@@ -1,0 +1,292 @@
+version: "3.1"
+
+rules:
+
+- rule: Decir adiós cada vez que el usuario se despida
+  steps:
+  - intent: despedirse
+  - action: utter_derivacion
+
+- rule: Ayudar a la persona
+  steps:
+  - intent: ayuda
+  - action: utter_ayuda
+
+- rule: Decir 'Soy un bot' cada vez que el usuario desafíe
+  steps:
+  - intent: desafio_bot
+  - action: utter_soyunbot
+
+- rule: Ayudar a cambiar la contraseña
+  steps:
+  - intent: cambio_contraseña
+  - action: utter_entendido
+  - action: utter_cambio_contraseña
+  - action: utter_cambio_contraseña_2
+  - action: utter_derivacion
+
+  
+- rule: Ayudar a configurar Outlook
+  steps:
+  - intent: configurar_outlook
+  - action: utter_entendido
+  - action: utter_configurar_outlook
+  - action: utter_configurar_outlook_2
+  - action: utter_derivacion
+
+
+- rule: Ayudar a solicitar firma digital
+  steps:
+  - intent: solicitar_firma_digital
+  - action: utter_entendido
+  - action: utter_solicitar_firma_digital
+  - action: utter_solicitar_firma_digital_2
+  - action: utter_solicitar_firma_digital_3
+  - action: utter_solicitar_firma_digital_4
+  - action: utter_derivacion
+
+- rule: Ayudar a solicitar los problemas de la PC y acceso a internet
+  steps:
+  - intent: problemas_PC_y_acceso_internet
+  - action: utter_entendido
+  - action: utter_problemas_PC_y_acceso_internet
+  - action: utter_derivacion
+
+- rule: Ayudar a recordar contraseña
+  steps:
+  - intent: olvide_mi_contraseña
+  - action: utter_entendido
+  - action: utter_olvide_mi_contraseña
+  - action: utter_derivacion
+
+- rule: Ayudar a migrar
+  steps:
+  - intent: proceso_migracion_gob_pe
+  - action: utter_entendido
+  - action: utter_proceso_migracion_gob_pe
+
+- rule: Contacto migrar
+  steps:
+  - intent: contacto_migrar
+  - action: utter_contacto_migrar
+  - action: utter_derivacion
+
+- rule: Guia del tramite
+  steps:
+  - intent: Guia_tramite
+  - action: utter_Guia_tramite
+  - action: utter_derivacion
+  
+
+
+- rule: Guias del lenguaje ciudadano
+  steps:
+  - intent: Guia_lenguaje_ciudadano
+  - action: utter_Guia_lenguaje_ciudadano
+  - action: utter_derivacion
+
+- rule: Ayudar a descargar los formatos de mesa de ayuda
+  steps:
+  - intent: descargar_formatos_mesa_ayuda
+  - action: utter_entendido
+  - action: utter_descargar_formatos_mesa_ayuda
+
+- rule: Ayudar a instalar un programa
+  steps:
+  - intent: solicitar_instalacion_programa
+  - action: utter_entendido
+  - action: utter_solicitar_instalacion_programa
+  - action: utter_derivacion
+
+- rule: Brindar informacion de sgd
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+
+
+
+- rule: Brindar SGD_1
+  steps:
+  - intent: que_es_SGD
+  - action: utter_informacion_sgd_1
+  - action: utter_derivacion
+
+- rule: Brindar SGD_2
+  steps:
+  - intent: acceder_SGD
+  - action: utter_informacion_sgd_2
+  - action: utter_derivacion
+
+- rule: Brindar SGD_3
+  steps:
+  - intent: cambio_contraseña_SGD
+  - action: utter_informacion_sgd_3
+  - action: utter_derivacion
+
+- rule: Brindar SGD_4
+  steps:
+  - intent: que_rol_tengo_SGD
+  - action: utter_informacion_sgd_4
+  - action: utter_derivacion
+
+- rule: Brindar SGD_5
+  steps:
+  - intent: hoja_tramite_SGD
+  - action: utter_informacion_sgd_5
+  - action: utter_derivacion
+
+- rule: Brindar SGD_6
+  steps:
+  - intent: documento_bandeja_SGD
+  - action: utter_informacion_sgd_6
+  - action: utter_derivacion
+
+- rule: Brindar SGD_7
+  steps:
+  - intent: unirse_grupo_WhatsApp_SGD
+  - action: utter_informacion_sgd_7
+  - action: utter_derivacion
+
+- rule: Brindar SGD_8
+  steps:
+  - intent: videos_instructivos_SGD
+  - action: utter_informacion_sgd_8
+
+- rule: Brindar SGD_8_1
+  steps:
+  - intent: video_manual_director
+  - action: utter_informacion_sgd_8_1
+  - action: utter_derivacion
+
+- rule: Brindar SGD_8_2
+  steps:
+  - intent: video_manual_secretaria
+  - action: utter_informacion_sgd_8_2
+  - action: utter_derivacion
+
+- rule: Brindar SGD_8_3
+  steps:
+  - intent: video_manual_trabajador
+  - action: utter_informacion_sgd_8_3
+  - action: utter_derivacion
+
+- rule: Brindar SGD_8_4
+  steps:
+  - intent: instructivo_caso_practico
+  - action: utter_informacion_sgd_8_4
+  - action: utter_derivacion
+
+
+- rule: Brindar SGD_9
+  steps:
+  - intent: dificultades_SGD
+  - action: utter_informacion_sgd_9
+  - action: utter_derivacion
+
+- rule: Brindar SGD_10
+  steps:
+  - intent: otras_consultas
+  - action: utter_informacion_sgd_10
+
+- rule: Brindar SGD_10_1
+  steps:
+  - intent: preguntar_enviar_documento_trabajador
+  - action: utter_informacion_sgd_10_1
+  - action: utter_derivacion
+
+- rule: Brindar SGD_10_2
+  steps:
+  - intent: preguntar_digitalizar_documento_con_NIT
+  - action: utter_informacion_sgd_10_2
+  - action: utter_derivacion
+
+- rule: Brindar SGD_10_3
+  steps:
+  - intent: preguntar_enviar_documento_adjunto
+  - action: utter_informacion_sgd_10_3
+  - action: utter_derivacion
+
+- rule: Brindar SGD_10_4
+  steps:
+  - intent: preguntar_finalizar_documento
+  - action: utter_informacion_sgd_10_4
+  - action: utter_derivacion
+
+- rule: Brindar SGD_10_5
+  steps:
+  - intent: preguntar_poner_firma
+  - action: utter_informacion_sgd_10_5
+  - action: utter_derivacion
+
+- rule: Brindar SGD_10_6
+  steps:
+  - intent: preguntar_revisar_documentos_emitidos
+  - action: utter_informacion_sgd_10_6
+  - action: utter_derivacion
+
+- rule: Brindar SGD_10_7
+  steps:
+  - intent: preguntar_confirmar_acciones_director
+  - action: utter_informacion_sgd_10_7
+  - action: utter_derivacion
+
+- rule: Brindar SGD_10_8
+  steps:
+  - intent: preguntar_que_es_multibandeja
+  - action: utter_informacion_sgd_10_8
+  - action: utter_derivacion
+  - action: action_listen
+
+
+- rule: Brindar solcitud de atencion general
+  steps:
+  - intent: solicitud_atencion_general
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+
+
+
+- rule: Brindar formato acceso a servicios informaticos
+  steps:
+  - intent: solicitud_acceso_a_los_servicios_informaticos
+  - action: utter_solicitud_acceso_a_los_servicios_informaticos
+  - action: utter_derivacion
+
+- rule: Brindar formato acceso a internet
+  steps:
+  - intent: solicitud_acceso_a_internet
+  - action: utter_solicitud_acceso_a_internet
+  - action: utter_derivacion
+
+- rule: Brindar formato VPN
+  steps:
+  - intent: solicitud_formato_vpn
+  - action: utter_solicitud_formato_vpn
+  - action: utter_derivacion
+
+- rule: Brindar formato de devolucion de bienes tecnologicos
+  steps:
+  - intent: solicitud_formato_devolucion_bienes_tecnologicos
+  - action: utter_solicitud_formato_devolucion_bienes_tecnologicos
+  - action: utter_derivacion
+  
+- rule: Brindar formato PIDE
+  steps:
+  - intent: solicitud_PIDE
+  - action: utter_solicitud_PIDE
+  - action: utter_derivacion
+
+- rule: Brindar formato certificado digital
+  steps:
+  - intent: solicitud_formato_de_certificado_digital
+  - action: utter_solicitud_formato_de_certificado_digital
+  - action: utter_derivacion
+
+- rule: Brindar formato bienes tecnologicos
+  steps:
+  - intent: solicitud_formato__bienes_tecnologicos
+  - action: utter_solicitud_formato__bienes_tecnologicos
+  - action: utter_derivacion
+

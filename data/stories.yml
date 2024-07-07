@@ -1,0 +1,1007 @@
+version: "3.1"
+
+stories:
+
+- story: opciones
+  steps:
+  - intent: saludar
+  - action: utter_saludar
+  - action: utter_nuevo
+  - intent: afirmar
+  - action: utter_opciones
+
+
+- story: camino feliz
+  steps:
+  - intent: saludar
+  - action: utter_saludar
+  - action: utter_nuevo
+  - intent: negar
+  - action: utter_ayuda
+
+- story: camino triste 1
+  steps:
+  - intent: saludar
+  - action: utter_saludar
+  - action: utter_nuevo
+  - intent: estado_animo_malo
+  - action: utter_animar
+  - action: utter_ayudo
+  - intent: afirmar
+  - action: utter_feliz
+
+- story: camino triste 2
+  steps:
+  - intent: saludar
+  - action: utter_saludar
+  - action: utter_nuevo
+  - intent: estado_animo_malo
+  - action: utter_animar
+  - action: utter_ayudo
+  - intent: negar
+  - action: utter_solicitar_firma_digital
+
+- story: configurar Outlook
+  steps:
+  - intent: configurar_outlook
+  - action: utter_entendido
+  - action: utter_configurar_outlook
+  - action: utter_configurar_outlook_2
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: cambio de contraseña
+  steps:
+  
+  - intent: cambio_contraseña
+  - action: utter_entendido
+  - action: utter_cambio_contraseña
+  - action: utter_cambio_contraseña_2
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+
+
+- story: solicitar firma digital
+  steps:
+  - intent: solicitar_firma_digital
+  - action: utter_entendido
+  - action: utter_solicitar_firma_digital
+  - action: utter_solicitar_firma_digital_2
+  - action: utter_solicitar_firma_digital_3
+  - action: utter_solicitar_firma_digital_4
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: solicitar solucion de problemas pc e internet
+  steps:
+  - intent: problemas_PC_y_acceso_internet
+  - action: utter_entendido
+  - action: utter_problemas_PC_y_acceso_internet
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Recordar contraseña
+  steps:
+  - intent: olvide_mi_contraseña
+  - action: utter_entendido
+  - action: utter_olvide_mi_contraseña
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Proceso de migracion
+  steps:
+  - intent: proceso_migracion_gob_pe
+  - action: utter_entendido
+  - action: utter_proceso_migracion_gob_pe
+  - intent: contacto_migrar
+  - action: utter_contacto_migrar
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Proceso de migracion_2
+  steps:
+  - intent: proceso_migracion_gob_pe
+  - action: utter_entendido
+  - action: utter_proceso_migracion_gob_pe
+  - intent: Guia_tramite
+  - action: utter_Guia_tramite
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+
+- story: Proceso de migracion_3
+  steps:
+  - intent: proceso_migracion_gob_pe
+  - action: utter_entendido
+  - action: utter_proceso_migracion_gob_pe
+  - intent: Ejemplos_de_estructura
+  - action: utter_Ejemplos_de_estructura
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+
+- story: Proceso de migracion_3_1
+  steps:
+  - intent: proceso_migracion_gob_pe
+  - action: utter_entendido
+  - action: utter_proceso_migracion_gob_pe
+  - intent: solicitar_ejemplos
+  - action: utter_Ejemplos_de_estructura
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Proceso de migracion_4
+  steps:
+  - intent: proceso_migracion_gob_pe
+  - action: utter_entendido
+  - action: utter_proceso_migracion_gob_pe
+  - intent: Guia_lenguaje_ciudadano
+  - action: utter_Guia_lenguaje_ciudadano
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+
+
+- story: Solicitar instalacion de un programa
+  steps:
+  - intent: solicitar_instalacion_programa
+  - action: utter_entendido
+  - action: utter_solicitar_instalacion_programa
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+  
+- story: Solicitar atencion general mesa de ayuda
+  steps:
+  - intent: solicitud_atencion_general
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+  
+- story: Solcitar ayuda
+  steps:
+  - intent: ayuda
+  - action: utter_ayuda
+  
+
+
+
+- story: Proceso de descarga de formatos de mesa de ayuda_1
+  steps:
+  - intent: descargar_formatos_mesa_ayuda
+  - action: utter_entendido
+  - action: utter_descargar_formatos_mesa_ayuda
+  - intent: solicitud_acceso_a_los_servicios_informaticos
+  - action: utter_solicitud_acceso_a_los_servicios_informaticos
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Proceso de descarga de formatos de mesa de ayuda_2
+  steps:
+  - intent: descargar_formatos_mesa_ayuda
+  - action: utter_entendido
+  - action: utter_descargar_formatos_mesa_ayuda
+  - intent: solicitud_acceso_a_internet
+  - action: utter_solicitud_acceso_a_internet
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Proceso de descarga de formatos de mesa de ayuda_3
+  steps:
+  - intent: descargar_formatos_mesa_ayuda
+  - action: utter_entendido
+  - action: utter_descargar_formatos_mesa_ayuda
+  - intent: solicitud_formato_vpn
+  - action: utter_solicitud_formato_vpn
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Proceso de descarga de formatos de mesa de ayuda_4
+  steps:
+  - intent: descargar_formatos_mesa_ayuda
+  - action: utter_entendido
+  - action: utter_descargar_formatos_mesa_ayuda
+  - intent: solicitud_formato_devolucion_bienes_tecnologicos
+  - action: utter_solicitud_formato_devolucion_bienes_tecnologicos
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Proceso de descarga de formatos de mesa de ayuda_5
+  steps:
+  - intent: descargar_formatos_mesa_ayuda
+  - action: utter_entendido
+  - action: utter_descargar_formatos_mesa_ayuda
+  - intent: solicitud_PIDE
+  - action: utter_solicitud_PIDE
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Proceso de descarga de formatos de mesa de ayuda_6
+  steps:
+  - intent: descargar_formatos_mesa_ayuda
+  - action: utter_entendido
+  - action: utter_descargar_formatos_mesa_ayuda
+  - intent: solicitud_formato_de_certificado_digital
+  - action: utter_solicitud_formato_de_certificado_digital
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Proceso de descarga de formatos de mesa de ayuda_7
+  steps:
+  - intent: descargar_formatos_mesa_ayuda
+  - action: utter_entendido
+  - action: utter_descargar_formatos_mesa_ayuda
+  - intent: solicitud_formato__bienes_tecnologicos
+  - action: utter_solicitud_formato__bienes_tecnologicos
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+
+- story: Solicitar informacion de sgd_1
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: que_es_SGD
+  - action: utter_informacion_sgd_1
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Solicitar informacion de sgd_2
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: acceder_SGD
+  - action: utter_informacion_sgd_2
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Solicitar informacion de sgd_3
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: cambio_contraseña_SGD
+  - action: utter_informacion_sgd_3
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Solicitar informacion de sgd_4
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: que_rol_tengo_SGD
+  - action: utter_informacion_sgd_4
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Solicitar informacion de sgd_5
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: hoja_tramite_SGD
+  - action: utter_informacion_sgd_5
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Solicitar informacion de sgd_6
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: documento_bandeja_SGD
+  - action: utter_informacion_sgd_6
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Solicitar informacion de sgd_7
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: unirse_grupo_WhatsApp_SGD
+  - action: utter_informacion_sgd_7
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+
+- story: Solicitar informacion de sgd_8_1
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: videos_instructivos_SGD
+  - action: utter_informacion_sgd_8
+  - intent: video_manual_director
+  - action: utter_informacion_sgd_8_1
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Solicitar informacion de sgd_8_2
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: videos_instructivos_SGD
+  - action: utter_informacion_sgd_8
+  - intent: video_manual_secretaria
+  - action: utter_informacion_sgd_8_2
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Solicitar informacion de sgd_8_3
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: videos_instructivos_SGD
+  - action: utter_informacion_sgd_8
+  - intent: video_manual_trabajador
+  - action: utter_informacion_sgd_8_3
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Solicitar informacion de sgd_8_4
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: videos_instructivos_SGD
+  - action: utter_informacion_sgd_8
+  - intent: instructivo_caso_practico
+  - action: utter_informacion_sgd_8_4
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+
+
+- story: Solicitar informacion de sgd_9
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: dificultades_SGD
+  - action: utter_informacion_sgd_9
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+  
+
+- story: Solicitar informacion de sgd_10_1
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: otras_consultas
+  - action: utter_informacion_sgd_10
+  - intent: preguntar_enviar_documento_trabajador
+  - action: utter_informacion_sgd_10_1
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Solicitar informacion de sgd_10_2
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: otras_consultas
+  - action: utter_informacion_sgd_10
+  - intent: preguntar_digitalizar_documento_con_NIT
+  - action: utter_informacion_sgd_10_2
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Solicitar informacion de sgd_10_3
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: otras_consultas
+  - action: utter_informacion_sgd_10
+  - intent: preguntar_enviar_documento_adjunto
+  - action: utter_informacion_sgd_10_3
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Solicitar informacion de sgd_10_4
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: otras_consultas
+  - action: utter_informacion_sgd_10
+  - intent: preguntar_finalizar_documento
+  - action: utter_informacion_sgd_10_4
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Solicitar informacion de sgd_10_5
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: otras_consultas
+  - action: utter_informacion_sgd_10
+  - intent: preguntar_poner_firma
+  - action: utter_informacion_sgd_10_5
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+
+- story: Solicitar informacion de sgd_10_6
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: otras_consultas
+  - action: utter_informacion_sgd_10
+  - intent: preguntar_revisar_documentos_emitidos
+  - action: utter_informacion_sgd_10_6
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Solicitar informacion de sgd_10_7
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: otras_consultas
+  - action: utter_informacion_sgd_10
+  - intent: preguntar_confirmar_acciones_director
+  - action: utter_informacion_sgd_10_7
+  - action: utter_derivacion
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Solicitar informacion de sgd_10_8
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: otras_consultas
+  - action: utter_informacion_sgd_10
+  - intent: preguntar_que_es_multibandeja
+  - action: utter_informacion_sgd_10_8
+  - action: utter_derivacion
+  - action: action_listen
+  - intent: afirmar
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+  
+- story: Si solo
+  steps:
+  - intent: afirmar
+  - action: utter_ayuda
+
+- story: no solo
+  steps: 
+  - intent: negar
+  - action: utter_despedirse
+
+- story: configurar Outlook_no
+  steps:
+  - intent: configurar_outlook
+  - action: utter_entendido
+  - action: utter_configurar_outlook
+  - action: utter_configurar_outlook_2
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: cambio de contraseña_no
+  steps:
+  - intent: cambio_contraseña
+  - action: utter_entendido
+  - action: utter_cambio_contraseña
+  - action: utter_cambio_contraseña_2
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+
+- story: solicitar firma digital_no
+  steps:
+  - intent: solicitar_firma_digital
+  - action: utter_entendido
+  - action: utter_solicitar_firma_digital
+  - action: utter_solicitar_firma_digital_2
+  - action: utter_solicitar_firma_digital_3
+  - action: utter_solicitar_firma_digital_4
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: solicitar solucion de problemas pc e internet_no
+  steps:
+  - intent: problemas_PC_y_acceso_internet
+  - action: utter_entendido
+  - action: utter_problemas_PC_y_acceso_internet
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Recordar contraseña_no
+  steps:
+  - intent: olvide_mi_contraseña
+  - action: utter_entendido
+  - action: utter_olvide_mi_contraseña
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Proceso de migracion_no
+  steps:
+  - intent: proceso_migracion_gob_pe
+  - action: utter_entendido
+  - action: utter_proceso_migracion_gob_pe
+  - intent: contacto_migrar
+  - action: utter_contacto_migrar
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Proceso de migracion_2_no
+  steps:
+  - intent: proceso_migracion_gob_pe
+  - action: utter_entendido
+  - action: utter_proceso_migracion_gob_pe
+  - intent: Guia_tramite
+  - action: utter_Guia_tramite
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Proceso de migracion_3_no
+  steps:
+  - intent: proceso_migracion_gob_pe
+  - action: utter_entendido
+  - action: utter_proceso_migracion_gob_pe
+  - intent: Ejemplos_de_estructura
+  - action: utter_Ejemplos_de_estructura
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Proceso de migracion_3_1_no
+  steps:
+  - intent: proceso_migracion_gob_pe
+  - action: utter_entendido
+  - action: utter_proceso_migracion_gob_pe
+  - intent: solicitar_ejemplos
+  - action: utter_Ejemplos_de_estructura
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Proceso de migracion_4_no
+  steps:
+  - intent: proceso_migracion_gob_pe
+  - action: utter_entendido
+  - action: utter_proceso_migracion_gob_pe
+  - intent: Guia_lenguaje_ciudadano
+  - action: utter_Guia_lenguaje_ciudadano
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar instalacion de un programa_no
+  steps:
+  - intent: solicitar_instalacion_programa
+  - action: utter_entendido
+  - action: utter_solicitar_instalacion_programa
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar atencion general mesa de ayuda_no
+  steps:
+  - intent: solicitud_atencion_general
+  - action: utter_entendido
+  - action: utter_solicitud_atencion_general
+
+- story: Solicitar ayuda_no
+  steps:
+  - intent: ayuda
+  - action: utter_ayuda
+
+- story: Proceso de descarga de formatos de mesa de ayuda_1_no
+  steps:
+  - intent: descargar_formatos_mesa_ayuda
+  - action: utter_entendido
+  - action: utter_descargar_formatos_mesa_ayuda
+  - intent: solicitud_acceso_a_los_servicios_informaticos
+  - action: utter_solicitud_acceso_a_los_servicios_informaticos
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Proceso de descarga de formatos de mesa de ayuda_2_no
+  steps:
+  - intent: descargar_formatos_mesa_ayuda
+  - action: utter_entendido
+  - action: utter_descargar_formatos_mesa_ayuda
+  - intent: solicitud_acceso_a_internet
+  - action: utter_solicitud_acceso_a_internet
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Proceso de descarga de formatos de mesa de ayuda_3_no
+  steps:
+  - intent: descargar_formatos_mesa_ayuda
+  - action: utter_entendido
+  - action: utter_descargar_formatos_mesa_ayuda
+  - intent: solicitud_formato_vpn
+  - action: utter_solicitud_formato_vpn
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Proceso de descarga de formatos de mesa de ayuda_4_no
+  steps:
+  - intent: descargar_formatos_mesa_ayuda
+  - action: utter_entendido
+  - action: utter_descargar_formatos_mesa_ayuda
+  - intent: solicitud_formato_devolucion_bienes_tecnologicos
+  - action: utter_solicitud_formato_devolucion_bienes_tecnologicos
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Proceso de descarga de formatos de mesa de ayuda_5_no
+  steps:
+  - intent: descargar_formatos_mesa_ayuda
+  - action: utter_entendido
+  - action: utter_descargar_formatos_mesa_ayuda
+  - intent: solicitud_PIDE
+  - action: utter_solicitud_PIDE
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Proceso de descarga de formatos de mesa de ayuda_6_no
+  steps:
+  - intent: descargar_formatos_mesa_ayuda
+  - action: utter_entendido
+  - action: utter_descargar_formatos_mesa_ayuda
+  - intent: solicitud_formato_de_certificado_digital
+  - action: utter_solicitud_formato_de_certificado_digital
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Proceso de descarga de formatos de mesa de ayuda_7_no
+  steps:
+  - intent: descargar_formatos_mesa_ayuda
+  - action: utter_entendido
+  - action: utter_descargar_formatos_mesa_ayuda
+  - intent: solicitud_formato__bienes_tecnologicos
+  - action: utter_solicitud_formato__bienes_tecnologicos
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_1_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: que_es_SGD
+  - action: utter_informacion_sgd_1
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_2_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: acceder_SGD
+  - action: utter_informacion_sgd_2
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_3_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: cambio_contraseña_SGD
+  - action: utter_informacion_sgd_3
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_4_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: que_rol_tengo_SGD
+  - action: utter_informacion_sgd_4
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_5_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: hoja_tramite_SGD
+  - action: utter_informacion_sgd_5
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_6_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: documento_bandeja_SGD
+  - action: utter_informacion_sgd_6
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_7_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: unirse_grupo_WhatsApp_SGD
+  - action: utter_informacion_sgd_7
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_8_1_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: videos_instructivos_SGD
+  - action: utter_informacion_sgd_8
+  - intent: video_manual_director
+  - action: utter_informacion_sgd_8_1
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_8_2_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: videos_instructivos_SGD
+  - action: utter_informacion_sgd_8
+  - intent: video_manual_secretaria
+  - action: utter_informacion_sgd_8_2
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_8_3_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: videos_instructivos_SGD
+  - action: utter_informacion_sgd_8
+  - intent: video_manual_trabajador
+  - action: utter_informacion_sgd_8_3
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_8_4_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: videos_instructivos_SGD
+  - action: utter_informacion_sgd_8
+  - intent: instructivo_caso_practico
+  - action: utter_informacion_sgd_8_4
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_9_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: dificultades_SGD
+  - action: utter_informacion_sgd_9
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_10_1_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: otras_consultas
+  - action: utter_informacion_sgd_10
+  - intent: preguntar_enviar_documento_trabajador
+  - action: utter_informacion_sgd_10_1
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_10_2_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: otras_consultas
+  - action: utter_informacion_sgd_10
+  - intent: preguntar_digitalizar_documento_con_NIT
+  - action: utter_informacion_sgd_10_2
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_10_3_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: otras_consultas
+  - action: utter_informacion_sgd_10
+  - intent: preguntar_enviar_documento_adjunto
+  - action: utter_informacion_sgd_10_3
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_10_4_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: otras_consultas
+  - action: utter_informacion_sgd_10
+  - intent: preguntar_finalizar_documento
+  - action: utter_informacion_sgd_10_4
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_10_5_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: otras_consultas
+  - action: utter_informacion_sgd_10
+  - intent: preguntar_poner_firma
+  - action: utter_informacion_sgd_10_5
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_10_6_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: otras_consultas
+  - action: utter_informacion_sgd_10
+  - intent: preguntar_revisar_documentos_emitidos
+  - action: utter_informacion_sgd_10_6
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_10_7_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: otras_consultas
+  - action: utter_informacion_sgd_10
+  - intent: preguntar_confirmar_acciones_director
+  - action: utter_informacion_sgd_10_7
+  - action: utter_derivacion
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Solicitar informacion de sgd_10_8_no
+  steps:
+  - intent: informacion_sgd
+  - action: utter_entendido
+  - action: utter_informacion_sgd
+  - intent: otras_consultas
+  - action: utter_informacion_sgd_10
+  - intent: preguntar_que_es_multibandeja
+  - action: utter_informacion_sgd_10_8
+  - action: utter_derivacion
+  - action: action_listen
+  - intent: negar
+  - action: utter_despedirse
+
+- story: Opciones generales
+  steps:
+  - intent: opciones_general
+  - action: utter_opciones

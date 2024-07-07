@@ -1,0 +1,2727 @@
+version: "3.1"
+
+nlu:
+- intent: ayuda
+  examples: |
+    - Necesito ayuda
+    - Tengo un problema
+    - ¿Puedes ayudarme?
+    - ¿Me das una mano?
+    - Ayúdame por favor
+    - Estoy teniendo un problema
+    - Ayuda por favor
+    - Necesito asistencia
+    - Tengo una duda
+    - ¿A quién puedo pedir ayuda?
+    - Necesito que me ayudes
+    - ¿Puedes asistirme?
+    - Tengo un problema y no sé qué hacer
+    - ¿Alguien puede ayudarme?
+    - ¿Puedo pedir ayuda?
+    - Necesito resolver un problema
+    - Estoy teniendo dificultades
+    - Me estoy enfrentando a un problema
+    - ¿Podrías ayudarme con algo?
+    - Tengo un inconveniente
+    - ¿Podrías asistirme?
+    - Estoy teniendo un inconveniente
+    - Necesito solucionar un problema
+    - ¿A quién puedo acudir por ayuda?
+    - Tengo una consulta
+
+- intent: saludar
+  examples: |
+    - hola
+    - ¡hola!
+    - buenas
+    - buen día
+    - buenas tardes
+    - buenas noches
+    - ¿qué tal?
+    - ¿cómo estás?
+    - ¿qué onda?
+    - ¿qué pasa?
+    - hey amigo
+    - saludos
+    - buenos días
+    - buenas noches
+    - hola, ¿qué tal?
+    - ¡hola, buen día!
+    - ¿cómo va todo?
+    - ¡hey!
+    - ¿qué hay de nuevo?
+    - ¿cómo te va?
+    - ¡hey, qué tal!
+    - ¡hey, buenas!
+    - ¡hola a todos!
+    - ¡hola, buen día!
+    - ¡hola, buenas tardes!
+    - ¡hola, buenas noches!
+    - ¡hola, cómo andas?
+    - ¿qué cuentas?
+    - ¿cómo te va hoy?
+    - ¡hola, qué alegría verte!
+    - ¡qué gusto saludarte!
+    - ¡hey, cómo estás?
+    - ¿qué tal, cómo va?
+    - ¡hola, cómo te encuentras?
+    - ¡hola, qué pasa!
+    - ¡hola, qué gusto verte!
+    - ¿qué tal, cómo te sientes?
+    - ¡hola, qué bueno verte!
+    - ¡hola, cómo has estado?
+    - ¡buenas, cómo estás?
+    - ¡hola, qué onda!
+    - ¡hola, qué tal todo?
+    - ¡hola, cómo te va hoy?
+    - ¡buenas, cómo andas?
+
+
+- intent: despedirse
+  examples: |
+    - chau
+    - hasta luego
+    - nos vemos
+    - adiós
+    - hasta pronto
+    - hasta la vista
+    - bye
+    - hasta mañana
+    - que tengas un buen día
+    - que estés bien
+    - nos vemos después
+    - hasta la próxima
+    - me despido
+    - hasta la próxima vez
+    - cuídate
+    - que te vaya bien
+    - hasta otra
+    - que tengas un buen día
+    - que tengas una buena noche
+    - hasta entonces
+    - adiós, cuídate
+    - nos vemos pronto
+    - hasta la próxima ocasión
+    - que tengas un buen fin de semana
+    - nos vemos mañana
+    - nos vemos luego
+    - hasta otro momento
+    - que pases un buen día
+    - te veo después
+    - hasta más tarde
+    - chau chau
+    - adiós, hasta luego
+    - me voy
+    - te cuidas
+    - hasta el próximo encuentro
+    - adiós, que estés bien
+    - hasta el siguiente
+    - hasta otra oportunidad
+    - que pases una buena tarde
+    - me despido por ahora
+    - nos encontramos después
+    - chau, nos vemos
+
+
+- intent: afirmar
+  examples: |
+    - sí
+    - claro
+    - efectivamente
+    - por supuesto
+    - suena bien
+    - correcto
+    - está bien
+    - eso está bien
+    - sí, por supuesto
+    - desde luego
+    - totalmente
+    - definitivamente
+    - claro que sí
+    - seguro
+    - sin duda
+    - afirmativo
+    - así es
+    - eso es
+    - tal cual
+    - vale
+    - sí, claro
+    - sí, seguro
+    - sí, estoy de acuerdo
+    - sí, correcto
+    - claro que sí, está bien
+    - sí, lo confirmo
+    - sí, así es
+    - efectivamente, es correcto
+    - sí, sin problema
+    - sí, estoy de acuerdo contigo
+    - claro, está bien
+    - sí, eso mismo
+    - sí, por supuesto que sí
+    - sí, completamente
+    - claro, sin dudas
+    - sí, tal cual dices
+    - sí, perfecto
+    - sí, exacto
+    - si
+
+
+- intent: negar
+  examples: |
+    - no
+    - nunca
+    - no creo
+    - no me gusta
+    - de ninguna manera
+    - no realmente
+    - no, gracias
+    - en absoluto
+    - para nada
+    - definitivamente no
+    - claro que no
+    - de ninguna manera
+    - en absoluto
+    - no es posible
+    - no estoy de acuerdo
+    - no lo creo
+    - no es cierto
+    - no quiero
+    - no puedo
+    - no está bien
+    - no me parece
+    - no es correcto
+    - no, de verdad
+    - no, en serio
+    - no, definitivamente no
+    - no, claro que no
+    - no, no quiero
+    - no, no puedo
+    - no, no está bien
+    - no, no es cierto
+    - no, no estoy de acuerdo
+    - no, no lo creo
+    - no, no me gusta
+    - no, no me parece
+    - no, no es posible
+    - no, no realmente
+
+- intent: estado_animo_bueno
+  examples: |
+    - perfecto
+    - genial
+    - asombroso
+    - me siento como un rey
+    - maravilloso
+    - me siento muy bien
+    - estoy genial
+    - estoy asombroso
+    - estoy feliz
+    - estoy emocionado
+    - extremadamente bien
+    - tan perfecto
+    - tan bueno
+
+- intent: estado_animo_malo
+  examples: |
+    - mi día fue horrible
+    - estoy triste
+    - no me siento muy bien
+    - estoy decepcionado
+    - muy triste
+    - estoy muy triste
+    - triste
+    - muy triste
+    - no estoy bien
+    - no muy bien
+
+- intent: cambio_contraseña
+  examples: |
+    - Quiero cambiar mi contraseña
+    - Necesito cambiar mi contraseña
+    - ¿Cómo puedo cambiar mi contraseña?
+    - Me gustaría cambiar mi contraseña
+    - Cambiar contraseña
+    - Quiero modificar mi contraseña
+    - Necesito actualizar mi contraseña
+    - ¿Puedes ayudarme a cambiar mi contraseña?
+    - ¿Cómo cambio mi contraseña?
+    - ¿Dónde puedo cambiar mi contraseña?
+    - Quiero una nueva contraseña
+    - Olvidé mi contraseña y quiero cambiarla
+    - ¿Me ayudas a cambiar mi contraseña?
+    - Deseo cambiar mi clave
+    - Cambiar mi clave de acceso
+    - Necesito una nueva contraseña
+    - ¿Cómo puedo actualizar mi clave?
+    - necesito cambiar la contraseña de mi cuenta
+    - como cambio la contraseña de mi cuenta
+
+- intent: configurar_outlook
+  examples: |
+    - Configurar Outlook
+    - Cómo configurar Outlook
+    - Necesito ayuda con la configuración de Outlook
+    - Configuración de correo electrónico en Outlook
+    - ¿Cómo puedo configurar mi cuenta de correo en Outlook?
+    - ¿Puedes ayudarme a configurar Outlook?
+    - ¿Dónde puedo encontrar ayuda para configurar Outlook?
+    - Ayuda con la configuración de correo en Outlook
+    - quiero configurar mi cuenta
+    - deseo configurar mi cuenta
+    - como configuro mi cuenta
+    - que pasos debo seguir para configurar mi cuenta
+
+- intent: solicitar_firma_digital
+  examples: |
+    - Como saco mi firma digital
+    - Solicito mi firma digital
+    - Quiero mi firma digital
+    - Solicitar el certificado de firma digital
+    - Necesito instalar el certificado de firma digital
+    - Cómo puedo obtener el certificado de firma digital
+    - ¿Dónde puedo solicitar el certificado de firma digital?
+    - Ayuda para instalar el certificado de firma digital
+    - ¿Puedes ayudarme a obtener el certificado de firma digital?
+    - Quiero instalar el certificado de firma digital
+    - ¿Cómo se instala el certificado de firma digital?
+    - Proceso para obtener el certificado de firma digital
+    - Instrucciones para solicitar el certificado de firma digital
+
+- intent: problemas_PC_y_acceso_internet
+  examples: |
+    - No tengo acceso a internet
+    - Mi PC no se conecta a internet
+    - No puedo navegar en internet
+    - Mi computadora no funciona bien
+    - No puedo conectarme a la red
+    - El internet no está funcionando
+    - Tengo problemas con la conexión de mi PC
+    - Mi PC tiene problemas para conectarse a internet
+    - No hay internet en mi computadora
+    - No puedo acceder a la red desde mi PC
+    - Mi conexión a internet está caída
+    - La computadora tiene problemas de conexión
+    - No logro conectarme a internet desde mi computadora
+
+
+- intent: olvide_mi_contraseña
+  examples: |
+    - Olvidé mi contraseña
+    - No recuerdo mi contraseña
+    - Se me olvidó la contraseña
+    - Perdí mi contraseña
+    - No puedo acordarme de mi contraseña
+    - ¿Cómo recupero mi contraseña?
+    - Necesito resetear mi contraseña
+    - No sé cuál es mi contraseña
+    - ¿Qué hago si olvidé mi contraseña?
+    - He olvidado mi contraseña
+    - Necesito ayuda para recuperar mi contraseña
+    - No puedo iniciar sesión porque olvidé mi contraseña
+    - ¿Puedes ayudarme a recuperar mi contraseña?
+    - Se me ha olvidado la contraseña
+    - No consigo recordar mi contraseña
+
+- intent: proceso_migracion_gob_pe
+  examples: |
+    - Necesito información sobre la migración al GOB.PE
+    - ¿Cómo es el proceso de migración al GOB.PE?
+    - Ayuda con la migración al GOB.PE
+    - ¿Qué debo hacer para migrar al GOB.PE?
+    - ¿Cuáles son los pasos para la migración al GOB.PE?
+    - Información sobre el proceso de migración al GOB.PE
+    - Necesito migrar al GOB.PE
+    - ¿Cómo puedo migrar al GOB.PE?
+    - Proceso para cambiar al GOB.PE
+    - ¿Qué se necesita para migrar al GOB.PE?
+    - Quiero migrar al GOB.PE, ¿qué hago?
+    - Detalles sobre la migración al GOB.PE
+    - ¿Dónde encuentro información sobre la migración al GOB.PE?
+    - Pasos a seguir para la migración al GOB.PE
+    - ¿Qué es el GOB.PE y cómo migrar?
+    - Como migro
+    - Quisiera migrar
+    - Que debo hacer para migrar
+    - ¿Cómo inicio el proceso de migración al GOB.PE?
+    - Necesito comenzar la migración al GOB.PE
+    - Ayuda para migrar al GOB.PE
+    - ¿Cuál es el primer paso para migrar al GOB.PE?
+    - Información detallada sobre la migración al GOB.PE
+    - ¿Qué documentos necesito para migrar al GOB.PE?
+    - Instrucciones para migrar al GOB.PE
+    - Pasos iniciales para migrar al GOB.PE
+    - ¿Dónde puedo empezar la migración al GOB.PE?
+    - Quiero saber cómo migrar al GOB.PE
+    - Detalles sobre cómo migrar al GOB.PE
+    - Ayuda paso a paso para la migración al GOB.PE
+    - Guía para migrar al GOB.PE
+    - ¿A dónde debo ir para migrar al GOB.PE?
+    - ¿Cuánto tiempo tarda la migración al GOB.PE?
+    - Proceso completo de migración al GOB.PE
+    - Necesito iniciar los trámites para migrar al GOB.PE
+    - ¿Cómo empiezo mi migración al GOB.PE?
+    - ¿Qué requisitos hay para migrar al GOB.PE?
+    - ¿Qué debo saber para migrar al GOB.PE?
+    - ¿Cuáles son los trámites para migrar al GOB.PE?
+    - ¿Me puedes explicar cómo migrar al GOB.PE?
+    - ¿Qué necesito para empezar la migración al GOB.PE?
+    - ¿Cuál es el procedimiento para migrar al GOB.PE?
+    - Necesito orientación para migrar al GOB.PE
+    - ¿Cómo inicio los trámites de migración al GOB.PE?
+    - Información esencial para la migración al GOB.PE
+    - Pasos clave para migrar al GOB.PE
+    - ¿Cómo hago para cambiar al GOB.PE?
+    - ¿Qué hay que hacer para migrar al GOB.PE?
+    - Ayúdame a migrar al GOB.PE
+    - ¿Qué documentos son necesarios para migrar al GOB.PE?
+    - Información completa sobre la migración al GOB.PE
+    - ¿Cuáles son los pasos iniciales para migrar al GOB.PE?
+    - ¿Qué debo presentar para migrar al GOB.PE?
+    - Todo lo que necesito saber sobre la migración al GOB.PE
+    - ¿Cómo realizo el proceso de migración al GOB.PE?
+    - ¿Qué trámites necesito hacer para migrar al GOB.PE?
+    - ¿Qué se requiere para empezar la migración al GOB.PE?
+    - ¿Qué necesito para empezar el proceso migratorio al GOB.PE?
+    - ¿Cómo puedo obtener información sobre la migración al GOB.PE?
+    - Necesito iniciar el proceso de migración al GOB.PE
+    - ¿Cuáles son las etapas de la migración al GOB.PE?
+    - ¿Cómo es la migración al GOB.PE?
+    - Ayuda para el proceso de migración al GOB.PE
+    - Quiero migrar al GOB.PE
+    - ¿Cómo hago para migrar?
+    - Explícame el proceso de migración al GOB.PE
+    - Guía paso a paso para migrar al GOB.PE
+    - ¿Qué debo hacer para iniciar la migración al GOB.PE?
+    - Pasos detallados para migrar al GOB.PE
+
+- intent: descargar_formatos_mesa_ayuda
+  examples: |
+    - Necesito descargar los formatos de mesa de ayuda
+    - ¿Dónde puedo bajar los formatos de mesa de ayuda?
+    - Quiero los formatos de mesa de ayuda
+    - ¿Puedes ayudarme a descargar los formatos de mesa de ayuda?
+    - Necesito los formatos de la mesa de ayuda
+    - ¿Cómo descargo los formatos de mesa de ayuda?
+    - Ayuda para descargar los formatos de mesa de ayuda
+    - Me puedes proporcionar los formatos de mesa de ayuda
+    - Necesito acceso a los formatos de mesa de ayuda
+    - ¿Dónde encuentro los formatos de mesa de ayuda?
+    - ¿Puedes decirme cómo descargar los formatos de mesa de ayuda?
+    - Descarga de formatos de mesa de ayuda
+    - Quiero bajar los formatos de mesa de ayuda
+    - ¿Me ayudas a descargar los formatos de mesa de ayuda?
+    - ¿Cómo obtengo los formatos de mesa de ayuda?
+    - como descargo los formatos de mesa de ayuda
+    - quiero los archivos de mesa de ayuda
+    - quiero descargar los archivos de mesa de ayuda
+    - Como veo los archivos de mesa de ayuda.
+    - ¿Qué formatos tiene mesa de ayuda?
+    - Cuales son los formatos de mesa de ayuda
+    - Necesito ejemplos de formatos de mesa de ayuda
+    - ¿Tienes ejemplos de formatos de mesa de ayuda?
+    - Quiero ver algunos formatos de mesa de ayuda
+    - ¿Dónde puedo encontrar ejemplos de formatos de mesa de ayuda?
+    - ¿Me puedes mostrar ejemplos de formatos de mesa de ayuda?
+    - Estoy buscando formatos de mesa de ayuda, ¿puedes ayudarme?
+    - Necesito ver algunos ejemplos de formatos de mesa de ayuda
+    - ¿Podrías darme ejemplos de formatos de mesa de ayuda?
+    - ¿Tienes algún formato de mesa de ayuda que pueda ver?
+    - Quisiera ejemplos de formatos de mesa de ayuda
+    - Muéstrame ejemplos de formatos de mesa de ayuda
+    - ¿Puedes mostrarme formatos de mesa de ayuda?
+    - Estoy buscando ejemplos de formatos de mesa de ayuda
+    - Necesito algunos ejemplos de formatos de mesa de ayuda
+    - Quiero ver formatos de mesa de ayuda
+    - ¿Dónde puedo encontrar formatos de mesa de ayuda?
+    - ¿Me das ejemplos de formatos de mesa de ayuda?
+    - Necesito ver formatos de mesa de ayuda
+    - ¿Tienes formatos de mesa de ayuda?
+    - Quisiera ver algunos ejemplos de formatos de mesa de ayuda
+    - Muéstrame algunos formatos de mesa de ayuda
+    - Estoy interesado en formatos de mesa de ayuda
+    - ¿Puedes proporcionarme ejemplos de formatos de mesa de ayuda?
+    - Quiero algunos ejemplos de formatos de mesa de ayuda
+    - ¿Tienes ejemplos de formatos?
+    - Necesito ver algunos ejemplos de formatos
+    - Muéstrame ejemplos de formatos
+    - ¿Puedes darme ejemplos de formatos?
+    - Quisiera ver ejemplos de formatos
+    - ¿Dónde puedo encontrar ejemplos de formatos?
+    - Enséñame ejemplos de formatos
+    - Estoy buscando ejemplos de formatos
+    - ¿Podrías mostrarme ejemplos de formatos?
+    - Necesito algunos ejemplos de formatos
+    - ¿Tienes algunos ejemplos de formatos para mostrarme?
+    - ¿Puedes enseñarme ejemplos de formatos?
+    - Me gustaría ver ejemplos de formatos
+    - ¿Podrías darme ejemplos de formatos?
+    - Quisiera ver algunos ejemplos de formatos
+    - ¿Puedes mostrarme ejemplos de formatos?
+    - Necesito ejemplos de formatos, ¿me puedes ayudar?
+    - ¿Dónde puedo ver ejemplos de formatos?
+    - ¿Podrías proporcionarme ejemplos de formatos?
+    - Enséñame algunos ejemplos de formatos
+    - ¿Tienes ejemplos de formatos disponibles?
+    - ¿Puedo ver ejemplos de formatos?
+    - Me vendrían bien algunos ejemplos de formatos
+    - ¿Puedes mostrarme algunos ejemplos de formatos?
+    - Necesito ver ejemplos de formatos, ¿me puedes ayudar?
+
+- intent: solicitar_instalacion_programa
+  examples: |
+    - Necesito instalar un programa
+    - ¿Puedes instalarme un programa?
+    - Quiero que me instales un programa
+    - ¿Cómo puedo solicitar la instalación de un programa?
+    - Ayuda para instalar un programa
+    - Necesito que instalen un software en mi PC
+    - ¿Cómo pido la instalación de un programa?
+    - Quiero solicitar la instalación de un programa
+    - ¿Me puedes ayudar a instalar un programa?
+    - Necesito ayuda con la instalación de un programa
+    - ¿Dónde puedo solicitar la instalación de un software?
+    - ¿Me puedes instalar este programa?
+    - Necesito que me instalen un programa
+    - ¿Cómo hago para que me instalen un programa?
+    - Quiero que instalen un software en mi computadora
+    - Quiero instalar un programa
+    - ¿Comó instalo un programa?
+
+
+
+- intent: informacion_sgd
+  examples: |
+    - Necesito información sobre el SGD
+    - ¿Qué es el SGD?
+    - ¿Cómo funciona el SGD?
+    - Dime más sobre el SGD
+    - Quiero saber qué es el SGD
+    - Explícame qué es el SGD
+    - Información sobre el SGD, por favor
+    - ¿Para qué sirve el SGD?
+    - ¿Puedes darme detalles sobre el SGD?
+    - ¿Qué significa SGD?
+    - Necesito saber más sobre el SGD
+    - ¿Cómo puedo usar el SGD?
+    - ¿Qué es el sistema SGD?
+    - Cuéntame sobre el SGD
+    - ¿Cómo se utiliza el SGD?
+    - SGD que es?
+
+- intent: solicitud_atencion_general
+  examples: |
+    - Necesito ayuda con algo
+    - Tengo un problema y necesito asistencia
+    - Hay un problema urgente que necesito resolver
+    - ¿Puedo solicitar ayuda con un problema?
+    - ¿Cómo puedo recibir atención para un problema?
+    - Tengo un incidente que necesito reportar
+    - Necesito asistencia urgente
+    - Hay un incidente que necesita atención
+    - Tengo un problema que no sé cómo resolver
+    - Necesito reportar un problema grave
+    - ¿Dónde puedo solicitar ayuda para un problema?
+    - Necesito hablar con alguien sobre un problema urgente
+    - Hay un asunto importante que necesito resolver
+    - ¿Cómo puedo reportar un problema serio?
+    - Tengo un problema urgente que necesita atención
+    - Necesito ayuda con un problema que surgió
+    - Hay algo que necesito resolver urgentemente
+    - Necesito asistencia para un problema grave
+    - Tengo un asunto urgente que requiere atención
+    - ¿Cómo puedo obtener ayuda para un problema importante?
+    - Tengo un problema que necesita ser atendido de inmediato
+    - Hay un incidente que requiere asistencia urgente
+    - Necesito reportar un problema crítico
+    - ¿Cómo solicito atención para un problema grave?
+    - Tengo un problema serio y necesito ayuda
+    - Hay un problema urgente que debe ser resuelto
+    - Necesito asistencia inmediata para un problema
+    - Tengo un incidente que necesita ser atendido
+    - ¿Puedo reportar un problema grave aquí?
+    - Necesito ayuda urgente con un problema
+    - Hay algo urgente que necesito resolver
+    - Tengo un problema crítico que requiere atención
+    - Necesito asistencia con un problema importante
+    - Hay un asunto serio que necesito resolver
+    - ¿Cómo reporto un problema grave?
+    - Tengo un problema urgente y necesito ayuda
+    - Hay un incidente grave que necesita atención
+    - Necesito asistencia para resolver un problema
+    - Tengo un problema importante que necesita ser resuelto
+    - Hay un incidente crítico que requiere asistencia
+    - Necesito ayuda para resolver un problema grave
+    - Tengo un problema serio y necesito asistencia
+    - Hay un asunto urgente que requiere atención
+    - Necesito reportar un problema urgente
+    - Tengo un problema crítico y necesito ayuda
+    - Hay algo importante que necesito resolver
+    - Necesito asistencia urgente para un incidente
+    - Tengo un problema grave que requiere atención inmediata
+    - Hay un incidente urgente que necesita ser resuelto
+    - Necesito ayuda con un problema crítico
+    - Tengo un problema urgente que necesita ser atendido
+    - Hay un incidente importante que requiere asistencia
+    - Necesito asistencia inmediata para un problema grave
+    - Tengo un problema serio que necesita ser resuelto
+    - Hay un asunto urgente que requiere atención inmediata
+    - Necesito reportar un incidente grave
+    - Tengo un problema crítico que necesita atención
+    - Hay un incidente serio que necesita ser resuelto
+    - Necesito ayuda con un problema urgente
+    - Tengo un problema importante que requiere asistencia
+    - Hay un incidente urgente que requiere atención
+    - Necesito asistencia para un problema crítico
+    - Tengo un problema grave que necesita ser resuelto
+    - Hay un incidente serio que necesita atención urgente
+    - Necesito ayuda urgente para un problema grave
+    - Tengo un problema crítico que requiere atención inmediata
+    - Hay un asunto importante que necesita ser resuelto
+    - Necesito asistencia inmediata para un incidente grave
+    - Tengo un problema urgente que requiere asistencia
+    - Hay un incidente crítico que necesita ser resuelto
+    - Necesito ayuda con un problema serio
+    - Tengo un problema importante que requiere atención inmediata
+    - Hay un incidente urgente que necesita ser atendido
+    - Necesito asistencia para un problema urgente
+    - Tengo un problema crítico que requiere atención urgente
+    - Hay un asunto serio que necesita ser resuelto inmediatamente
+    - Necesito reportar un problema crítico urgente
+    - Tengo un problema grave que necesita ser atendido de inmediato
+    - Hay un incidente importante que requiere atención inmediata
+    - Necesito ayuda urgente con un problema crítico
+    - Tengo un problema serio que requiere atención urgente
+    - Hay un incidente urgente que necesita ser resuelto inmediatamente
+    - Necesito asistencia inmediata para un problema crítico
+    - Tengo un problema urgente que necesita ser resuelto de inmediato
+    - Hay un asunto crítico que requiere atención urgente
+    - Necesito reportar un incidente crítico urgente
+    - Tengo un problema grave que necesita atención urgente
+    - Hay un incidente importante que necesita ser resuelto de inmediato
+    - Que hago si mi pc esta mal
+    - Que hago si mi internet esta mal
+    - Tengo problemas con mi maquina.
+    - Tengo un problema con mi computadora
+    - Mi computadora no funciona bien
+    - Algo anda mal con mi PC
+    - No puedo usar mi computadora
+    - La PC se congela
+    - Necesito soporte técnico
+    - Mi computadora se apaga sola
+    - Ayuda con un problema técnico
+    - La computadora no arranca
+    - Tengo un problema técnico
+    - Mi PC no responde
+    - La computadora no enciende
+    - Problema con el sistema operativo
+    - Ayuda urgente con mi computadora
+    - La computadora está muy lenta
+    - Mi PC está fallando
+    - Problema con el hardware de mi PC
+    - Necesito asistencia técnica
+    - La computadora no carga el sistema
+    - Problema con el software de mi computadora
+    - La computadora se reinicia sola
+    - Tengo un problema con el monitor
+    - Problemas con la impresora
+    - Necesito ayuda con el teclado
+    - Problemas con el mouse
+    - Ayuda con la configuración de mi computadora
+    - La computadora hace ruido extraño
+    - Mi PC no reconoce los dispositivos USB
+    - La computadora no se conecta a la red
+    - Problema con la tarjeta gráfica
+    - Necesito actualizar el software
+    - La computadora se calienta mucho
+    - Problema con la memoria RAM
+    - Ayuda con la configuración del sistema
+    - La computadora no detecta el disco duro
+    - Problemas con el disco duro
+    - Mi PC tiene pantalla azul
+    - La computadora no apaga
+    - Problema con la batería de la laptop
+    - La computadora no carga la batería
+    - Problema con el BIOS de la PC
+    - La computadora no reconoce el teclado
+    - Problema con la configuración de red
+    - Problema con los drivers de la PC
+    - Problema con el ventilador de la computadora
+    - Necesito reinstalar el sistema operativo
+    - Problema con la tarjeta de sonido
+    - La computadora tiene virus
+    - Ayuda con la seguridad del sistema
+    - Necesito configurar la impresora
+    - Problema con la conexión Bluetooth
+    - La computadora no arranca después de la actualización
+    - Problema con el adaptador de red
+    - La computadora se cuelga frecuentemente
+    - Problema con el puerto HDMI
+    - Necesito restaurar el sistema
+    - La computadora no detecta la tarjeta de red
+    - Problema con el monitor externo
+    - Problema con el touchpad de la laptop
+    - La computadora no reconoce el disco externo
+    - Problema con la resolución de la pantalla
+    - Necesito ayuda con el arranque del sistema
+    - Problema con la conexión WiFi
+    - La computadora no reproduce sonido
+    - Necesito ayuda para formatear la PC
+    - La computadora no se apaga correctamente
+    - Problema con la actualización de Windows
+    - La computadora no responde después de la suspensión
+    - Problema con el acceso a la BIOS
+    - La computadora se apaga al iniciar
+    - Necesito desfragmentar el disco
+    - Problema con el teclado retroiluminado
+    - La computadora se reinicia al azar
+    - Problema con el administrador de tareas
+    - La computadora se queda en la pantalla de carga
+    - Necesito instalar un nuevo hardware
+    - Problema con la configuración del firewall
+    - La computadora no reconoce el micrófono
+    - Problema con la cámara web
+    - Necesito ayuda con el inicio de sesión
+    - Problema con la conexión de red cableada
+    - La computadora no detecta la red WiFi
+    - Problema con la configuración de energía
+    - La computadora no reconoce el lector de tarjetas
+    - Problema con el software de gestión de discos
+    - La computadora no se actualiza automáticamente
+    - Problema con la sincronización del tiempo
+    - La computadora no reconoce el dispositivo Bluetooth
+    - Problema con la instalación de drivers
+    - La computadora no inicia en modo seguro
+    - Problema con la partición del disco
+    - Necesito ayuda para clonar el disco duro
+    - Problema con el software antivirus
+    - La computadora no detecta el monitor secundario
+    - Problema con la configuración del sistema operativo
+    - La computadora no reconoce el dispositivo de almacenamiento
+    - Problema con la conexión USB
+    - La computadora no se conecta a la impresora
+    - Problema con el sistema de arranque
+    - La computadora no apaga después de la actualización
+    - Problema con el software de recuperación del sistema
+    - La computadora no detecta la memoria externa
+    - Problema con la conexión de red inalámbrica
+    - La computadora no arranca después de instalar hardware nuevo
+    - Mi maquina se congela 
+    - Mi pc se cierra de golpe
+    - Fallas en mi cable HDMI
+    - Estoy teniendo problemas con mi computadora
+    - La PC no responde correctamente
+    - Quiero una nueva cuenta de correo
+    - Mi correo no esta en funcionamiento, quiero cambiarlo
+
+- intent: desafio_bot
+  examples: |
+    - ¿eres un bot?
+    - ¿eres humano?
+    - ¿estoy hablando con un bot?
+    - ¿estoy hablando con un humano?
+    - ¿eres un bot?
+    - ¿eres humano?
+    - ¿estoy hablando con un bot?
+    - ¿estoy hablando con un humano?
+    - ¿tú eres un bot?
+    - ¿tú eres humano?
+    - ¿estoy conversando con un bot?
+    - ¿estoy conversando con un humano?
+    - ¿eres una máquina?
+    - ¿eres un robot?
+    - ¿soy yo hablando con un bot?
+    - ¿soy yo hablando con un humano?
+    - ¿estoy hablando con una inteligencia artificial?
+    - ¿estoy hablando con una persona?
+    - ¿me está respondiendo un bot?
+    - ¿me está respondiendo un humano?
+    - ¿es esto una conversación con un bot?
+    - ¿es esto una conversación con un humano?
+    - ¿es un bot quien me responde?
+    - ¿es un humano quien me responde?
+    - ¿eres tú un bot?
+    - ¿eres tú humano?
+    - ¿con quién estoy hablando, un bot o un humano?
+    - ¿quién me está respondiendo, un bot o un humano?
+    - ¿eres un asistente virtual?
+    - ¿eres una persona real?
+    - ¿estoy interactuando con un bot?
+    - ¿estoy interactuando con un humano?
+    - ¿me está hablando un bot?
+    - ¿me está hablando un humano?
+    - ¿quién me contesta, un bot?
+    - ¿quién me contesta, un humano?
+    - ¿esto es un bot?
+    - ¿esto es un humano?
+    - ¿converso con un bot?
+    - ¿converso con un humano?
+    - ¿esto es una respuesta de un bot?
+    - ¿esto es una respuesta de un humano?
+    - ¿estoy chateando con un bot?
+    - ¿estoy chateando con un humano?
+    - ¿hablo con un bot?
+    - ¿hablo con un humano?
+    - ¿eres un programa?
+    - ¿eres una inteligencia artificial?
+    - ¿con quién estoy interactuando, un bot o un humano?
+    - ¿quién está ahí, un bot o un humano?
+    - ¿eres un sistema automatizado?
+    - ¿eres una persona de verdad?
+    - ¿esto es un chat con un bot?
+    - ¿esto es un chat con un humano?
+
+
+- intent: contacto_migrar
+  examples: |
+    - Quiero empezar el proceso migratorio
+    - Necesito iniciar con la migración
+    - ¿Cómo empiezo el proceso de migración?
+    - Ayúdame a empezar con la migración
+    - Necesito información para iniciar la migración
+    - ¿Cómo puedo empezar la migración?
+    - Quiero iniciar el proceso de migración
+    - ¿Me puedes guiar para iniciar la migración?
+    - Ayuda para iniciar el proceso migratorio
+    - ¿Cómo se empieza el proceso migratorio?
+    - Necesito iniciar el proceso de migración
+    - ¿Qué debo hacer para iniciar la migración?
+    - Quiero iniciar con la migración
+    - ¿Cómo empiezo con la migración?
+    - Ayúdame a iniciar el proceso migratorio
+    - Necesito ayuda para empezar la migración
+    - ¿Qué pasos debo seguir para iniciar la migración?
+    - Quiero iniciar el trámite de migración
+    - ¿Cómo hago para empezar el proceso migratorio?
+    - Necesito iniciar el proceso migratorio, ¿cómo hago?
+    - ¿Dónde empiezo el proceso migratorio?
+    - Quiero empezar el trámite de migración
+    - Ayuda para comenzar con la migración
+    - ¿Qué necesito para iniciar el proceso migratorio?
+    - Quiero comenzar el proceso migratorio
+
+- intent: Guia_tramite
+  examples: |
+    - Necesito una guía para la página de trámite migratorio
+    - ¿Dónde encuentro la guía para servicios migratorios?
+    - ¿Puedes darme la guía para trámites de migración?
+    - ¿Cómo accedo a la guía informativa de migración?
+    - Busco la guía de servicios migratorios
+    - ¿Tienes una guía para trámites migratorios?
+    - Quiero la guía para la página de servicios de migración
+    - ¿Dónde está la guía de trámite migratorio?
+    - Necesito la guía informativa de servicios migratorios
+    - ¿Puedes enviarme la guía para trámites de migración?
+    - ¿Dónde encuentro la guía para la página de servicios migratorios?
+    - ¿Cómo puedo obtener la guía de trámites migratorios?
+    - Necesito información sobre la guía de migración
+    - ¿Cómo accedo a la guía para trámites de migración?
+    - ¿Tienes la guía para servicios migratorios?
+    - Quiero obtener la guía informativa de trámites migratorios
+    - ¿Dónde puedo ver la guía de servicios de migración?
+    - Necesito una guía para los trámites de migración
+    - ¿Puedes darme información sobre la guía de migración?
+    - Busco la guía para la página de trámites migratorios
+    - ¿Tienes la guía informativa para servicios de migración?
+    - ¿Dónde puedo encontrar la guía de trámites de migración?
+    - Necesito acceder a la guía de servicios migratorios
+    - ¿Puedes proporcionarme la guía de trámites migratorios?
+    - ¿Dónde encuentro la guía de servicios informativos de migración?
+
+- intent: Ejemplos_de_estructura
+  examples: |
+    - Necesito la estructura de contenido para el proceso migratorio
+    - ¿Cuál es la estructura de los documentos enviados por otras dependencias?
+    - ¿Cómo es la estructura del contenido para la migración?
+    - ¿Qué estructura deben tener los documentos para el proceso migratorio?
+    - Información sobre la estructura del contenido migratorio
+    - ¿Cómo debo estructurar el contenido para el proceso migratorio?
+    - ¿Qué formato deben seguir los documentos para la migración?
+    - Necesito saber la estructura de los documentos para la migración
+    - ¿Cómo se organizan los documentos enviados por otras dependencias?
+    - Estructura de contenido requerida para la migración
+    - ¿Cuál es la estructura correcta para los documentos migratorios?
+    - Necesito la guía de estructura para el contenido migratorio
+    - ¿Cómo organizar el contenido para el proceso migratorio?
+    - ¿Qué estructura seguir para los documentos de migración?
+    - ¿Me puedes dar la estructura de los documentos para la migración?
+    - ¿Qué formato deben tener los documentos enviados por otras dependencias?
+    - Información sobre cómo estructurar el contenido para la migración
+    - Necesito el formato correcto para los documentos de migración
+    - ¿Cómo deben estar organizados los documentos para la migración?
+    - ¿Cuál es el formato requerido para el contenido migratorio?
+    - ¿Qué guía debo seguir para estructurar los documentos migratorios?
+    - Estructura de los documentos para el proceso migratorio
+    - ¿Cómo estructurar correctamente los documentos para la migración?
+    - Necesito saber el formato para los documentos de migración
+    - ¿Cuál es la guía para organizar el contenido enviado por otras dependencias?
+    - ¿Tienes algún ejemplo de estructura?
+    - Necesito ejemplos de estructuras
+    - ¿Puedes mostrarme ejemplos de estructura?
+    - Muéstrame ejemplos de estructuras
+    - Quisiera ver ejemplos de estructura
+    - ¿Tienes ejemplos de cómo estructurar esto?
+    - Dame algunos ejemplos de estructura
+    - Enséñame ejemplos de estructura, por favor
+    - Estoy buscando ejemplos de estructura
+    - ¿Dónde puedo encontrar ejemplos de estructura?
+    - ¿Puedes darme algunos ejemplos de estructura?
+    - Quiero ver ejemplos de estructura
+    - ¿Podrías mostrarme ejemplos de estructura?
+    - Me gustaría ver ejemplos de estructura
+    - Necesito ver ejemplos de estructuras
+    - ¿Puedes compartir ejemplos de estructura?
+    - Enséñame ejemplos de estructuras
+    - ¿Me das algunos ejemplos de estructura?
+    - ¿Puedes darme ejemplos de estructura?
+    - Muéstrame algunos ejemplos de estructura
+    - Necesito algunos ejemplos de estructura
+    - Quiero ver algunos ejemplos de estructura
+    - ¿Tienes algunos ejemplos de estructura?
+    - Dame ejemplos de estructura, por favor
+    - ¿Podrías darme ejemplos de estructura?
+
+- intent: Guia_lenguaje_ciudadano
+  examples: |
+    - Recuerda seguir estas guías para que tu información sea fácil de entender para todos.
+    - Es esencial que uses estas guías para que cualquiera pueda comprender lo que dices.
+    - Asegúrate de adaptar tu información a un lenguaje que todos entiendan.
+    - Sigue estas guías para escribir de una manera que todos puedan entender.
+    - Es clave que adaptes tu escritura para que sea comprensible por todos.
+    - Usa estas guías para que tu mensaje llegue claramente a todos.
+    - Es importante que utilices estas pautas para escribir de manera clara y accesible.
+    - Adapta tu información siguiendo estas guías para que sea fácil de entender.
+    - Asegúrate de que tu escritura sea accesible para todos siguiendo estas guías.
+    - Recuerda escribir de manera que todos puedan entender, usando estas pautas.
+    - Es fundamental que sigas estas guías para que tu mensaje sea claro para todos.
+    - Usa estas pautas para asegurarte de que todos entiendan tu información.
+    - Es crucial que adaptes tu estilo de escritura con estas guías para que sea comprensible.
+    - Sigue estas pautas para adaptar tu información a un lenguaje más accesible.
+    - Asegúrate de usar estas guías para escribir de una forma que todos comprendan.
+    - Recuerda que es importante seguir estas pautas para que tu mensaje sea claro.
+    - Adapta tu información con estas guías para que sea fácil de entender para todos.
+    - Es esencial que sigas estas guías para que tu escritura sea accesible.
+    - Usa estas guías para escribir de manera que todos puedan entender.
+    - Asegúrate de que tu información sea comprensible para todos siguiendo estas pautas.
+    - Sigue estas pautas para que tu mensaje llegue claramente a todos.
+    - Recuerda usar estas guías para que tu escritura sea clara y accesible.
+    - Es importante que sigas estas pautas para escribir de una manera comprensible.
+    - Usa estas guías para adaptar tu información a un lenguaje más claro.
+    - Asegúrate de que todos puedan entender tu mensaje siguiendo estas guías.
+    - ¿Dónde puedo encontrar guías de lenguaje ciudadano?
+    - Necesito una guía de lenguaje ciudadano
+    - ¿Tienen guías sobre lenguaje ciudadano?
+    - Me gustaría aprender sobre lenguaje ciudadano
+    - ¿Pueden darme información sobre lenguaje ciudadano?
+    - ¿Dónde están las guías de lenguaje ciudadano?
+    - Busco información sobre lenguaje ciudadano
+    - ¿Tienen algún manual de lenguaje ciudadano?
+    - ¿Hay guías de lenguaje ciudadano disponibles?
+    - Quiero saber más sobre lenguaje ciudadano
+    - ¿Dónde consigo una guía de lenguaje ciudadano?
+    - Estoy buscando guías de lenguaje ciudadano
+    - ¿Me pueden proporcionar guías de lenguaje ciudadano?
+    - Necesito material sobre lenguaje ciudadano
+    - ¿Hay alguna guía de lenguaje ciudadano?
+    - ¿Pueden darme guías de lenguaje ciudadano?
+    - ¿Dónde encuentro las guías de lenguaje ciudadano?
+    - Quiero información sobre lenguaje ciudadano
+    - ¿Puedo obtener una guía de lenguaje ciudadano?
+    - ¿Tienen documentos sobre lenguaje ciudadano?
+    - ¿Hay material disponible sobre lenguaje ciudadano?
+    - ¿Dónde busco guías de lenguaje ciudadano?
+    - ¿Me pueden dar una guía de lenguaje ciudadano?
+    - ¿Puedo acceder a guías de lenguaje ciudadano?
+    - Necesito una guía sobre lenguaje ciudadano
+
+
+- intent: solicitud_acceso_a_los_servicios_informaticos
+  examples: |
+    - Quiero solicitar acceso a mi cuenta de correo.
+    - Necesito acceso al dominio de la empresa.
+    - Solicito la creación de una cuenta de correo institucional.
+    - ¿Pueden habilitarme el correo electrónico corporativo?
+    - Requiero acceso a los servicios informáticos.
+    - Quiero activar mi cuenta de correo electrónico.
+    - Solicito ayuda para obtener acceso al dominio y correo.
+    - ¿Cómo puedo registrar mi cuenta de correo en el dominio corporativo?
+    - Solicito la configuración de mi correo electrónico del trabajo.
+    - Necesito acceso a la cuenta de correo para un nuevo empleado.
+    - Quiero habilitar mi cuenta de correo institucional.
+    - Solicito acceso al dominio de los servicios informáticos.
+    - ¿Me pueden activar el correo electrónico oficial?
+    - Requiero acceso a la cuenta de correo para un proyecto específico.
+    - Solicito la activación de mi acceso al correo corporativo.
+    - Quiero obtener acceso al dominio y correo electrónico.
+    - Necesito una cuenta de correo para aplicaciones oficiales.
+    - Solicito acceso al correo electrónico en el nuevo edificio.
+    - ¿Pueden habilitarme una nueva cuenta de correo electrónico?
+    - Requiero acceso al correo electrónico para mi equipo de trabajo.
+    - Solicito la creación de un correo electrónico para un proyecto temporal.
+    - Quiero registrar mi cuenta de correo en el dominio de la empresa.
+    - Necesito activar mi acceso al correo institucional.
+    - Solicito acceso a la cuenta de correo para la nueva sucursal.
+    - Quiero solicitar acceso a los sericios informaticos.
+    - Quiero obtener acceso a los servicios de TI.
+    - Solicito acceso a los sistemas informáticos.
+    - Necesito habilitar mi acceso a las herramientas digitales.
+    - Quiero solicitar acceso a las plataformas tecnológicas.
+    - Solicito acceso a las herramientas informáticas de la empresa.
+    - Quiero obtener acceso a los recursos digitales de la compañía.
+    - Solicito habilitar mi acceso a los servicios de tecnología.
+    - Necesito acceso a los recursos informáticos de la organización.
+    - Quiero obtener acceso a los servicios de TI.
+    - Solicito acceso a los sistemas informáticos.
+    - Necesito habilitar mi acceso a las herramientas digitales.
+    - Quiero solicitar acceso a las plataformas tecnológicas.
+    - Solicito acceso a las herramientas informáticas de la empresa.
+    - Quiero obtener acceso a los recursos digitales de la compañía.
+    - Solicito habilitar mi acceso a los servicios de tecnología.
+    - Necesito acceso a los recursos informáticos de la organización.
+    - Quiero habilitar mi acceso a los sistemas de TI.
+    - Solicito acceso a las aplicaciones informáticas de la empresa.
+    - Necesito obtener acceso a las herramientas tecnológicas.
+    - Quiero solicitar acceso a los sistemas de información.
+    - Solicito habilitar mi acceso a las plataformas digitales.
+    - Necesito acceso a los servicios de tecnología de la compañía.
+    - Quiero obtener acceso a las herramientas de software.
+    - Solicito habilitar mi acceso a los recursos informáticos.
+    - Necesito acceso a las aplicaciones de la organización.
+    - Quiero solicitar acceso a las soluciones tecnológicas.
+    - Solicito habilitar mi acceso a las herramientas de TI.
+    - Necesito obtener acceso a las plataformas de la empresa.
+    - Quiero solicitar acceso a los servicios de informática.
+    - Solicito habilitar mi acceso a los sistemas digitales.
+    - Necesito acceso a las herramientas de desarrollo.
+    - Quiero obtener acceso a las aplicaciones empresariales.
+    - Solicito habilitar mi acceso a los sistemas tecnológicos.
+
+- intent: solicitud_acceso_a_internet
+  examples: |
+    - Quiero solicitar acceso a internet en mi oficina.
+    - Necesito conexión a internet para mi puesto.
+    - Solicito la activación del servicio de internet.
+    - ¿Cómo puedo obtener acceso a internet en el trabajo?
+    - Requiero acceso a internet para un nuevo dispositivo.
+    - Solicito ayuda para obtener acceso a internet en mi área.
+    - ¿Pueden habilitarme el internet en mi computadora?
+    - Necesito acceso a internet para una reunión.
+    - Quiero habilitar el internet en mi área de trabajo.
+    - Solicito acceso a internet para el nuevo edificio.
+    - ¿Me pueden activar el servicio de internet en mi escritorio?
+    - Requiero acceso a internet para trabajar en proyectos específicos.
+    - Solicito acceso a internet para acceder a recursos nacionales.
+    - Quiero obtener acceso a internet en mi lugar de trabajo.
+    - Necesito internet para mi laptop.
+    - Solicito la configuración del internet en mi oficina.
+    - ¿Cómo puedo solicitar acceso a internet en la empresa?
+    - Requiero habilitar el acceso a internet en mi dispositivo.
+    - Solicito acceso a internet para la nueva sucursal.
+    - Necesito activar el internet en mi oficina.
+    - Quiero registrar mi dispositivo para el acceso a internet.
+
+- intent: solicitud_formato_vpn
+  examples: |
+    - Necesito acceso VPN para trabajar desde casa.
+    - ¿Cómo puedo obtener acceso a la VPN de la empresa?
+    - Solicito la configuración de la VPN en mi computadora.
+    - Quiero acceso a la VPN para poder conectarme remotamente.
+    - ¿Me pueden habilitar el acceso VPN en mi equipo?
+    - Necesito conexión VPN para mis tareas diarias.
+    - ¿Cómo solicito acceso a la VPN corporativa?
+    - Solicito la activación de la VPN para mi cuenta.
+    - Requiero acceso VPN para acceder a recursos internos.
+    - Necesito acceso a la VPN para una reunión remota.
+    - Quiero activar la VPN en mi laptop.
+    - Solicito ayuda para configurar la VPN en mi dispositivo.
+    - ¿Cómo puedo registrar mi equipo para el acceso VPN?
+    - Necesito configurar la VPN en mi lugar de trabajo.
+    - Solicito acceso VPN para conectarme desde una ubicación externa.
+    - Quiero habilitar el acceso VPN en mi área de trabajo.
+    - Necesito ayuda con la configuración de la VPN.
+    - Solicito la activación de la VPN para mi perfil.
+    - Requiero acceso VPN para trabajar en proyectos remotos.
+    - Necesito acceso a la VPN para acceder a la intranet de la empresa.
+    - Quiero habilitar mi equipo para acceder a la VPN.
+    - Solicito acceso VPN para un nuevo miembro del equipo.
+    - ¿Pueden habilitarme el acceso VPN en mi dispositivo?
+    - Necesito VPN para acceder a aplicaciones internas.
+    - Solicito acceso a la VPN para el nuevo edificio.
+    - Quiero obtener acceso VPN en mi área de trabajo.
+    - Necesito VPN para mi computadora personal.
+    - ¿Cómo puedo solicitar acceso a la VPN de la empresa?
+    - Requiero habilitar el acceso VPN en mi dispositivo.
+    - Solicito VPN para la nueva sucursal.
+    - Necesito activar la VPN en mi oficina.
+    - Quiero registrar mi dispositivo para el acceso VPN.
+    - Solicito acceso VPN para un proyecto temporal.
+    - Necesito una conexión VPN segura para mis tareas diarias.
+    - ¿Me pueden activar el servicio de VPN en mi área?
+
+- intent: solicitud_formato_devolucion_bienes_tecnologicos
+  examples: |
+    - Necesito devolver mi laptop al departamento de TI.
+    - ¿Cómo puedo devolver el equipo tecnológico que tengo en préstamo?
+    - Solicito información sobre la entrega de bienes tecnológicos.
+    - Quiero devolver los dispositivos tecnológicos que ya no uso.
+    - ¿Me pueden indicar cómo devolver el equipo tecnológico asignado?
+    - Necesito devolver una impresora al departamento de TI.
+    - ¿Cómo realizo la entrega de cargo de los bienes tecnológicos?
+    - Solicito la devolución de mi equipo de trabajo.
+    - Requiero información sobre cómo devolver una tablet.
+    - Necesito devolver mi equipo al finalizar mi contrato.
+    - Quiero devolver los dispositivos electrónicos al departamento de TI.
+    - Solicito ayuda para la devolución de un monitor.
+    - ¿Cómo puedo coordinar la entrega de los bienes tecnológicos?
+    - Necesito devolver una cámara al departamento de TI.
+    - Solicito información sobre el proceso de entrega de cargo de tecnología.
+    - Quiero devolver mi teléfono corporativo.
+    - Necesito ayuda con la devolución de un proyector.
+    - Solicito la devolución de una computadora de escritorio.
+    - Requiero información sobre cómo devolver un teclado y un ratón.
+    - Necesito devolver un equipo de red al departamento de TI.
+    - Quiero devolver los dispositivos tecnológicos al finalizar un proyecto.
+    - Solicito información sobre la devolución de una unidad de almacenamiento.
+    - ¿Pueden indicarme cómo devolver el equipo tecnológico prestado?
+    - Necesito devolver un escáner al departamento de TI.
+    - Solicito ayuda para la devolución de un equipo de videoconferencia.
+    - Quiero devolver mi equipo de trabajo al departamento de TI.
+    - Necesito devolver una pantalla al finalizar mi contrato.
+    - ¿Cómo puedo coordinar la entrega de una impresora?
+    - Requiero información sobre la devolución de un router.
+    - Solicito la devolución de una laptop y sus accesorios.
+    - Necesito devolver una webcam al departamento de TI.
+    - Quiero devolver los dispositivos electrónicos prestados.
+    - Solicito ayuda para la devolución de un disco duro externo.
+    - Necesito devolver mi equipo de trabajo al finalizar mi proyecto.
+    - ¿Me pueden indicar cómo devolver una tableta gráfica?
+    - Quiero devolver el portátil que me asignaron.
+    - Solicito la devolución del escáner que tengo en mi poder.
+    - Necesito devolver la impresora que utilicé temporalmente.
+    - Quiero devolver el proyector que me prestaron.
+    - Solicito la devolución del teléfono móvil de la empresa.
+    - Necesito devolver la cámara de videoconferencia.
+    - Quiero devolver la tablet que me asignaron para un proyecto.
+    - Solicito la devolución del equipo de red que utilicé.
+    - Necesito devolver el monitor adicional que se me proporcionó.
+    - Quiero devolver el equipo de sonido que se me asignó.
+    - Solicito la devolución del ratón y teclado que utilicé.
+    - Necesito devolver la impresora láser de mi departamento.
+    - Quiero devolver el router que se me asignó para pruebas.
+    - Solicito la devolución del disco duro externo que presté.
+    - Necesito devolver el equipo de videoconferencia de la sala.
+    - Quiero devolver el monitor táctil que utilicé en la presentación.
+    - Solicito la devolución del portátil que se me asignó para el proyecto.
+    - Necesito devolver el escáner de alta resolución que utilicé para digitalizar documentos.
+    - Quiero devolver la impresora multifuncional que se me proporcionó para el evento.
+    - Solicito la devolución del equipo de red que utilicé para configurar la nueva sucursal.
+    - Necesito devolver el teléfono móvil corporativo que utilicé temporalmente.
+    - Quiero devolver el proyector portátil que se me asignó para la reunión externa.
+    - Solicito la devolución del equipo de videoconferencia de alta gama que utilicé para la presentación.
+    - Quiero dejar una webcam en el departamento de TI.
+    - Quiero entregar los dispositivos electrónicos prestados.
+    - Solicito ayuda para dejar un disco duro externo.
+    - Necesito entregar mi equipo de trabajo al finalizar mi proyecto.
+    - ¿Pueden indicarme cómo dejar una tableta gráfica?
+    - Quiero dejar el portátil que me asignaron.
+    - Solicito la entrega del escáner que tengo en mi poder.
+    - Necesito dejar la impresora que utilicé temporalmente.
+    - Quiero dejar el proyector que me prestaron.
+    - Solicito la entrega del teléfono móvil de la empresa.
+    - Necesito dejar la cámara de videoconferencia.
+    - Quiero dejar la tablet que me asignaron para un proyecto.
+    - Solicito la entrega del equipo de red que utilicé.
+    - Necesito dejar el monitor adicional que se me proporcionó.
+    - Quiero dejar el equipo de sonido que se me asignó.
+    - Solicito la entrega del ratón y teclado que utilicé.
+    - Necesito dejar la impresora láser de mi departamento.
+    - Quiero dejar el router que se me asignó para pruebas.
+    - Solicito la entrega del disco duro externo que presté.
+    - Necesito dejar el equipo de videoconferencia de la sala.
+    - Quiero dejar el monitor táctil que utilicé en la presentación.
+    - Solicito la entrega del portátil que se me asignó para el proyecto.
+    - Necesito dejar el escáner de alta resolución que utilicé para digitalizar documentos.
+    - Quiero dejar la impresora multifuncional que se me proporcionó para el evento.
+    - Solicito la entrega del equipo de red que utilicé para configurar la nueva sucursal.
+    - Necesito dejar el teléfono móvil corporativo que utilicé temporalmente.
+    - Quiero dejar el proyector portátil que se me asignó para la reunión externa.
+    - Solicito la entrega del equipo de videoconferencia de alta gama que utilicé para la presentación.
+    - Quiero dejar una webcam en TI.
+    - Quiero entregar los dispositivos prestados.
+    - Ayuda para dejar un disco duro.
+    - Entregar mi equipo al terminar.
+    - ¿Cómo dejo una tableta gráfica?
+    - Dejar el portátil asignado.
+    - Entregar el escáner que tengo.
+    - Dejar la impresora usada.
+    - Dejar el proyector prestado.
+    - Entregar el móvil de la empresa.
+    - Dejar la cámara de videoconferencia.
+    - Dejar la tablet del proyecto.
+    - Entregar el equipo de red usado.
+    - Dejar el monitor extra.
+    - Dejar el equipo de sonido asignado.
+    - Entregar el ratón y teclado.
+    - Dejar la impresora del departamento.
+    - Dejar el router de pruebas.
+    - Entregar el disco duro prestado.
+    - Dejar el equipo de videoconferencia.
+    - Dejar el monitor táctil usado.
+    - Entregar el portátil del proyecto.
+    - Dejar el escáner usado.
+    - Dejar la impresora del evento.
+    - Entregar el equipo de red usado.
+    - Dejar el móvil corporativo.
+    - Dejar el proyector portátil.
+    - Entregar el equipo de videoconferencia.
+    - Quiero devolver una webcam a TI.
+    - Devolver los dispositivos electrónicos prestados.
+    - Ayuda para devolver un disco duro.
+    - Devolver mi equipo al finalizar.
+    - ¿Cómo devuelvo una tableta gráfica?
+    - Devolver el portátil asignado.
+    - Solicito devolver el escáner que tengo.
+    - Devolver la impresora temporal.
+    - Devolver el proyector prestado.
+    - Solicito devolver el móvil de la empresa.
+    - Devolver la cámara de videoconferencia.
+    - Quiero devolver la tablet del proyecto.
+    - Solicito devolver el equipo de red usado.
+    - Devolver el monitor adicional.
+    - Devolver el equipo de sonido asignado.
+    - Solicito devolver el ratón y teclado.
+    - Devolver la impresora del departamento.
+    - Quiero devolver el router de pruebas.
+    - Solicito devolver el disco duro prestado.
+    - Devolver el equipo de videoconferencia.
+    - Quiero devolver el monitor táctil usado.
+    - Solicito devolver el portátil del proyecto.
+    - Devolver el escáner de alta resolución usado.
+    - Quiero devolver la impresora del evento.
+    - Solicito devolver el equipo de red usado.
+    - Devolver el móvil corporativo.
+    - Quiero devolver el proyector portátil.
+    - Solicito devolver el equipo de videoconferencia.
+
+
+
+
+- intent: solicitud_PIDE
+  examples: |
+    - Necesito acceso a la Plataforma PIDE.
+    - ¿Cómo puedo obtener acceso a la PIDE?
+    - Solicito la activación de mi cuenta en la PIDE.
+    - Quiero acceso a la PIDE para realizar mis tareas.
+    - ¿Me pueden habilitar el acceso a la PIDE?
+    - Necesito acceso a la Plataforma PIDE para mis proyectos.
+    - ¿Cómo solicito acceso a la PIDE en la empresa?
+    - Solicito la configuración de mi cuenta en la PIDE.
+    - Requiero acceso a la PIDE para un proyecto.
+    - Necesito acceso a la PIDE para una reunión.
+    - Quiero activar mi cuenta en la Plataforma PIDE.
+    - Solicito ayuda para obtener acceso a la PIDE.
+    - ¿Cómo puedo registrar mi cuenta en la Plataforma PIDE?
+    - Necesito configurar mi acceso a la PIDE en mi lugar de trabajo.
+    - Solicito acceso a la PIDE para un evento.
+    - Quiero habilitar mi acceso a la Plataforma PIDE.
+    - Necesito ayuda con la configuración de mi acceso a la PIDE.
+    - Solicito la activación de mi acceso a la Plataforma PIDE.
+    - Requiero acceso a la PIDE para trabajar en proyectos específicos.
+    - Necesito acceso a la PIDE para acceder a recursos nacionales.
+    - Quiero habilitar mi cuenta en la Plataforma Nacional de Interoperabilidad.
+    - Solicito acceso a la PIDE para un nuevo miembro del equipo.
+    - ¿Pueden habilitarme el acceso a la PIDE?
+    - Necesito acceso a la PIDE para aplicaciones oficiales.
+    - Solicito acceso a la Plataforma PIDE en el nuevo edificio.
+    - Quiero obtener acceso a la PIDE en mi área de trabajo.
+    - Necesito acceso a la PIDE para mi computadora personal.
+    - ¿Cómo puedo solicitar acceso a la Plataforma PIDE?
+    - Requiero habilitar el acceso a la PIDE en mi dispositivo.
+    - Solicito acceso a la PIDE para la nueva sucursal.
+    - Necesito activar mi cuenta en la Plataforma Nacional de Interoperabilidad.
+    - Quiero registrar mi cuenta para el acceso a la PIDE.
+    - Solicito acceso a la PIDE para un proyecto temporal.
+    - Necesito una conexión a la Plataforma PIDE para mis tareas diarias.
+    - ¿Me pueden activar el servicio de acceso a la PIDE?
+
+- intent: solicitud_formato_de_certificado_digital
+  examples: |
+    - Necesito un certificado digital para firmar documentos.
+    - ¿Cómo puedo obtener un certificado digital?
+    - Solicito la emisión de un certificado digital.
+    - Quiero un certificado digital para mi cuenta.
+    - ¿Me pueden proporcionar un certificado digital?
+    - Necesito un certificado digital para acceder a ciertos servicios.
+    - ¿Cómo solicito un certificado digital en la empresa?
+    - Solicito la configuración de mi certificado digital.
+    - Requiero un certificado digital para una transacción.
+    - Necesito un certificado digital para una reunión virtual.
+    - Quiero activar mi certificado digital.
+    - Solicito ayuda para obtener un certificado digital.
+    - ¿Cómo puedo registrar mi certificado digital?
+    - Necesito configurar mi certificado digital en mi dispositivo.
+    - Solicito un certificado digital para una firma electrónica.
+    - Quiero habilitar mi certificado digital.
+    - Necesito ayuda con la configuración de mi certificado digital.
+    - Solicito la emisión de un nuevo certificado digital.
+    - Requiero un certificado digital para trabajar en proyectos específicos.
+    - Necesito un certificado digital para acceder a la intranet de la empresa.
+    - Quiero habilitar mi certificado digital en mi computadora.
+    - Solicito un certificado digital para un nuevo miembro del equipo.
+    - ¿Pueden proporcionarme un certificado digital?
+    - Necesito un certificado digital para aplicaciones oficiales.
+    - Solicito un certificado digital para el nuevo edificio.
+    - Quiero obtener un certificado digital en mi área de trabajo.
+    - Necesito un certificado digital para mi computadora personal.
+    - ¿Cómo puedo solicitar un certificado digital en la empresa?
+    - Requiero habilitar mi certificado digital en mi dispositivo.
+    - Solicito un certificado digital para la nueva sucursal.
+    - Necesito activar mi certificado digital.
+    - Quiero registrar mi certificado digital en mi cuenta.
+    - Solicito un certificado digital para un proyecto temporal.
+    - Necesito un certificado digital para firmar contratos.
+    - ¿Me pueden emitir un certificado digital?
+
+
+- intent: solicitud_formato__bienes_tecnologicos
+  examples: |
+    - Necesito un nuevo laptop para mi trabajo.
+    - ¿Cómo puedo solicitar una impresora para mi oficina?
+    - Solicito la adquisición de una nueva tablet.
+    - Quiero un monitor adicional para mi estación de trabajo.
+    - ¿Me pueden proporcionar un nuevo teclado y ratón?
+    - Necesito una cámara web para videoconferencias.
+    - ¿Cómo solicito un nuevo proyector?
+    - Solicito la compra de una nueva unidad de almacenamiento externa.
+    - Requiero un nuevo equipo de red para mi área.
+    - Necesito una nueva computadora de escritorio.
+    - Quiero adquirir un nuevo dispositivo móvil corporativo.
+    - Solicito la adquisición de un nuevo escáner.
+    - ¿Cómo puedo obtener un nuevo equipo de videoconferencia?
+    - Necesito una nueva pantalla para presentaciones.
+    - Solicito la compra de un nuevo router.
+    - Quiero un nuevo dispositivo de almacenamiento interno.
+    - Necesito un nuevo equipo de sonido para mi oficina.
+    - Solicito la adquisición de una nueva impresora multifuncional.
+    - Requiero un nuevo proyector portátil.
+    - Necesito una nueva cámara digital para proyectos.
+    - Quiero un nuevo equipo de red para el nuevo edificio.
+    - Solicito un nuevo monitor para el nuevo miembro del equipo.
+    - ¿Pueden proporcionarme un nuevo teclado ergonómico?
+    - Necesito un nuevo dispositivo móvil para aplicaciones corporativas.
+    - Solicito la compra de una nueva tableta gráfica.
+    - Quiero obtener un nuevo dispositivo de almacenamiento en red.
+    - Necesito una nueva impresora láser.
+    - ¿Cómo puedo solicitar un nuevo escáner de alta resolución?
+    - Requiero un nuevo equipo de videoconferencia para la sala de reuniones.
+    - Solicito la adquisición de un nuevo router para la nueva sucursal.
+    - Necesito una nueva cámara de seguridad para mi oficina.
+    - Quiero un nuevo dispositivo de almacenamiento para el equipo de trabajo.
+    - Solicito un nuevo monitor de alta resolución.
+    - Necesito una nueva impresora de etiquetas.
+    - ¿Me pueden proporcionar un nuevo proyector para la sala de conferencias?
+    - Quiero solicitar la adquisición de una nueva laptop para mi trabajo.
+    - Necesito un escáner para digitalizar documentos. ¿Cómo puedo solicitarlo?
+    - Solicito la compra de una impresora multifuncional para mi área.
+    - Quiero obtener un nuevo teléfono móvil corporativo. ¿Cómo puedo hacer la solicitud?
+    - Necesito una cámara web para participar en reuniones virtuales. ¿Pueden proporcionármela?
+    - Solicito la adquisición de un nuevo proyector para presentaciones.
+    - Quiero obtener un monitor adicional para mi estación de trabajo. ¿Es posible?
+    - Necesito un equipo de videoconferencia para realizar reuniones remotas. ¿Cómo puedo solicitarlo?
+    - Solicito la compra de una nueva tablet para fines profesionales.
+    - Quiero obtener una impresora láser para imprimir documentos de alta calidad.
+    - Necesito un nuevo router para mejorar la conectividad en mi área. ¿Cómo procedo con la solicitud?
+    - Solicito la adquisición de una unidad de almacenamiento externa para respaldar archivos.
+    - Quiero obtener un nuevo equipo de sonido para eventos en la empresa. ¿Es posible solicitarlo?
+    - Necesito una computadora portátil resistente para trabajo en campo. ¿Cómo puedo hacer la solicitud?
+    - Solicito la compra de un nuevo escáner de alta resolución para digitalizar imágenes.
+    - Quiero obtener un dispositivo de almacenamiento en red para compartir archivos entre equipos.
+    - Necesito una impresora de etiquetas para imprimir códigos de barras. ¿Pueden proporcionarla?
+    - Solicito la adquisición de un nuevo proyector portátil para presentaciones externas.
+    - Quiero obtener un equipo de red adicional para mejorar la velocidad de internet.
+    - Necesito un monitor de alta resolución para trabajar con diseño gráfico. ¿Cómo puedo solicitarlo?
+    - Solicito la compra de una impresora de gran formato para imprimir planos.
+    - Quiero obtener un equipo de videoconferencia con funciones avanzadas de colaboración.
+    - Necesito una cámara de seguridad para monitorear áreas específicas de la empresa.
+    - Solicito la adquisición de un nuevo servidor para mejorar la capacidad de almacenamiento.
+    - Quiero obtener un dispositivo móvil resistente para uso en entornos industriales. 
+    - Quiero pedir una laptop nueva para mi trabajo. ¿Cómo hago eso?
+    - Necesito un escáner para pasar documentos a digital. ¿Me ayudan con eso?
+    - Quiero una impresora multifuncional para mi área. ¿Pueden conseguir una?
+    - Estoy buscando un nuevo teléfono corporativo. ¿Cómo lo solicito?
+    - Necesito una webcam para las reuniones virtuales. ¿Me consiguen una?
+    - Quiero un proyector nuevo para nuestras presentaciones. ¿Podemos conseguirlo?
+    - Necesito un monitor extra para mi escritorio. ¿Es posible?
+    - Estoy buscando un equipo de videoconferencia para nuestras reuniones remotas. ¿Cómo lo conseguimos?
+    - Quiero una tablet para trabajo. ¿Podemos comprar una?
+    - Necesito una impresora láser para documentos importantes. ¿Me ayudan con eso?
+    - Quiero un router nuevo para mejorar la señal de internet. ¿Podemos conseguir uno?
+    - Estoy buscando un disco duro externo para hacer respaldos. ¿Cómo lo conseguimos?
+    - Necesito un equipo de sonido para eventos de la empresa. ¿Podemos obtener uno?
+    - Quiero una laptop resistente para trabajo de campo. ¿Es posible?
+    - Estoy buscando un escáner de alta calidad para imágenes. ¿Cómo lo conseguimos?
+    - Necesito un disco de red para compartir archivos. ¿Me ayudan con eso?
+    - Quiero una impresora de etiquetas. ¿Podemos conseguir una?
+    - Estoy buscando un proyector portátil para presentaciones fuera de la oficina. ¿Cómo lo consigo?
+    - Necesito un router más rápido. ¿Podemos conseguir uno?
+    - Quiero un monitor grande para diseño gráfico. ¿Podemos obtenerlo?
+    - Estoy buscando una impresora grande para imprimir planos. ¿Me ayudan con eso?
+    - Necesito un equipo de videoconferencia avanzado. ¿Podemos conseguir uno?
+    - Quiero una cámara de seguridad para la oficina. ¿Podemos conseguir una?
+    - Estoy buscando un servidor nuevo. ¿Cómo lo consigo?
+    - Necesito un teléfono móvil resistente. ¿Me ayudan con eso?
+    - Quiero solicitar una nueva laptop.
+    - Solicitar una impresora multifuncional.
+    - Necesito un escáner para documentos.
+    - ¿Cómo pido un móvil corporativo?
+    - Solicitar una webcam para reuniones.
+    - Quiero un proyector nuevo.
+    - Solicitar un equipo de videoconferencia.
+    - Necesito un monitor adicional.
+    - ¿Me ayudan con un router más rápido?
+    - Solicitar un disco duro externo.
+    - Quiero un equipo de sonido para eventos.
+    - Solicitar una laptop resistente.
+    - ¿Cómo solicito un escáner de alta calidad?
+    - Solicitar un equipo de red adicional.
+    - Necesito una tablet para proyectos.
+    - ¿Me ayudan con un servidor nuevo?
+    - Solicitar un móvil resistente.
+    - Quiero un equipo de red más potente.
+    - Solicitar un monitor grande.
+    - Necesito una impresora grande.
+    - ¿Cómo solicito un equipo de videoconferencia avanzado?
+    - Solicitar una cámara de seguridad.
+    - Quiero solicitar una nueva laptop para mi equipo.
+    - Solicitar una impresora multifuncional para el departamento.
+    - Necesito un escáner para digitalizar documentos importantes.
+    - ¿Cómo puedo solicitar un teléfono móvil corporativo nuevo?
+    - Solicitar una webcam para mejorar las reuniones virtuales.
+    - Quiero un proyector nuevo para presentaciones más claras.
+    - Necesito pedir una laptop nueva para mi trabajo.
+    - ¿Cómo puedo pedir una impresora para mi oficina?
+    - Quiero pedir una nueva tablet.
+    - ¿Puedo pedir un monitor adicional para mi estación de trabajo?
+    - ¿Me pueden ayudar a pedir un nuevo teclado y ratón?
+    - Necesito pedir una cámara web para videoconferencias.
+    - ¿Cómo puedo pedir un nuevo proyector?
+    - Quiero pedir una nueva unidad de almacenamiento externa.
+    - Necesito pedir un nuevo equipo de red para mi área.
+    - ¿Puedo pedir una nueva computadora de escritorio?
+    - Quiero pedir un nuevo dispositivo móvil corporativo.
+    - ¿Cómo puedo pedir un nuevo escáner?
+    - Necesito pedir un nuevo equipo de videoconferencia.
+    - Quiero pedir una nueva pantalla para presentaciones.
+    - ¿Puedo pedir un nuevo router?
+    - Necesito pedir un nuevo dispositivo de almacenamiento interno.
+    - Quiero pedir un nuevo equipo de sonido para mi oficina.
+    - Necesito pedir una impresora multifuncional.
+    - Quiero pedir un nuevo proyector portátil.
+    - Necesito pedir una nueva cámara digital para proyectos.
+    - ¿Puedo pedir un nuevo equipo de red para el nuevo edificio?
+    - Necesito pedir un nuevo monitor para el nuevo miembro del equipo.
+    - ¿Me pueden ayudar a pedir un nuevo teclado ergonómico?
+    - Necesito pedir un nuevo dispositivo móvil para aplicaciones corporativas.
+    - Quiero pedir una nueva tableta gráfica.
+    - Necesito pedir un dispositivo de almacenamiento en red.
+
+
+- intent: que_es_SGD
+  examples: |
+    - ¿Qué es el SGD y qué roles contempla?
+    - ¿Me puedes explicar qué es el SGD y sus roles?
+    - ¿Qué significa SGD y qué roles hay?
+    - Quiero saber qué es el SGD y los roles que tiene.
+    - Explícame qué es el SGD y qué roles existen.
+    - ¿Qué es el SGD y qué roles puedo tener?
+    - ¿Qué es el SGD y cómo funcionan los roles?
+    - ¿Qué roles existen en el SGD?
+    - ¿Cuál es el propósito del SGD y sus roles?
+    - ¿Qué es exactamente el SGD y qué roles contempla?
+    - ¿Qué roles se pueden tener en el SGD?
+    - ¿Qué roles contempla el SGD?
+    - ¿Qué funciones tiene el SGD y sus roles?
+    - ¿Qué es el SGD y qué roles hay disponibles?
+    - ¿Qué es el sistema SGD y qué roles tiene?
+    - ¿Qué roles puedo tener en el SGD?
+    - ¿Qué roles hay en el SGD?
+    - ¿Qué tipos de roles existen en el SGD?
+    - ¿Cuáles son los roles en el SGD?
+    - ¿Cuáles son los roles que contempla el SGD?
+    - ¿Cómo funcionan los roles en el SGD?
+    - ¿Qué rol puedo tener en el SGD?
+    - ¿Qué roles existen en el sistema SGD?
+    - ¿Qué roles contempla el sistema SGD?
+    - ¿Qué es el SGD y cómo se organizan los roles?
+    - ¿Qué es el SGD y cómo se asignan los roles?
+    - ¿Qué es el SGD y qué tipo de roles hay?
+    - ¿Qué roles puedo desempeñar en el SGD?
+    - ¿Qué es el SGD y qué roles existen?
+    - ¿Qué es el SGD y qué funciones tienen sus roles?
+    - ¿Qué es el SGD y cuáles son sus roles?
+    - ¿Qué roles se pueden desempeñar en el SGD?
+    - ¿Qué roles tiene el SGD?
+    - ¿Qué roles hay disponibles en el SGD?
+    - ¿Qué roles puedo asumir en el SGD?
+    - ¿Qué roles ofrece el SGD?
+    - ¿Qué es el SGD y qué roles desempeña cada uno?
+    - ¿Qué es el SGD y qué tipos de roles contempla?
+    - ¿Qué roles existen en el sistema de SGD?
+    - ¿Qué roles tiene el sistema SGD?
+    - ¿Qué es el SGD y qué rol puedo tener?
+    - ¿Cuáles son los roles que existen en el SGD?
+    - ¿Qué roles se contemplan en el SGD?
+    - ¿Qué roles son parte del SGD?
+    - ¿Qué roles puedo encontrar en el SGD?
+    - ¿Cuáles son los roles que puedo tener en el SGD?
+    - ¿Qué roles contempla exactamente el SGD?
+    - ¿Cuántos roles hay en el SGD?
+    - ¿Qué tipo de roles hay en el SGD?
+    - ¿Qué roles existen y qué es el SGD?
+
+- intent: acceder_SGD
+  examples: |
+    - ¿Cómo accedo al SGD?
+    - ¿Cómo puedo acceder al SGD?
+    - ¿Cuál es el proceso para acceder al SGD?
+    - Necesito saber cómo acceder al SGD.
+    - ¿Cómo ingreso al SGD?
+    - ¿Qué debo hacer para acceder al SGD?
+    - ¿Cómo entro al SGD?
+    - ¿Cómo puedo ingresar al SGD?
+    - ¿Cómo se accede al SGD?
+    - ¿Cómo me conecto al SGD?
+    - ¿Cuál es el acceso al SGD?
+    - ¿Cómo puedo entrar al SGD?
+    - ¿Cómo puedo loguearme en el SGD?
+    - ¿Cómo puedo conectar al SGD?
+    - ¿Qué pasos sigo para acceder al SGD?
+    - ¿Cómo puedo tener acceso al SGD?
+    - ¿Cómo inicio sesión en el SGD?
+    - ¿Cómo puedo loguear en el SGD?
+    - ¿Cómo puedo abrir el SGD?
+    - ¿Cómo puedo conectar con el SGD?
+    - ¿Cómo puedo acceder al sistema SGD?
+    - ¿Cómo se entra al SGD?
+    - ¿Cómo puedo entrar al sistema SGD?
+    - ¿Cómo puedo tener acceso al sistema SGD?
+    - ¿Cómo puedo ingresar al sistema SGD?
+    - ¿Cómo puedo abrir el sistema SGD?
+    - ¿Cómo me conecto al sistema SGD?
+    - ¿Cómo puedo loguearme al sistema SGD?
+    - ¿Cómo puedo conectarme al sistema SGD?
+    - ¿Cómo inicio sesión en el sistema SGD?
+    - ¿Qué pasos debo seguir para acceder al SGD?
+    - ¿Cómo puedo entrar en el SGD?
+    - ¿Cómo puedo loguear en el sistema SGD?
+    - ¿Cómo puedo tener acceso al sistema de SGD?
+    - ¿Cómo puedo acceder al sistema de SGD?
+    - ¿Cómo me conecto al sistema de SGD?
+    - ¿Cómo puedo ingresar al sistema de SGD?
+    - ¿Cómo puedo abrir el sistema de SGD?
+    - ¿Cómo puedo conectar con el sistema de SGD?
+    - ¿Cómo puedo loguearme en el sistema de SGD?
+    - ¿Cómo inicio sesión en el sistema de SGD?
+    - ¿Cómo puedo tener acceso al SGD?
+    - ¿Cómo puedo entrar en el sistema de SGD?
+    - ¿Cómo se accede al sistema SGD?
+    - ¿Cómo puedo ingresar al SGD?
+    - ¿Cómo puedo abrir el SGD?
+    - ¿Cómo me conecto al sistema de SGD?
+    - ¿Cómo puedo loguearme al sistema SGD?
+    - ¿Cómo puedo conectarme al sistema de SGD?
+
+- intent: cambio_contraseña_SGD
+  examples: |
+    - ¿Cómo hago el cambio de mi contraseña?
+    - ¿Cómo cambio mi contraseña en el SGD?
+    - Necesito cambiar mi contraseña en el SGD.
+    - ¿Qué debo hacer para cambiar mi contraseña en el SGD?
+    - ¿Cómo puedo cambiar mi contraseña del SGD?
+    - ¿Cuál es el proceso para cambiar mi contraseña en el SGD?
+    - ¿Cómo puedo actualizar mi contraseña en el SGD?
+    - ¿Cómo se cambia la contraseña en el SGD?
+    - ¿Cómo cambio mi clave en el SGD?
+    - ¿Cómo puedo cambiar mi clave en el SGD?
+    - ¿Qué pasos sigo para cambiar mi contraseña en el SGD?
+    - ¿Cómo actualizo mi contraseña en el SGD?
+    - ¿Cómo puedo modificar mi contraseña en el SGD?
+    - ¿Cómo puedo restablecer mi contraseña en el SGD?
+    - ¿Cómo hago para cambiar mi clave en el SGD?
+    - ¿Cómo se cambia la clave en el SGD?
+    - ¿Cómo puedo actualizar mi clave en el SGD?
+    - ¿Cómo puedo modificar mi clave en el SGD?
+    - ¿Cómo puedo restablecer mi clave en el SGD?
+    - ¿Cómo hago para cambiar mi contraseña en el SGD?
+    - ¿Cómo se actualiza la contraseña en el SGD?
+    - ¿Cómo cambio mi password en el SGD?
+    - ¿Cómo puedo cambiar mi password en el SGD?
+    - ¿Cómo puedo actualizar mi password en el SGD?
+    - ¿Cómo puedo modificar mi password en el SGD?
+    - ¿Cómo puedo restablecer mi password en el SGD?
+    - ¿Qué pasos sigo para cambiar mi password en el SGD?
+    - ¿Cómo hago para cambiar mi password en el SGD?
+    - ¿Cómo se cambia el password en el SGD?
+    - ¿Cómo puedo actualizar el password en el SGD?
+    - ¿Cómo puedo modificar el password en el SGD?
+    - ¿Cómo puedo restablecer el password en el SGD?
+    - ¿Cómo se actualiza el password en el SGD?
+    - ¿Cómo cambio mi contraseña en el sistema SGD?
+    - ¿Cómo puedo cambiar mi contraseña en el sistema SGD?
+    - ¿Cómo puedo actualizar mi contraseña en el sistema SGD?
+    - ¿Cómo puedo modificar mi contraseña en el sistema SGD?
+    - ¿Cómo puedo restablecer mi contraseña en el sistema SGD?
+    - ¿Qué pasos sigo para cambiar mi contraseña en el sistema SGD?
+    - ¿Cómo hago para cambiar mi clave en el sistema SGD?
+    - ¿Cómo se cambia la clave en el sistema SGD?
+    - ¿Cómo puedo actualizar mi clave en el sistema SGD?
+    - ¿Cómo puedo modificar mi clave en el sistema SGD?
+    - ¿Cómo puedo restablecer mi clave en el sistema SGD?
+    - ¿Cómo se actualiza la contraseña en el sistema SGD?
+    - ¿Cómo cambio mi password en el sistema SGD?
+    - ¿Cómo puedo cambiar mi password en el sistema SGD?
+    - ¿Cómo puedo actualizar mi password en el sistema SGD?
+    - ¿Cómo puedo modificar mi password en el sistema SGD?
+    - ¿Cómo puedo restablecer mi password en el sistema SGD?
+
+- intent: que_rol_tengo_SGD
+  examples: |
+    - ¿Cómo sé qué rol tengo dentro del SGD?
+    - ¿Cómo puedo saber qué rol tengo en el SGD?
+    - ¿Cuál es mi rol en el SGD?
+    - ¿Cómo puedo conocer mi rol en el SGD?
+    - ¿Qué rol tengo en el SGD?
+    - ¿Cómo sé cuál es mi rol en el SGD?
+    - ¿Cómo puedo ver mi rol en el SGD?
+    - ¿Cuál es mi rol dentro del SGD?
+    - ¿Qué rol desempeño en el SGD?
+    - ¿Cómo saber qué rol tengo en el SGD?
+    - ¿Cómo puedo verificar mi rol en el SGD?
+    - ¿Cómo encuentro mi rol en el SGD?
+    - ¿Cómo sé cuál es mi rol dentro del SGD?
+    - ¿Cómo veo mi rol en el SGD?
+    - ¿Cómo descubro mi rol en el SGD?
+    - ¿Cuál es mi rol dentro del sistema SGD?
+    - ¿Qué rol tengo asignado en el SGD?
+    - ¿Cómo puedo saber cuál es mi rol en el SGD?
+    - ¿Cómo me entero de mi rol en el SGD?
+    - ¿Qué rol me corresponde en el SGD?
+    - ¿Cómo verifico mi rol en el SGD?
+    - ¿Cómo hallo mi rol en el SGD?
+    - ¿Qué rol desempeño dentro del SGD?
+    - ¿Cómo identifico mi rol en el SGD?
+    - ¿Qué rol tengo dentro del sistema SGD?
+    - ¿Qué rol tengo en el sistema SGD?
+    - ¿Cuál es mi rol en el sistema SGD?
+    - ¿Qué rol desempeño dentro del sistema SGD?
+    - ¿Cómo sé cuál es mi rol en el sistema SGD?
+    - ¿Cómo puedo ver cuál es mi rol en el sistema SGD?
+    - ¿Cómo me informo sobre mi rol en el SGD?
+    - ¿Cuál es mi función en el SGD?
+    - ¿Cómo sé cuál es mi función en el SGD?
+    - ¿Cómo puedo ver cuál es mi función en el SGD?
+    - ¿Qué función desempeño en el SGD?
+    - ¿Cómo verifico mi función en el SGD?
+    - ¿Qué función tengo en el SGD?
+    - ¿Cómo sé qué función tengo en el SGD?
+    - ¿Cómo me informo sobre mi función en el SGD?
+    - ¿Qué rol me asignaron en el SGD?
+    - ¿Qué rol desempeño en el sistema SGD?
+    - ¿Cuál es mi rol asignado en el SGD?
+    - ¿Cómo puedo saber mi rol asignado en el SGD?
+    - ¿Cómo sé cuál es mi rol asignado en el SGD?
+    - ¿Qué rol tengo asignado dentro del SGD?
+    - ¿Cómo sé qué rol tengo asignado en el SGD?
+    - ¿Cómo puedo saber qué rol tengo asignado en el SGD?
+    - ¿Qué rol tengo en el sistema de SGD?
+    - ¿Cuál es mi rol en el sistema de SGD?
+    - ¿Qué rol desempeño en el sistema de SGD?
+
+- intent: hoja_tramite_SGD
+  examples: |
+    - ¿Qué es una Hoja de Trámite?
+    - ¿Qué significa una Hoja de Trámite?
+    - ¿Qué se considera una Hoja de Trámite?
+    - ¿Qué incluye una Hoja de Trámite?
+    - ¿Qué representa una Hoja de Trámite?
+    - ¿Para qué sirve una Hoja de Trámite?
+    - ¿Cuál es el propósito de una Hoja de Trámite?
+    - ¿Qué contiene una Hoja de Trámite?
+    - ¿Qué información hay en una Hoja de Trámite?
+    - ¿Qué debe tener una Hoja de Trámite?
+    - ¿Qué es una Hoja de Trámite en el SGD?
+    - ¿Qué se entiende por Hoja de Trámite?
+    - ¿Qué detalles hay en una Hoja de Trámite?
+    - ¿Qué define una Hoja de Trámite?
+    - ¿Qué elementos hay en una Hoja de Trámite?
+    - ¿Qué datos incluye una Hoja de Trámite?
+    - ¿Qué constituye una Hoja de Trámite?
+    - ¿Qué partes tiene una Hoja de Trámite?
+    - ¿Qué es una Hoja de Trámite en el sistema SGD?
+    - ¿Para qué se usa una Hoja de Trámite?
+    - ¿Qué papel tiene una Hoja de Trámite?
+    - ¿Qué función cumple una Hoja de Trámite?
+    - ¿Qué rol juega una Hoja de Trámite?
+    - ¿Qué hace una Hoja de Trámite?
+    - ¿Qué incluye exactamente una Hoja de Trámite?
+    - ¿Qué se incluye en una Hoja de Trámite?
+    - ¿Qué elementos componen una Hoja de Trámite?
+    - ¿Qué información debe tener una Hoja de Trámite?
+    - ¿Qué significa exactamente una Hoja de Trámite?
+    - ¿Cuál es el significado de una Hoja de Trámite?
+    - ¿Qué es una Hoja de Trámite en el SGD?
+    - ¿Qué datos contiene una Hoja de Trámite?
+    - ¿Qué información debe incluir una Hoja de Trámite?
+    - ¿Qué detalles contiene una Hoja de Trámite?
+    - ¿Qué se debe incluir en una Hoja de Trámite?
+    - ¿Qué partes debe tener una Hoja de Trámite?
+    - ¿Qué se pone en una Hoja de Trámite?
+    - ¿Qué hay en una Hoja de Trámite?
+    - ¿Qué debe contener una Hoja de Trámite?
+    - ¿Qué es exactamente una Hoja de Trámite?
+    - ¿Qué incluye una Hoja de Trámite en el SGD?
+    - ¿Qué es una Hoja de Trámite en términos del SGD?
+    - ¿Qué contiene una Hoja de Trámite en el SGD?
+    - ¿Qué detalles hay en una Hoja de Trámite en el SGD?
+    - ¿Qué define una Hoja de Trámite en el SGD?
+    - ¿Qué elementos hay en una Hoja de Trámite en el SGD?
+    - ¿Qué datos incluye una Hoja de Trámite en el SGD?
+    - ¿Qué partes tiene una Hoja de Trámite en el SGD?
+    - ¿Qué información se encuentra en una Hoja de Trámite?
+    - ¿Qué detalles se encuentran en una Hoja de Trámite?
+    - ¿Qué información se encuentra en una Hoja de Trámite del SGD?
+
+- intent: documento_bandeja_SGD
+  examples: |
+    - ¿Cómo sé que ha llegado un documento para atender en mi bandeja?
+    - ¿Cómo sé si tengo un documento para atender en mi bandeja?
+    - ¿Cómo me entero de un documento en mi bandeja?
+    - ¿Cómo sé si hay un documento para atender?
+    - ¿Cómo sé si tengo documentos pendientes en mi bandeja?
+    - ¿Cómo puedo saber si hay un documento para atender en mi bandeja?
+    - ¿Cómo sé si llegó un documento para atender?
+    - ¿Cómo me notifican de un documento en mi bandeja?
+    - ¿Cómo sé si hay documentos para atender en mi bandeja?
+    - ¿Cómo me informan de un documento para atender?
+    - ¿Cómo sé si hay un documento pendiente en mi bandeja?
+    - ¿Cómo sé si tengo un documento pendiente en mi bandeja?
+    - ¿Cómo sé si hay documentos pendientes para atender?
+    - ¿Cómo me avisan de un documento para atender?
+    - ¿Cómo sé si tengo un documento para atender?
+    - ¿Cómo puedo saber si tengo un documento para atender?
+    - ¿Cómo sé si hay documentos en mi bandeja para atender?
+    - ¿Cómo me informan de documentos para atender?
+    - ¿Cómo sé si hay documentos pendientes?
+    - ¿Cómo puedo saber si hay documentos pendientes en mi bandeja?
+    - ¿Cómo sé si tengo documentos por atender en mi bandeja?
+    - ¿Cómo me notifican de documentos para atender?
+    - ¿Cómo sé si llegó un documento a mi bandeja?
+    - ¿Cómo puedo saber si llegó un documento para atender?
+    - ¿Cómo sé si hay documentos en mi bandeja?
+    - ¿Cómo sé si tengo un documento en mi bandeja?
+    - ¿Cómo me entero de documentos en mi bandeja?
+    - ¿Cómo sé si hay documentos para atender?
+    - ¿Cómo sé si tengo documentos pendientes?
+    - ¿Cómo puedo saber si tengo documentos pendientes?
+    - ¿Cómo me informan de documentos en mi bandeja?
+    - ¿Cómo sé si hay un documento en mi bandeja?
+    - ¿Cómo puedo saber si hay un documento en mi bandeja?
+    - ¿Cómo me notifican de un documento pendiente?
+    - ¿Cómo sé si tengo documentos pendientes para atender?
+    - ¿Cómo me avisan de documentos en mi bandeja?
+    - ¿Cómo sé si hay un documento para atender en mi bandeja?
+    - ¿Cómo puedo saber si hay un documento para atender en mi bandeja?
+    - ¿Cómo sé si tengo un documento pendiente en mi bandeja?
+    - ¿Cómo me informan de un documento pendiente?
+    - ¿Cómo sé si hay documentos por atender en mi bandeja?
+    - ¿Cómo me notifican de documentos pendientes?
+    - ¿Cómo sé si tengo documentos por atender?
+    - ¿Cómo puedo saber si tengo documentos por atender?
+    - ¿Cómo sé si llegó un documento a mi bandeja para atender?
+    - ¿Cómo me informan de documentos pendientes para atender?
+    - ¿Cómo sé si hay un documento pendiente por atender en mi bandeja?
+    - ¿Cómo puedo saber si hay documentos pendientes por atender?
+    - ¿Cómo sé si tengo un documento para atender en mi bandeja?
+
+- intent: unirse_grupo_WhatsApp_SGD
+  examples: |
+    - Únete al grupo “WhatsApp SGD - Atención de consultas y dudas.
+    - ¿Cómo me uno al grupo de WhatsApp de SGD?
+    - ¿Me puedes agregar al grupo de WhatsApp de SGD?
+    - Quiero unirme al grupo de WhatsApp de SGD.
+    - ¿Dónde encuentro el grupo de WhatsApp de SGD?
+    - ¿Cómo puedo unirme al grupo de WhatsApp de SGD?
+    - ¿Me puedes invitar al grupo de WhatsApp de SGD?
+    - Necesito unirme al grupo de WhatsApp de SGD.
+    - ¿Cómo entro al grupo de WhatsApp de SGD?
+    - ¿Cómo puedo unirme al grupo de WhatsApp para consultas de SGD?
+    - Únete al grupo de WhatsApp de SGD para consultas.
+    - ¿Cómo me uno al grupo de consultas de WhatsApp de SGD?
+    - Quiero ser parte del grupo de WhatsApp de SGD.
+    - ¿Cómo puedo ser parte del grupo de WhatsApp de SGD?
+    - ¿Dónde puedo unirme al grupo de WhatsApp de SGD?
+    - ¿Dónde me uno al grupo de WhatsApp de SGD?
+    - Únete al grupo de WhatsApp de consultas de SGD.
+    - ¿Cómo me uno al grupo de WhatsApp de consultas de SGD?
+    - ¿Cómo puedo unirme al grupo de WhatsApp de consultas de SGD?
+    - ¿Dónde me uno al grupo de WhatsApp de consultas de SGD?
+    - Únete al grupo de WhatsApp de atención de consultas de SGD.
+    - ¿Cómo me uno al grupo de atención de consultas de WhatsApp de SGD?
+    - ¿Dónde me uno al grupo de atención de consultas de WhatsApp de SGD?
+    - Quiero unirme al grupo de atención de consultas de WhatsApp de SGD.
+    - Necesito unirme al grupo de WhatsApp de atención de consultas de SGD.
+    - ¿Cómo puedo unirme al grupo de WhatsApp de atención de consultas de SGD?
+    - ¿Dónde me uno al grupo de WhatsApp de atención de consultas de SGD?
+    - Únete al grupo de WhatsApp para consultas de SGD.
+    - ¿Cómo me uno al grupo de WhatsApp para consultas de SGD?
+    - Necesito unirme al grupo de WhatsApp para consultas de SGD.
+    - ¿Cómo puedo unirme al grupo de WhatsApp para consultas de SGD?
+    - ¿Dónde me uno al grupo de WhatsApp para consultas de SGD?
+    - Quiero unirme al grupo de WhatsApp de atención de consultas de SGD.
+    - ¿Dónde me puedo unir al grupo de WhatsApp de atención de consultas de SGD?
+    - Necesito unirme al grupo de WhatsApp de consultas de SGD.
+    - Únete al grupo de WhatsApp de consultas y dudas de SGD.
+    - ¿Cómo me uno al grupo de WhatsApp de consultas y dudas de SGD?
+    - Quiero unirme al grupo de WhatsApp de consultas y dudas de SGD.
+    - ¿Dónde puedo unirme al grupo de WhatsApp de consultas y dudas de SGD?
+    - ¿Cómo puedo unirme al grupo de WhatsApp de consultas y dudas de SGD?
+    - ¿Dónde me uno al grupo de WhatsApp de consultas y dudas de SGD?
+    - Únete al grupo de WhatsApp de dudas de SGD.
+    - ¿Cómo me uno al grupo de WhatsApp de dudas de SGD?
+    - Quiero unirme al grupo de WhatsApp de dudas de SGD.
+    - ¿Cómo puedo unirme al grupo de WhatsApp de dudas de SGD?
+    - ¿Dónde me uno al grupo de WhatsApp de dudas de SGD?
+    - Necesito unirme al grupo de WhatsApp de dudas de SGD.
+
+- intent: videos_instructivos_SGD
+  examples: |
+    - Videos e instructivos del SGD.
+    - Quiero ver videos e instructivos del SGD.
+    - ¿Dónde están los videos e instructivos del SGD?
+    - ¿Me puedes mostrar los videos e instructivos del SGD?
+    - Necesito videos e instructivos del SGD.
+    - ¿Tienes videos e instructivos del SGD?
+    - ¿Dónde encuentro videos e instructivos del SGD?
+    - ¿Dónde puedo ver videos e instructivos del SGD?
+    - Muéstrame los videos e instructivos del SGD.
+    - ¿Cómo accedo a los videos e instructivos del SGD?
+    - ¿Puedo ver los videos e instructivos del SGD?
+    - Enséñame los videos e instructivos del SGD.
+    - Necesito ver videos e instructivos del SGD.
+    - ¿Dónde están disponibles los videos e instructivos del SGD?
+    - ¿Tienes los videos e instructivos del SGD?
+    - ¿Dónde puedo encontrar videos e instructivos del SGD?
+    - ¿Dónde puedo acceder a los videos e instructivos del SGD?
+    - Enséñame los videos e instructivos del SGD.
+    - ¿Cómo puedo ver los videos e instructivos del SGD?
+    - ¿Dónde encuentro los videos e instructivos del SGD?
+    - ¿Cómo accedo a los videos e instructivos del SGD?
+    - Necesito acceder a los videos e instructivos del SGD.
+    - ¿Cómo puedo encontrar los videos e instructivos del SGD?
+    - ¿Dónde están los videos e instructivos del SGD?
+    - ¿Dónde puedo ver los videos e instructivos del SGD?
+    - Enséñame los videos e instructivos del SGD.
+    - Necesito ver los videos e instructivos del SGD.
+    - ¿Dónde están los videos e instructivos del SGD?
+    - Quiero ver los videos e instructivos del SGD.
+    - ¿Cómo puedo acceder a los videos e instructivos del SGD?
+    - Enséñame los videos e instructivos del SGD.
+    - Muéstrame los videos e instructivos del SGD.
+    - ¿Dónde puedo encontrar los videos e instructivos del SGD?
+    - Necesito ver los videos e instructivos del SGD.
+    - ¿Tienes videos e instructivos del SGD?
+    - ¿Dónde puedo ver los videos e instructivos del SGD?
+    - Enséñame los videos e instructivos del SGD.
+    - ¿Dónde encuentro los videos e instructivos del SGD?
+    - ¿Cómo accedo a los videos e instructivos del SGD?
+    - Muéstrame los videos e instructivos del SGD.
+    - ¿Dónde están los videos e instructivos del SGD?
+    - Quiero ver los videos e instructivos del SGD.
+    - ¿Dónde puedo encontrar los videos e instructivos del SGD?
+    - ¿Cómo puedo ver los videos e instructivos del SGD?
+    - Necesito ver los videos e instructivos del SGD.
+    - ¿Dónde puedo acceder a los videos e instructivos del SGD?
+    - Muéstrame los videos e instructivos del SGD.
+    - Enséñame los videos e instructivos del SGD.
+
+- intent: dificultades_SGD
+  examples: |
+    - ¿Presentas dificultades con el SGD?
+    - Tengo dificultades con el SGD.
+    - ¿Cómo soluciono dificultades con el SGD?
+    - Estoy presentando dificultades con el SGD.
+    - Necesito ayuda con dificultades en el SGD.
+    - ¿Cómo resuelvo dificultades en el SGD?
+    - Tengo problemas con el SGD.
+    - ¿Cómo puedo solucionar dificultades en el SGD?
+    - ¿Cómo soluciono problemas en el SGD?
+    - ¿Qué hago si tengo dificultades con el SGD?
+    - Necesito solucionar dificultades con el SGD.
+    - ¿Qué hago si tengo problemas en el SGD?
+    - ¿Cómo resuelvo problemas en el SGD?
+    - Estoy teniendo dificultades con el SGD.
+    - ¿Cómo puedo resolver dificultades en el SGD?
+    - ¿Cómo resuelvo dificultades con el SGD?
+    - Necesito ayuda con problemas en el SGD.
+    - Tengo dificultades en el SGD.
+    - ¿Cómo puedo resolver problemas en el SGD?
+    - ¿Qué hago si presento dificultades con el SGD?
+    - Necesito solucionar problemas con el SGD.
+    - ¿Qué hago si presento problemas en el SGD?
+    - ¿Cómo resuelvo dificultades en el SGD?
+    - ¿Cómo puedo solucionar problemas en el SGD?
+    - ¿Cómo resuelvo problemas con el SGD?
+    - Tengo dificultades usando el SGD.
+    - Necesito resolver dificultades con el SGD.
+    - ¿Qué hago si tengo dificultades en el SGD?
+    - ¿Cómo resuelvo problemas en el SGD?
+    - ¿Cómo puedo solucionar dificultades en el SGD?
+    - Estoy teniendo problemas con el SGD.
+    - Necesito ayuda con dificultades en el SGD.
+    - ¿Cómo puedo resolver dificultades con el SGD?
+    - ¿Qué hago si tengo problemas con el SGD?
+    - Necesito solucionar dificultades en el SGD.
+    - ¿Qué hago si presento dificultades en el SGD?
+    - ¿Cómo resuelvo dificultades con el SGD?
+    - Necesito resolver problemas con el SGD.
+    - ¿Qué hago si tengo problemas en el SGD?
+    - ¿Cómo puedo solucionar dificultades en el SGD?
+    - ¿Cómo resuelvo problemas en el SGD?
+    - Estoy presentando problemas con el SGD.
+    - Necesito ayuda con dificultades en el SGD.
+    - ¿Cómo puedo resolver problemas con el SGD?
+    - ¿Qué hago si tengo dificultades en el SGD?
+    - Necesito solucionar dificultades en el SGD.
+    - ¿Qué hago si tengo problemas en el SGD?
+    - ¿Cómo resuelvo dificultades en el SGD?
+    - Necesito resolver dificultades con el SGD.
+
+- intent: otras_consultas
+  examples: |
+    - Otras consultas.
+    - Tengo otras consultas.
+    - ¿Cómo hago otras consultas?
+    - Quiero hacer otras consultas.
+    - Tengo más consultas.
+    - ¿Cómo realizo otras consultas?
+    - Necesito hacer otras consultas.
+    - ¿Dónde hago otras consultas?
+    - Tengo algunas consultas más.
+    - ¿Dónde puedo hacer otras consultas?
+    - Necesito hacer más consultas.
+    - Quiero realizar otras consultas.
+    - Tengo varias consultas.
+    - ¿Cómo puedo hacer otras consultas?
+    - Quiero hacer más consultas.
+    - Necesito realizar otras consultas.
+    - Tengo más preguntas.
+    - ¿Dónde puedo realizar otras consultas?
+    - Tengo consultas adicionales.
+    - Quiero hacer algunas consultas más.
+    - ¿Dónde hago más consultas?
+    - Tengo más consultas que hacer.
+    - Quiero hacer varias consultas.
+    - Necesito realizar más consultas.
+    - ¿Dónde puedo hacer más consultas?
+    - ¿Dónde puedo hacer algunas consultas más?
+    - Quiero realizar más consultas.
+    - Tengo algunas consultas adicionales.
+    - Necesito hacer varias consultas.
+    - ¿Cómo hago algunas consultas más?
+    - ¿Dónde hago varias consultas?
+    - Quiero realizar varias consultas.
+    - Necesito hacer más consultas.
+    - ¿Cómo puedo hacer más consultas?
+    - Quiero hacer consultas adicionales.
+    - Tengo preguntas adicionales.
+    - ¿Dónde puedo hacer consultas adicionales?
+    - Necesito realizar varias consultas.
+    - Quiero hacer varias consultas adicionales.
+    - Necesito hacer algunas consultas adicionales.
+    - ¿Cómo hago varias consultas?
+    - Necesito realizar algunas consultas adicionales.
+    - ¿Dónde hago consultas adicionales?
+    - Quiero hacer algunas consultas adicionales.
+    - Tengo varias preguntas.
+    - Quiero hacer consultas adicionales.
+    - Necesito realizar consultas adicionales.
+    - ¿Cómo puedo realizar otras consultas?
+    - ¿Dónde realizo otras consultas?
+    - ¿Dónde hago otras consultas adicionales?
+    - ¿Dónde puedo hacer otras consultas adicionales?
+    - Quiero hacer varias consultas adicionales.
+    - ¿Cómo puedo hacer varias consultas?
+    - Tengo preguntas adicionales sobre el SGD.
+    - Quiero hacer varias preguntas.
+    - ¿Dónde hago otras consultas adicionales?
+    - Quiero realizar consultas adicionales.
+    - ¿Cómo hago más consultas sobre el SGD?
+    - Necesito hacer consultas adicionales sobre el SGD.
+    - ¿Cómo hago otras consultas adicionales sobre el SGD?
+    - Quiero hacer otras consultas sobre el SGD.
+    - Necesito realizar otras consultas sobre el SGD.
+    - ¿Dónde puedo hacer otras consultas sobre el SGD?
+    - Tengo consultas adicionales sobre el SGD.
+    - Quiero hacer algunas consultas más sobre el SGD.
+    - ¿Dónde hago otras consultas sobre el SGD?
+    - Necesito hacer más consultas sobre el SGD.
+    - Quiero realizar otras consultas sobre el SGD.
+    - Tengo varias consultas sobre el SGD.
+    - ¿Cómo puedo hacer otras consultas sobre el SGD?
+    - Quiero hacer más consultas sobre el SGD.
+    - Necesito realizar otras consultas sobre el SGD.
+    - Tengo más preguntas sobre el SGD.
+    - ¿Dónde puedo realizar otras consultas sobre el SGD?
+    - Tengo consultas adicionales sobre el sistema SGD.
+    - Quiero hacer algunas consultas más sobre el sistema SGD.
+    - ¿Dónde hago otras consultas sobre el sistema SGD?
+    - Necesito hacer más consultas sobre el sistema SGD.
+    - Quiero realizar otras consultas sobre el sistema SGD.
+    - Tengo varias consultas sobre el sistema SGD.
+    - ¿Cómo puedo hacer otras consultas sobre el sistema SGD?
+    - Quiero hacer más consultas sobre el sistema SGD.
+    - Necesito realizar otras consultas sobre el sistema SGD.
+    - Tengo más preguntas sobre el sistema SGD.
+    - ¿Dónde puedo realizar otras consultas sobre el sistema SGD?
+    - Tengo consultas adicionales sobre el Sistema de Gestión Documental.
+    - Quiero hacer algunas consultas más sobre el Sistema de Gestión Documental.
+    - ¿Dónde hago otras consultas sobre el Sistema de Gestión Documental?
+    - Necesito hacer más consultas sobre el Sistema de Gestión Documental.
+    - Quiero realizar otras consultas sobre el Sistema de Gestión Documental.
+    - Tengo varias consultas sobre el Sistema de Gestión Documental.
+    - ¿Cómo puedo hacer otras consultas sobre el Sistema de Gestión Documental?
+    - Quiero hacer más consultas sobre el Sistema de Gestión Documental.
+    - Necesito realizar otras consultas sobre el Sistema de Gestión Documental.
+    - Tengo más preguntas sobre el Sistema de Gestión Documental.
+    - ¿Dónde puedo realizar otras consultas sobre el Sistema de Gestión Documental?
+
+
+
+- intent: video_manual_director
+  examples: |
+    - Necesito el video y manual para el Rol de Director.
+    - ¿Dónde encuentro el video y manual para el Rol de Director?
+    - Muéstrame el video y manual para el Rol de Director.
+    - Quiero ver el video y manual para el Rol de Director.
+    - ¿Tienes el video y manual para el Rol de Director?
+    - Enséñame el video y manual para el Rol de Director.
+    - ¿Cómo accedo al video y manual para el Rol de Director?
+    - Necesito el manual y video para el Rol de Director.
+    - ¿Me das el link del video y manual para el Rol de Director?
+    - ¿Dónde está el video y manual para el Rol de Director?
+    - Muéstrame el manual y video para el Rol de Director.
+    - Quiero el video y manual para el Rol de Director.
+    - ¿Tienes el manual y video para el Rol de Director?
+    - Enséñame el manual y video para el Rol de Director.
+    - ¿Cómo accedo al manual y video para el Rol de Director?
+    - Necesito el video y manual del Rol de Director.
+    - ¿Me das el link del manual y video para el Rol de Director?
+    - ¿Dónde está el manual y video para el Rol de Director?
+    - Muéstrame el video y el manual para el Rol de Director.
+    - Quiero ver el manual y video para el Rol de Director.
+    - ¿Tienes el video y el manual para el Rol de Director?
+    - Enséñame el video y el manual para el Rol de Director.
+    - ¿Cómo accedo al video y el manual para el Rol de Director?
+    - Necesito el manual y video del Rol de Director.
+    - ¿Me das el link del video y el manual para el Rol de Director?
+    - ¿Dónde está el video y el manual para el Rol de Director?
+    - Muéstrame el manual y el video para el Rol de Director.
+    - Quiero ver el video y el manual para el Rol de Director.
+    - ¿Tienes el manual y el video para el Rol de Director?
+    - Enséñame el manual y el video para el Rol de Director.
+    - ¿Cómo accedo al manual y el video para el Rol de Director?
+    - Necesito el video y manual del Rol de Director.
+    - ¿Me das el link del manual y el video para el Rol de Director?
+    - ¿Dónde está el manual y el video para el Rol de Director?
+    - Muéstrame el video y manual para el Rol de Director.
+    - Quiero ver el video y manual para el Rol de Director.
+    - ¿Tienes el video y manual para el Rol de Director?
+    - Enséñame el video y manual para el Rol de Director.
+    - ¿Cómo accedo al video y manual para el Rol de Director?
+    - Necesito el manual y video del Rol de Director.
+    - ¿Me das el link del video y manual para el Rol de Director?
+    - ¿Dónde está el video y manual para el Rol de Director?
+    - Muéstrame el video y el manual para el Rol de Director.
+    - Quiero ver el manual y video para el Rol de Director.
+    - ¿Tienes el video y el manual para el Rol de Director?
+    - Enséñame el video y el manual para el Rol de Director.
+    - ¿Cómo accedo al video y el manual para el Rol de Director?
+    - Necesito el manual y video del Rol de Director.
+    - ¿Me das el link del video y el manual para el Rol de Director?
+    - ¿Dónde está el video y el manual para el Rol de Director?
+
+- intent: video_manual_secretaria
+  examples: |
+    - Necesito el video y manual para el Rol de Secretaria.
+    - ¿Dónde encuentro el video y manual para el Rol de Secretaria?
+    - Muéstrame el video y manual para el Rol de Secretaria.
+    - Quiero ver el video y manual para el Rol de Secretaria.
+    - ¿Tienes el video y manual para el Rol de Secretaria?
+    - Enséñame el video y manual para el Rol de Secretaria.
+    - ¿Cómo accedo al video y manual para el Rol de Secretaria?
+    - Necesito el manual y video para el Rol de Secretaria.
+    - ¿Me das el link del video y manual para el Rol de Secretaria?
+    - ¿Dónde está el video y manual para el Rol de Secretaria?
+    - Muéstrame el manual y video para el Rol de Secretaria.
+    - Quiero el video y manual para el Rol de Secretaria.
+    - ¿Tienes el manual y video para el Rol de Secretaria?
+    - Enséñame el manual y video para el Rol de Secretaria.
+    - ¿Cómo accedo al manual y video para el Rol de Secretaria?
+    - Necesito el video y manual del Rol de Secretaria.
+    - ¿Me das el link del manual y video para el Rol de Secretaria?
+    - ¿Dónde está el manual y video para el Rol de Secretaria?
+    - Muéstrame el video y el manual para el Rol de Secretaria.
+    - Quiero ver el manual y video para el Rol de Secretaria.
+    - ¿Tienes el video y el manual para el Rol de Secretaria?
+    - Enséñame el video y el manual para el Rol de Secretaria.
+    - ¿Cómo accedo al video y el manual para el Rol de Secretaria?
+    - Necesito el manual y video del Rol de Secretaria.
+    - ¿Me das el link del video y el manual para el Rol de Secretaria?
+    - ¿Dónde está el video y el manual para el Rol de Secretaria?
+    - Muéstrame el manual y el video para el Rol de Secretaria.
+    - Quiero ver el video y el manual para el Rol de Secretaria.
+    - ¿Tienes el manual y el video para el Rol de Secretaria?
+    - Enséñame el manual y el video para el Rol de Secretaria.
+    - ¿Cómo accedo al manual y el video para el Rol de Secretaria?
+    - Necesito el video y manual del Rol de Secretaria.
+    - ¿Me das el link del manual y el video para el Rol de Secretaria?
+    - ¿Dónde está el manual y el video para el Rol de Secretaria?
+    - Muéstrame el video y manual para el Rol de Secretaria.
+    - Quiero ver el video y manual para el Rol de Secretaria.
+    - ¿Tienes el video y manual para el Rol de Secretaria?
+    - Enséñame el video y manual para el Rol de Secretaria.
+    - ¿Cómo accedo al video y manual para el Rol de Secretaria?
+    - Necesito el manual y video del Rol de Secretaria.
+    - ¿Me das el link del video y manual para el Rol de Secretaria?
+    - ¿Dónde está el video y manual para el Rol de Secretaria?
+    - Muéstrame el video y el manual para el Rol de Secretaria.
+    - Quiero ver el manual y video para el Rol de Secretaria.
+    - ¿Tienes el video y el manual para el Rol de Secretaria?
+    - Enséñame el video y el manual para el Rol de Secretaria.
+    - ¿Cómo accedo al video y el manual para el Rol de Secretaria?
+    - Necesito el manual y video del Rol de Secretaria.
+    - ¿Me das el link del video y el manual para el Rol de Secretaria?
+    - ¿Dónde está el video y el manual para el Rol de Secretaria?
+
+- intent: video_manual_trabajador
+  examples: |
+    - Necesito el video y manual para el Rol de Trabajador.
+    - ¿Dónde encuentro el video y manual para el Rol de Trabajador?
+    - Muéstrame el video y manual para el Rol de Trabajador.
+    - Quiero ver el video y manual para el Rol de Trabajador.
+    - ¿Tienes el video y manual para el Rol de Trabajador?
+    - Enséñame el video y manual para el Rol de Trabajador.
+    - ¿Cómo accedo al video y manual para el Rol de Trabajador?
+    - Necesito el manual y video para el Rol de Trabajador.
+    - ¿Me das el link del video y manual para el Rol de Trabajador?
+    - ¿Dónde está el video y manual para el Rol de Trabajador?
+    - Muéstrame el manual y video para el Rol de Trabajador.
+    - Quiero el video y manual para el Rol de Trabajador.
+    - ¿Tienes el manual y video para el Rol de Trabajador?
+    - Enséñame el manual y video para el Rol de Trabajador.
+    - ¿Cómo accedo al manual y video para el Rol de Trabajador?
+    - Necesito el video y manual del Rol de Trabajador.
+    - ¿Me das el link del manual y video para el Rol de Trabajador?
+    - ¿Dónde está el manual y video para el Rol de Trabajador?
+    - Muéstrame el video y el manual para el Rol de Trabajador.
+    - Quiero ver el manual y video para el Rol de Trabajador.
+    - ¿Tienes el video y el manual para el Rol de Trabajador?
+    - Enséñame el video y el manual para el Rol de Trabajador.
+    - ¿Cómo accedo al video y el manual para el Rol de Trabajador?
+    - Necesito el manual y video del Rol de Trabajador.
+    - ¿Me das el link del video y el manual para el Rol de Trabajador?
+    - ¿Dónde está el video y el manual para el Rol de Trabajador?
+    - Muéstrame el manual y el video para el Rol de Trabajador.
+    - Quiero ver el video y el manual para el Rol de Trabajador.
+    - ¿Tienes el manual y el video para el Rol de Trabajador?
+    - Enséñame el manual y el video para el Rol de Trabajador.
+    - ¿Cómo accedo al manual y el video para el Rol de Trabajador?
+    - Necesito el video y manual del Rol de Trabajador.
+    - ¿Me das el link del manual y el video para el Rol de Trabajador?
+    - ¿Dónde está el manual y el video para el Rol de Trabajador?
+    - Muéstrame el video y manual para el Rol de Trabajador.
+    - Quiero ver el video y manual para el Rol de Trabajador.
+    - ¿Tienes el video y manual para el Rol de Trabajador?
+    - Enséñame el video y manual para el Rol de Trabajador.
+    - ¿Cómo accedo al video y manual para el Rol de Trabajador?
+    - Necesito el manual y video del Rol de Trabajador.
+    - ¿Me das el link del video y manual para el Rol de Trabajador?
+    - ¿Dónde está el video y manual para el Rol de Trabajador?
+    - Muéstrame el video y el manual para el Rol de Trabajador.
+    - Quiero ver el manual y video para el Rol de Trabajador.
+    - ¿Tienes el video y el manual para el Rol de Trabajador?
+    - Enséñame el video y el manual para el Rol de Trabajador.
+    - ¿Cómo accedo al video y el manual para el Rol de Trabajador?
+    - Necesito el manual y video del Rol de Trabajador.
+    - ¿Me das el link del video y el manual para el Rol de Trabajador?
+    - ¿Dónde está el video y el manual para el Rol de Trabajador?
+
+- intent: instructivo_caso_practico
+  examples: |
+    - Necesito el instructivo del caso práctico.
+    - ¿Dónde encuentro el instructivo del caso práctico?
+    - Muéstrame el instructivo del caso práctico.
+    - Quiero ver el instructivo del caso práctico.
+    - ¿Tienes el instructivo del caso práctico?
+    - Enséñame el instructivo del caso práctico.
+    - ¿Cómo accedo al instructivo del caso práctico?
+    - Necesito el instructivo del uso del SGD.
+    - ¿Me das el link del instructivo del caso práctico?
+    - ¿Dónde está el instructivo del caso práctico?
+    - Muéstrame el instructivo del uso del SGD.
+    - Quiero el instructivo del caso práctico.
+    - ¿Tienes el instructivo del uso del SGD?
+    - Enséñame el instructivo del caso práctico.
+    - ¿Cómo accedo al instructivo del uso del SGD?
+    - Necesito el instructivo del uso del SGD.
+    - ¿Me das el link del instructivo del uso del SGD?
+    - ¿Dónde está el instructivo del uso del SGD?
+    - Muéstrame el instructivo del caso práctico.
+    - Quiero ver el instructivo del caso práctico.
+    - ¿Tienes el instructivo del caso práctico?
+    - Enséñame el instructivo del uso del SGD.
+    - ¿Cómo accedo al instructivo del caso práctico?
+    - Necesito el instructivo del caso práctico.
+    - ¿Me das el link del instructivo del caso práctico?
+    - ¿Dónde está el instructivo del uso del SGD?
+    - Muéstrame el instructivo del uso del SGD.
+    - Quiero el instructivo del caso práctico.
+    - ¿Tienes el instructivo del caso práctico?
+    - Enséñame el instructivo del caso práctico.
+    - ¿Cómo accedo al instructivo del uso del SGD?
+    - Necesito el instructivo del uso del SGD.
+    - ¿Me das el link del instructivo del uso del SGD?
+    - ¿Dónde está el instructivo del uso del SGD?
+    - Muéstrame el instructivo del caso práctico.
+    - Quiero ver el instructivo del uso del SGD.
+    - ¿Tienes el instructivo del uso del SGD?
+    - Enséñame el instructivo del caso práctico.
+    - ¿Cómo accedo al instructivo del uso del SGD?
+    - Necesito el instructivo del caso práctico.
+    - ¿Me das el link del instructivo del caso práctico?
+    - ¿Dónde está el instructivo del uso del SGD?
+    - Muéstrame el instructivo del uso del SGD.
+    - Quiero el instructivo del caso práctico.
+    - ¿Tienes el instructivo del caso práctico?
+    - Enséñame el instructivo del uso del SGD.
+    - ¿Cómo accedo al instructivo del caso práctico?
+    - Necesito el instructivo del caso práctico.
+    - ¿Me das el link del instructivo del caso práctico?
+    - ¿Dónde está el instructivo del uso del SGD?
+    - Muéstrame el instructivo del uso del SGD.
+    - Quiero ver el instructivo del caso práctico.
+    - ¿Tienes el instructivo del caso práctico?
+    - Enséñame el instructivo del caso práctico.
+
+
+- intent: preguntar_enviar_documento_trabajador
+  examples: |
+    - ¿Cómo envío un documento desde el perfil trabajador?
+    - ¿Cómo puedo enviar un documento desde mi perfil de trabajador?
+    - ¿Cuál es el proceso para enviar un documento desde el perfil trabajador?
+    - ¿Me puedes explicar cómo enviar un documento desde el perfil de trabajador?
+    - Necesito enviar un documento desde mi perfil de trabajador, ¿cómo lo hago?
+    - ¿Qué pasos debo seguir para enviar un documento desde el perfil de trabajador?
+    - Enviar documento desde perfil trabajador
+    - ¿Cómo se envía un documento desde el perfil de trabajador?
+    - ¿Cuál es la forma correcta de enviar un documento desde el perfil trabajador?
+    - ¿Podrías indicarme cómo enviar un documento desde el perfil de trabajador?
+    - Instrucciones para enviar un documento desde el perfil trabajador
+    - Quiero enviar un documento desde mi perfil de trabajador, ¿cómo lo hago?
+    - Envío de documento desde el perfil trabajador
+    - ¿Cómo puedo mandar un documento desde mi perfil de trabajador?
+    - Proceso para enviar un documento desde el perfil trabajador
+    - Pasos para enviar un documento desde el perfil trabajador
+    - ¿Cómo realizar el envío de un documento desde el perfil trabajador?
+    - ¿Cuál es el procedimiento para enviar un documento desde el perfil trabajador?
+    - ¿Cómo hacer para enviar un documento desde el perfil de trabajador?
+    - Enviar un documento desde el perfil trabajador
+    - Necesito enviar un documento desde el perfil de trabajador
+    - ¿Cómo envío un documento usando el perfil de trabajador?
+    - ¿Cómo se realiza el envío de documentos desde el perfil trabajador?
+    - Guía para enviar un documento desde el perfil trabajador
+    - ¿Qué debo hacer para enviar un documento desde el perfil trabajador?
+    - ¿Cómo mandar un documento desde el perfil trabajador?
+    - Pasos a seguir para enviar un documento desde el perfil trabajador
+    - ¿Cómo puedo hacer para enviar un documento desde el perfil de trabajador?
+    - ¿Cómo se puede enviar un documento desde el perfil trabajador?
+    - Necesito instrucciones para enviar un documento desde el perfil trabajador
+    - ¿Cómo puedo enviar documentos desde el perfil trabajador?
+    - ¿Qué pasos debo seguir para mandar un documento desde el perfil de trabajador?
+    - ¿Cómo se envían documentos desde el perfil de trabajador?
+    - Instrucciones para el envío de documentos desde el perfil trabajador
+    - ¿Cuál es el proceso correcto para enviar un documento desde el perfil trabajador?
+    - ¿Podrías decirme cómo enviar un documento desde el perfil de trabajador?
+    - ¿Cómo envío documentos desde mi perfil trabajador?
+    - Proceso de envío de documentos desde el perfil trabajador
+    - Pasos detallados para enviar un documento desde el perfil trabajador
+    - ¿Cómo puedo enviar un documento desde el perfil de trabajador?
+    - ¿Qué debo hacer para mandar un documento desde el perfil trabajador?
+    - ¿Cómo se hace el envío de documentos desde el perfil trabajador?
+    - Guía detallada para enviar un documento desde el perfil trabajador
+    - ¿Qué pasos son necesarios para enviar un documento desde el perfil trabajador?
+    - Enviar documentos desde el perfil de trabajador
+    - ¿Cómo realizar el envío de un documento desde el perfil de trabajador?
+    - Proceso para enviar documentos desde el perfil trabajador
+    - ¿Cómo puedo enviar un documento desde el perfil trabajador?
+    - ¿Cómo mando un documento desde el perfil de trabajador?
+
+- intent: preguntar_digitalizar_documento_con_NIT
+  examples: |
+    - ¿Cómo digitalizo un documento en físico que cuenta con NIT?
+    - ¿Qué pasos debo seguir para digitalizar un documento en físico con NIT?
+    - Proceso para digitalizar un documento en físico con NIT
+    - ¿Cómo puedo digitalizar un documento en físico que tiene NIT?
+    - ¿Cuál es la forma correcta de digitalizar un documento en físico con NIT?
+    - ¿Me puedes explicar cómo digitalizar un documento en físico con NIT?
+    - Instrucciones para digitalizar un documento en físico con NIT
+    - Necesito digitalizar un documento en físico con NIT, ¿cómo lo hago?
+    - ¿Qué debo hacer para digitalizar un documento en físico con NIT?
+    - Pasos para digitalizar un documento en físico con NIT
+    - ¿Cómo se digitaliza un documento en físico con NIT?
+    - ¿Cuál es el procedimiento para digitalizar un documento en físico con NIT?
+    - ¿Cómo hacer para digitalizar un documento en físico que tiene NIT?
+    - Digitalizar documento en físico con NIT
+    - Necesito digitalizar un documento en físico que cuenta con NIT
+    - ¿Cómo puedo hacer para digitalizar un documento en físico con NIT?
+    - ¿Cómo se puede digitalizar un documento en físico con NIT?
+    - ¿Cómo digitalizar un documento en físico con NIT?
+    - ¿Cómo realizar la digitalización de un documento en físico con NIT?
+    - Guía para digitalizar un documento en físico con NIT
+    - ¿Cómo se hace la digitalización de un documento en físico con NIT?
+    - Proceso de digitalización de documentos en físico con NIT
+    - Pasos detallados para digitalizar un documento en físico con NIT
+    - ¿Qué debo hacer para digitalizar un documento en físico que cuenta con NIT?
+    - ¿Cómo digitalizo un documento físico con NIT?
+    - ¿Cuál es el proceso correcto para digitalizar un documento en físico con NIT?
+    - Instrucciones detalladas para digitalizar un documento en físico con NIT
+    - Necesito instrucciones para digitalizar un documento en físico con NIT
+    - ¿Qué pasos debo seguir para digitalizar un documento en físico que tiene NIT?
+    - ¿Cómo se puede hacer la digitalización de un documento en físico con NIT?
+    - ¿Qué debo hacer para digitalizar documentos en físico con NIT?
+    - ¿Cómo digitalizo documentos en físico que tienen NIT?
+    - Guía detallada para digitalizar un documento en físico con NIT
+    - ¿Qué pasos son necesarios para digitalizar un documento en físico con NIT?
+    - ¿Cómo digitalizo un documento en físico con NIT?
+    - ¿Cómo hago para digitalizar un documento en físico con NIT?
+    - ¿Cómo puedo digitalizar documentos en físico con NIT?
+    - ¿Cómo se digitaliza un documento en físico que tiene NIT?
+    - ¿Qué pasos debo seguir para digitalizar documentos en físico con NIT?
+    - ¿Cómo digitalizar documentos en físico que tienen NIT?
+    - Proceso para digitalizar documentos en físico con NIT
+    - Pasos para digitalizar un documento en físico con NIT
+    - ¿Cómo se puede digitalizar un documento en físico que tiene NIT?
+    - Instrucciones para digitalizar un documento en físico con NIT
+    - Necesito digitalizar un documento en físico que tiene NIT
+    - ¿Cómo digitalizar un documento en físico que cuenta con NIT?
+    - ¿Cuál es el procedimiento para digitalizar un documento en físico que tiene NIT?
+    - Guía para digitalizar un documento en físico que tiene NIT
+    - ¿Qué debo hacer para digitalizar un documento en físico que tiene NIT?
+
+- intent: preguntar_enviar_documento_adjunto
+  examples: |
+    - ¿Cómo enviar un documento adjunto sobre un documento ya enviado?
+    - ¿Cómo puedo enviar un documento adjunto sobre un documento ya enviado?
+    - ¿Qué pasos debo seguir para enviar un documento adjunto sobre un documento ya enviado?
+    - Proceso para enviar un documento adjunto sobre un documento ya enviado
+    - ¿Cuál es la forma correcta de enviar un documento adjunto sobre un documento ya enviado?
+    - ¿Me puedes explicar cómo enviar un documento adjunto sobre un documento ya enviado?
+    - Instrucciones para enviar un documento adjunto sobre un documento ya enviado
+    - Necesito enviar un documento adjunto sobre un documento ya enviado, ¿cómo lo hago?
+    - ¿Qué debo hacer para enviar un documento adjunto sobre un documento ya enviado?
+    - Pasos para enviar un documento adjunto sobre un documento ya enviado
+    - ¿Cómo se envía un documento adjunto sobre un documento ya enviado?
+    - ¿Cuál es el procedimiento para enviar un documento adjunto sobre un documento ya enviado?
+    - ¿Cómo hacer para enviar un documento adjunto sobre un documento ya enviado?
+    - Enviar documento adjunto sobre un documento ya enviado
+    - Necesito enviar un documento adjunto sobre un documento ya enviado
+    - ¿Cómo puedo hacer para enviar un documento adjunto sobre un documento ya enviado?
+    - ¿Cómo se puede enviar un documento adjunto sobre un documento ya enviado?
+    - ¿Cómo enviar un documento adjunto sobre un documento ya enviado?
+    - ¿Cómo realizar el envío de un documento adjunto sobre un documento ya enviado?
+    - Guía para enviar un documento adjunto sobre un documento ya enviado
+    - ¿Cómo se hace el envío de un documento adjunto sobre un documento ya enviado?
+    - Proceso de envío de documentos adjuntos sobre un documento ya enviado
+    - Pasos detallados para enviar un documento adjunto sobre un documento ya enviado
+    - ¿Qué debo hacer para enviar un documento adjunto sobre un documento ya enviado?
+    - ¿Cómo envío un documento adjunto sobre un documento ya enviado?
+    - ¿Cuál es el proceso correcto para enviar un documento adjunto sobre un documento ya enviado?
+    - Instrucciones detalladas para enviar un documento adjunto sobre un documento ya enviado
+    - Necesito instrucciones para enviar un documento adjunto sobre un documento ya enviado
+    - ¿Qué pasos debo seguir para enviar un documento adjunto sobre un documento ya enviado?
+    - ¿Cómo se puede hacer el envío de un documento adjunto sobre un documento ya enviado?
+    - ¿Qué debo hacer para enviar documentos adjuntos sobre un documento ya enviado?
+    - ¿Cómo envío documentos adjuntos sobre un documento ya enviado?
+    - Guía detallada para enviar un documento adjunto sobre un documento ya enviado
+    - ¿Qué pasos son necesarios para enviar un documento adjunto sobre un documento ya enviado?
+    - ¿Cómo envío un documento adjunto sobre un documento ya enviado?
+    - ¿Cómo hago para enviar un documento adjunto sobre un documento ya enviado?
+    - ¿Cómo puedo enviar documentos adjuntos sobre un documento ya enviado?
+    - ¿Cómo se envía un documento adjunto sobre un documento ya enviado?
+    - ¿Qué pasos debo seguir para enviar documentos adjuntos sobre un documento ya enviado?
+    - ¿Cómo enviar documentos adjuntos sobre un documento ya enviado?
+    - Proceso para enviar documentos adjuntos sobre un documento ya enviado
+    - Pasos para enviar un documento adjunto sobre un documento ya enviado
+    - ¿Cómo se puede enviar un documento adjunto sobre un documento ya enviado?
+    - Instrucciones para enviar un documento adjunto sobre un documento ya enviado
+    - Necesito enviar un documento adjunto sobre un documento ya enviado
+    - ¿Cómo enviar un documento adjunto sobre un documento ya enviado?
+    - ¿Cuál es el procedimiento para enviar un documento adjunto sobre un documento ya enviado?
+    - Guía para enviar un documento adjunto sobre un documento ya enviado
+    - ¿Qué debo hacer para enviar un documento adjunto sobre un documento ya enviado?
+
+- intent: preguntar_finalizar_documento
+  examples: |
+    - ¿Cómo finalizar un documento?
+    - ¿Cómo puedo finalizar un documento?
+    - ¿Qué pasos debo seguir para finalizar un documento?
+    - Proceso para finalizar un documento
+    - ¿Cuál es la forma correcta de finalizar un documento?
+    - ¿Me puedes explicar cómo finalizar un documento?
+    - Instrucciones para finalizar un documento
+    - Necesito finalizar un documento, ¿cómo lo hago?
+    - ¿Qué debo hacer para finalizar un documento?
+    - Pasos para finalizar un documento
+    - ¿Cómo se finaliza un documento?
+    - ¿Cuál es el procedimiento para finalizar un documento?
+    - ¿Cómo hacer para finalizar un documento?
+    - Finalizar documento
+    - Necesito finalizar un documento
+    - ¿Cómo puedo hacer para finalizar un documento?
+    - ¿Cómo se puede finalizar un documento?
+    - ¿Cómo finalizar un documento?
+    - ¿Cómo realizar la finalización de un documento?
+    - Guía para finalizar un documento
+    - ¿Cómo se hace la finalización de un documento?
+    - Proceso de finalización de documentos
+    - Pasos detallados para finalizar un documento
+    - ¿Qué debo hacer para finalizar un documento?
+    - ¿Cómo finalizo un documento?
+    - ¿Cuál es el proceso correcto para finalizar un documento?
+    - Instrucciones detalladas para finalizar un documento
+    - Necesito instrucciones para finalizar un documento
+    - ¿Qué pasos debo seguir para finalizar un documento?
+    - ¿Cómo se puede hacer la finalización de un documento?
+    - ¿Qué debo hacer para finalizar documentos?
+    - ¿Cómo finalizo documentos?
+    - Guía detallada para finalizar un documento
+    - ¿Qué pasos son necesarios para finalizar un documento?
+    - ¿Cómo finalizo un documento?
+    - ¿Cómo hago para finalizar un documento?
+    - ¿Cómo puedo finalizar documentos?
+    - ¿Cómo se finaliza un documento?
+    - ¿Qué pasos debo seguir para finalizar documentos?
+    - ¿Cómo finalizar documentos?
+    - Proceso para finalizar documentos
+    - Pasos para finalizar un documento
+    - ¿Cómo se puede finalizar un documento?
+    - Instrucciones para finalizar un documento
+    - Necesito finalizar un documento
+    - ¿Cómo finalizar un documento?
+    - ¿Cuál es el procedimiento para finalizar un documento?
+    - Guía para finalizar un documento
+    - ¿Qué debo hacer para finalizar un documento?
+
+- intent: preguntar_poner_firma
+  examples: |
+    - ¿Cómo poner una firma o visto a un documento adjunto?
+    - ¿Cómo puedo poner una firma o visto a un documento adjunto?
+    - ¿Qué pasos debo seguir para poner una firma o visto a un documento adjunto?
+    - Proceso para poner una firma o visto a un documento adjunto
+    - ¿Cuál es la forma correcta de poner una firma o visto a un documento adjunto?
+    - ¿Me puedes explicar cómo poner una firma o visto a un documento adjunto?
+    - Instrucciones para poner una firma o visto a un documento adjunto
+    - Necesito poner una firma o visto a un documento adjunto, ¿cómo lo hago?
+    - ¿Qué debo hacer para poner una firma o visto a un documento adjunto?
+    - Pasos para poner una firma o visto a un documento adjunto
+    - ¿Cómo se pone una firma o visto a un documento adjunto?
+    - ¿Cuál es el procedimiento para poner una firma o visto a un documento adjunto?
+    - ¿Cómo hacer para poner una firma o visto a un documento adjunto?
+    - Poner firma o visto a un documento adjunto
+    - Necesito poner una firma o visto a un documento adjunto
+    - ¿Cómo puedo hacer para poner una firma o visto a un documento adjunto?
+    - ¿Cómo se puede poner una firma o visto a un documento adjunto?
+    - ¿Cómo poner una firma o visto a un documento adjunto?
+    - ¿Cómo realizar la firma o visto a un documento adjunto?
+    - Guía para poner una firma o visto a un documento adjunto
+    - ¿Cómo se hace la firma o visto a un documento adjunto?
+    - Proceso de poner una firma o visto a un documento adjunto
+    - Pasos detallados para poner una firma o visto a un documento adjunto
+    - ¿Qué debo hacer para poner una firma o visto a un documento adjunto?
+    - ¿Cómo pongo una firma o visto a un documento adjunto?
+    - ¿Cuál es el proceso correcto para poner una firma o visto a un documento adjunto?
+    - Instrucciones detalladas para poner una firma o visto a un documento adjunto
+    - Necesito instrucciones para poner una firma o visto a un documento adjunto
+    - ¿Qué pasos debo seguir para poner una firma o visto a un documento adjunto?
+    - ¿Cómo se puede hacer la firma o visto a un documento adjunto?
+    - ¿Qué debo hacer para poner una firma o visto a un documento adjunto?
+    - ¿Cómo pongo una firma o visto a documentos adjuntos?
+    - Guía detallada para poner una firma o visto a un documento adjunto
+    - ¿Qué pasos son necesarios para poner una firma o visto a un documento adjunto?
+    - ¿Cómo pongo una firma o visto a un documento adjunto?
+    - ¿Cómo hago para poner una firma o visto a un documento adjunto?
+    - ¿Cómo puedo poner una firma o visto a documentos adjuntos?
+    - ¿Cómo se pone una firma o visto a un documento adjunto?
+    - ¿Qué pasos debo seguir para poner una firma o visto a documentos adjuntos?
+    - ¿Cómo poner una firma o visto a documentos adjuntos?
+    - Proceso para poner una firma o visto a documentos adjuntos
+    - Pasos para poner una firma o visto a un documento adjunto
+    - ¿Cómo se puede poner una firma o visto a un documento adjunto?
+    - Instrucciones para poner una firma o visto a un documento adjunto
+    - Necesito poner una firma o visto a un documento adjunto
+    - ¿Cómo poner una firma o visto a un documento adjunto?
+    - ¿Cuál es el procedimiento para poner una firma o visto a un documento adjunto?
+    - Guía para poner una firma o visto a un documento adjunto
+    - ¿Qué debo hacer para poner una firma o visto a un documento adjunto?
+
+- intent: preguntar_revisar_documentos_emitidos
+  examples: |
+    - ¿Cómo reviso los documentos emitidos?
+    - ¿Cómo puedo revisar los documentos emitidos?
+    - ¿Qué pasos debo seguir para revisar los documentos emitidos?
+    - Proceso para revisar los documentos emitidos
+    - ¿Cuál es la forma correcta de revisar los documentos emitidos?
+    - ¿Me puedes explicar cómo revisar los documentos emitidos?
+    - Instrucciones para revisar los documentos emitidos
+    - Necesito revisar los documentos emitidos, ¿cómo lo hago?
+    - ¿Qué debo hacer para revisar los documentos emitidos?
+    - Pasos para revisar los documentos emitidos
+    - ¿Cómo se revisan los documentos emitidos?
+    - ¿Cuál es el procedimiento para revisar los documentos emitidos?
+    - ¿Cómo hacer para revisar los documentos emitidos?
+    - Revisar documentos emitidos
+    - Necesito revisar los documentos emitidos
+    - ¿Cómo puedo hacer para revisar los documentos emitidos?
+    - ¿Cómo se pueden revisar los documentos emitidos?
+    - ¿Cómo revisar los documentos emitidos?
+    - ¿Cómo realizar la revisión de los documentos emitidos?
+    - Guía para revisar los documentos emitidos
+    - ¿Cómo se hace la revisión de los documentos emitidos?
+    - Proceso de revisión de documentos emitidos
+    - Pasos detallados para revisar los documentos emitidos
+    - ¿Qué debo hacer para revisar los documentos emitidos?
+    - ¿Cómo reviso los documentos emitidos?
+    - ¿Cuál es el proceso correcto para revisar los documentos emitidos?
+    - Instrucciones detalladas para revisar los documentos emitidos
+    - Necesito instrucciones para revisar los documentos emitidos
+    - ¿Qué pasos debo seguir para revisar los documentos emitidos?
+    - ¿Cómo se pueden hacer la revisión de los documentos emitidos?
+    - ¿Qué debo hacer para revisar documentos emitidos?
+    - ¿Cómo reviso documentos emitidos?
+    - Guía detallada para revisar los documentos emitidos
+    - ¿Qué pasos son necesarios para revisar los documentos emitidos?
+    - ¿Cómo reviso los documentos emitidos?
+    - ¿Cómo hago para revisar los documentos emitidos?
+    - ¿Cómo puedo revisar documentos emitidos?
+    - ¿Cómo se revisan los documentos emitidos?
+    - ¿Qué pasos debo seguir para revisar documentos emitidos?
+    - ¿Cómo revisar documentos emitidos?
+    - Proceso para revisar documentos emitidos
+    - Pasos para revisar los documentos emitidos
+    - ¿Cómo se pueden revisar los documentos emitidos?
+    - Instrucciones para revisar los documentos emitidos
+    - Necesito revisar los documentos emitidos
+    - ¿Cómo revisar los documentos emitidos?
+    - ¿Cuál es el procedimiento para revisar los documentos emitidos?
+    - Guía para revisar los documentos emitidos
+    - ¿Qué debo hacer para revisar los documentos emitidos?
+
+- intent: preguntar_confirmar_acciones_director
+  examples: |
+    - ¿Cómo se confirma las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Cómo se pueden confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Qué pasos debo seguir para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - Proceso para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director
+    - ¿Cuál es la forma correcta de confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Me puedes explicar cómo confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - Instrucciones para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director
+    - Necesito confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director, ¿cómo lo hago?
+    - ¿Qué debo hacer para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - Pasos para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director
+    - ¿Cómo se confirman las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Cuál es el procedimiento para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Cómo hacer para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - Confirmar acciones de DELEGAR y DERIVAR realizadas por un Director
+    - Necesito confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director
+    - ¿Cómo puedo hacer para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Cómo se pueden confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Cómo confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Cómo realizar la confirmación de las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - Guía para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director
+    - ¿Cómo se hace la confirmación de las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - Proceso de confirmación de acciones de DELEGAR y DERIVAR realizadas por un Director
+    - Pasos detallados para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director
+    - ¿Qué debo hacer para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Cómo confirmo las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Cuál es el proceso correcto para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - Instrucciones detalladas para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director
+    - Necesito instrucciones para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director
+    - ¿Qué pasos debo seguir para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Cómo se puede hacer la confirmación de las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Qué debo hacer para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Cómo confirmo las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - Guía detallada para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director
+    - ¿Qué pasos son necesarios para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Cómo confirmo las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Cómo hago para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Cómo puedo confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Cómo se confirman las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Qué pasos debo seguir para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Cómo confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - Proceso para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director
+    - Pasos para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director
+    - ¿Cómo se pueden confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - Instrucciones para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director
+    - Necesito confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director
+    - ¿Cómo confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - ¿Cuál es el procedimiento para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+    - Guía para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director
+    - ¿Qué debo hacer para confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director?
+
+- intent: preguntar_que_es_multibandeja
+  examples: |
+    - ¿Qué es una multibandeja?
+    - ¿Qué significa multibandeja?
+    - ¿Me puedes explicar qué es una multibandeja?
+    - Definición de multibandeja
+    - ¿Qué quiere decir multibandeja?
+    - ¿Qué significa el término multibandeja?
+    - ¿Qué es una multibandeja?
+    - Explicación de multibandeja
+    - ¿Podrías decirme qué es una multibandeja?
+    - ¿Qué es el concepto de multibandeja?
+    - ¿Cómo se define multibandeja?
+    - Necesito saber qué es una multibandeja
+    - ¿Me puedes explicar el concepto de multibandeja?
+    - ¿Qué es una multibandeja en términos sencillos?
+    - ¿Qué quiere decir multibandeja?
+    - ¿Qué es una multibandeja y cómo funciona?
+    - ¿Qué es una multibandeja y para qué sirve?
+    - ¿Qué significa exactamente multibandeja?
+    - Definición del término multibandeja
+    - ¿Qué significa multibandeja en un contexto de oficina?
+    - ¿Qué es una multibandeja en un sistema de gestión documental?
+    - ¿Qué significa multibandeja en términos de organización?
+    - ¿Qué es una multibandeja y cuál es su propósito?
+    - ¿Qué es una multibandeja en la gestión de documentos?
+    - Explicación del término multibandeja
+    - ¿Qué es una multibandeja en el contexto de gestión de documentos?
+    - ¿Me puedes dar una definición de multibandeja?
+    - ¿Qué es una multibandeja y cómo se usa?
+    - ¿Qué es una multibandeja en una oficina?
+    - ¿Qué significa multibandeja y cómo se aplica?
+    - ¿Cómo se explica el término multibandeja?
+    - Necesito entender qué es una multibandeja
+    - ¿Me podrías explicar qué es una multibandeja?
+    - ¿Qué es una multibandeja y cómo se utiliza?
+    - ¿Qué es una multibandeja y por qué es importante?
+    - ¿Qué significa multibandeja en el trabajo de oficina?
+    - ¿Qué es una multibandeja y cómo beneficia a la oficina?
+    - ¿Qué es una multibandeja y cuál es su función?
+    - ¿Qué es una multibandeja y cómo se implementa?
+    - ¿Qué significa multibandeja y cómo se utiliza?
+    - ¿Qué es una multibandeja en términos de oficina?
+    - ¿Qué es una multibandeja y cómo se aplica en la gestión de documentos?
+    - ¿Qué es una multibandeja y cuál es su utilidad?
+    - ¿Qué significa el concepto de multibandeja?
+    - ¿Qué es una multibandeja y cómo se pone en práctica?
+    - ¿Qué es una multibandeja y cuál es su aplicación?
+    - ¿Qué es una multibandeja y por qué es útil?
+    - ¿Qué es una multibandeja y cómo se usa en la oficina?
+    - ¿Qué es una multibandeja en términos de gestión documental?
+
+
+- intent: solicitar_ejemplos
+  examples: |
+    - Dame ejemplos
+    - Quiero los ejemplos
+    - ¿Puedes darme ejemplos?
+    - Necesito ejemplos
+    - Muéstrame ejemplos
+    - Enséñame ejemplos
+    - Proporcióname ejemplos
+    - Dime ejemplos
+    - Dame algunos ejemplos
+    - ¿Tienes ejemplos?
+    - Dame unos ejemplos
+    - Me gustaría ver ejemplos
+    - Por favor, dame ejemplos
+    - Dame un ejemplo
+    - Dame varios ejemplos
+    - ¿Podrías darme ejemplos?
+    - Quiero ver ejemplos
+    - ¿Puedes mostrarme ejemplos?
+    - ¿Puedes dar ejemplos?
+    - Necesito ver ejemplos
+    - Muéstrame algunos ejemplos
+    - Enséñame unos ejemplos
+    - Proporcióname unos ejemplos
+    - Dime algunos ejemplos
+    - Dame ejemplos, por favor
+    - ¿Tienes algunos ejemplos?
+    - Dame ejemplos ahora
+    - Me gustaría ver unos ejemplos
+    - Por favor, dame unos ejemplos
+    - Dame un ejemplo, por favor
+    - Dame varios ejemplos, por favor
+    - ¿Podrías darme unos ejemplos?
+    - Quiero ver unos ejemplos
+    - ¿Puedes mostrarme algunos ejemplos?
+    - ¿Puedes darme unos ejemplos?
+    - Necesito unos ejemplos
+    - Muéstrame ejemplos, por favor
+    - Enséñame algunos ejemplos
+    - Proporcióname varios ejemplos
+    - Dime unos ejemplos
+    - Dame ejemplos, por favor
+    - ¿Tienes unos ejemplos?
+    - Dame ejemplos de esto
+    - Me gustaría ver algunos ejemplos
+    - Por favor, dame unos ejemplos de esto
+    - Dame un ejemplo de esto
+    - Dame varios ejemplos de esto
+    - ¿Podrías darme ejemplos de esto?
+    - Quiero ver ejemplos de esto
+    - ¿Puedes mostrarme ejemplos de esto?
+
+- intent: opciones_general
+  examples: |
+    - Bríndame las opciones que tienes.
+    - Quiero saber las opciones que tienes.
+    - ¿Cuáles son las opciones que tienes?
+    - Dame las opciones disponibles.
+    - Muéstrame las opciones que tienes.
+    - Por favor, bríndame las opciones que tienes.
+    - Me gustaría conocer las opciones que tienes.
+    - Necesito saber las opciones disponibles.
+    - ¿Qué opciones tienes?
+    - Enséñame las opciones que tienes.
+    - Bríndame las opciones que ofreces.
+    - ¿Me puedes dar las opciones que tienes?
+    - Quisiera ver las opciones disponibles.
+    - ¿Cuáles son tus opciones?
+    - Dime las opciones que tienes.
+    - Bríndame las opciones, por favor.
+    - Necesito conocer las opciones que tienes.
+    - Dame las opciones que tienes disponibles.
+    - ¿Qué opciones me puedes ofrecer?
+    - Quiero ver las opciones que tienes.
+    - Bríndame todas las opciones que tienes.
+    - Me gustaría saber las opciones disponibles.
+    - ¿Cuáles son las opciones que ofreces?
+    - Dame las opciones que ofreces.
+    - Muéstrame todas las opciones que tienes.
+    - ¿Qué opciones tienes para mí?
+    - Enséñame todas las opciones disponibles.
+    - Por favor, dame las opciones que tienes.
+    - Necesito ver las opciones que tienes.
+    - ¿Me puedes mostrar las opciones que tienes?
+    - Bríndame todas las opciones disponibles.
+    - Quisiera saber las opciones que ofreces.
+    - ¿Cuáles opciones tienes?
+    - Dime todas las opciones disponibles.
+    - Bríndame las opciones que están disponibles.
+    - Muéstrame las opciones que ofreces.
+    - ¿Qué opciones tienes disponibles?
+    - Enséñame las opciones que me puedes dar.
+    - Quiero saber todas las opciones que tienes.
+    - Bríndame todas las opciones que tienes ahora.

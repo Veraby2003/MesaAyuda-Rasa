@@ -1,0 +1,425 @@
+version: "3.1"
+
+intents:
+  - saludar
+  - despedirse
+  - afirmar
+  - negar
+  - estado_animo_bueno
+  - estado_animo_malo
+  - cambio_contraseña
+  - configurar_outlook
+  - solicitar_firma_digital
+  - desafio_bot
+  - problemas_PC_y_acceso_internet
+  - olvide_mi_contraseña
+  - proceso_migracion_gob_pe
+  - descargar_formatos_mesa_ayuda
+  - solicitar_instalacion_programa
+  - informacion_sgd
+  - solicitud_atencion_general
+  - ayuda
+  - contacto_migrar
+  - Guia_tramite
+  - Ejemplos_de_estructura
+  - Guia_lenguaje_ciudadano
+  - solicitud_acceso_a_los_servicios_informaticos
+  - solicitud_acceso_a_internet
+  - solicitud_formato_vpn
+  - solicitud_formato_devolucion_bienes_tecnologicos
+  - solicitud_PIDE
+  - solicitud_formato_de_certificado_digital
+  - solicitud_formato__bienes_tecnologicos
+  - video_manual_director
+  - video_manual_secretaria
+  - video_manual_trabajador
+  - instructivo_caso_practico
+  - otras_consultas
+  - dificultades_SGD
+  - videos_instructivos_SGD
+  - unirse_grupo_WhatsApp_SGD
+  - documento_bandeja_SGD
+  - hoja_tramite_SGD
+  - que_rol_tengo_SGD
+  - cambio_contraseña_SGD
+  - acceder_SGD
+  - que_es_SGD
+  - preguntar_enviar_documento_trabajador
+  - preguntar_digitalizar_documento_con_NIT
+  - preguntar_enviar_documento_adjunto
+  - preguntar_finalizar_documento
+  - preguntar_poner_firma
+  - preguntar_revisar_documentos_emitidos
+  - preguntar_confirmar_acciones_director
+  - preguntar_que_es_multibandeja
+  - solicitar_ejemplos
+  - opciones_general
+
+
+responses:
+
+  utter_saludar:
+  - text: "¡Hola! 🙋🏻‍♀ *Soy Emilia, el Chatbot de EsSalud.*"
+  - text: "¡Saludos! 🙋🏻‍♀ *Soy Emilia, el Chatbot de EsSalud.*"
+  - text: "¡Qué tal! 🙋🏻‍♀ *Soy Emilia, tu asistente virtual de EsSalud.*"
+  - text: "¡Buen día! 🙋🏻‍♀ *Soy Emilia, aquí para ayudarte con EsSalud.*"
+  - text: "¡Saludos cordiales! 🙋🏻‍♀  *Soy Emilia, el Chatbot de EsSalud.*"
+  - text: "¡Hola! 🙋🏻‍♀  *Soy Emilia, el Chatbot de EsSalud.*"
+  - text: "¡Saludos! 🙋🏻‍♀  *Soy Emilia, tu guía de EsSalud.*"
+  - text: "¡Buenas! 🙋🏻‍♀  *Soy Emilia, el Chatbot de EsSalud.*"
+  - text: "¡Bienvenido! 🙋🏻‍♀  *Soy Emilia, el asistente virtual de EsSalud.*"
+  - text: "¡Bienvenida! 🙋🏻‍♀  *Soy Emilia, aquí para responder tus preguntas sobre EsSalud.*"
+  - text: "¡Saludos! 🙋🏻‍♀  *Soy Emilia, el Chatbot de EsSalud.*"
+  - text: "¡Hola! 🙋🏻‍♀  *Soy Emilia, lista para asistirte en lo que necesites.*"
+  - text: "¡Hola! 🙋🏻‍♀  *Soy Emilia, el Chatbot de EsSalud, a tu servicio.*"
+  - text: "¡Hola! 🙋🏻‍♀  *Soy Emilia, el Chatbot de EsSalud.*"
+  - text: "¡Saludos! 🙋🏻‍♀  *Soy Emilia, el Chatbot de EsSalud, aquí para ayudarte.*"
+  - text: "¡Qué tal! 🙋🏻‍♀  *Soy Emilia, tu asistente de EsSalud.*"
+  - text: "¡Buen día! 🙋🏻‍♀  *Soy Emilia, el Chatbot de EsSalud.*"
+  - text: "¡Buenos días! 🙋🏻‍♀  *Soy Emilia, el Chatbot de EsSalud.*"
+  
+  utter_nuevo:
+  - text: "¿En qué te puedo ayudar? ¿Te gustaría conocer las opciones que tengo disponibles?"
+  - text: "¿En qué puedo asistirte?¿Te gustaría conocer las opciones que tengo disponibles?"
+  - text: "¿Cómo puedo ayudarte hoy?¿Te gustaría conocer las opciones que tengo disponibles?"
+  - text: "¿Qué necesitas que haga por ti?¿Te gustaría conocer las opciones que tengo disponibles?"
+  - text: "¿En qué puedo ser de ayuda?¿Te gustaría conocer las opciones que tengo disponibles?"
+  - text: "¿Qué puedo hacer por ti?¿Te gustaría conocer las opciones que tengo disponibles?"
+  - text: "¿En qué te puedo asistir?¿Te gustaría conocer las opciones que tengo disponibles?"
+  - text: "¿Hay algo con lo que necesites ayuda?¿Te gustaría conocer las opciones que tengo disponibles?"
+  - text: "¿Cómo puedo asistirte?¿Te gustaría conocer las opciones que tengo disponibles?"
+  - text: "¿Qué necesitas?¿Te gustaría conocer las opciones que tengo disponibles?"
+  - text: "¿Puedo ayudarte con algo?¿Te gustaría conocer las opciones que tengo disponibles?"
+  
+  utter_opciones:
+  - text: " Cuento con las siguientes opciones:\n
+➣ 🔐 Cambiar la contraseña de mi computadora.\n
+➣ ✉ Configurar Outlook y Solicitar nueva cuenta de Correo.\n
+➣ ✍🏻 Solicita e instala el certificado de FIRMA DIGITAL.\n
+➣ 💻 No tengo acceso a internet o problemas con la PC.\n
+➣ 🔑 Olvidé mi contraseña.\n
+➣ 🌐 Proceso de Migración al GOB.PE.\n
+➣ 📄 Descargar Formatos de Mesa de Ayuda.\n
+➣ ⚙️ Solicitar la instalación de un programa.\n
+➣ 🔎 Información del SGD.\n
+➣ 👨🏻‍💻 Solicitud de Atención de Mesa de ayuda"
+
+  utter_animar:
+  - text: "Aquí tienes algo para animarte:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_ayuda:
+  - text: "¿En qué te puedo ayudar?"
+  - text: "¿En qué puedo asistirte?"
+  - text: "¿Cómo puedo ayudarte hoy?"
+  - text: "¿Qué necesitas que haga por ti?"
+  - text: "¿En qué puedo ser de ayuda?"
+  - text: "¿Qué puedo hacer por ti?"
+  - text: "¿En qué te puedo asistir?"
+  - text: "¿Hay algo con lo que necesites ayuda?"
+  - text: "¿Cómo puedo asistirte?"
+  - text: "¿Qué necesitas?"
+  - text: "¿Puedo ayudarte con algo?"
+  
+  utter_ayudo:
+  - text: "¿Te ayudó eso?"
+
+  utter_feliz:
+  - text: "¡Genial, sigue así!"
+
+  utter_entendido:
+  - text: "👩🏻‍🔧 Entiendo tu necesidad."
+  - text: "👩🏻‍🔧 Comprendo tu solicitud."
+  - text: "👩🏻‍🔧 Estoy al tanto de tu requerimiento."
+  - text: "👩🏻‍🔧 Estoy consciente de tu necesidad."
+
+  utter_despedirse:
+  - text: "Hasta pronto"
+  - text: "Fue un gusto atenderte"
+  - text: "Vuelve cuando quieras"
+  - text: "Adiós, cuídate"
+  - text: "Nos vemos pronto"
+  - text: "Que tengas un buen día"
+  - text: "Gracias por tu tiempo, hasta luego"
+  - text: "Nos vemos la próxima vez"
+  - text: "Que te vaya bien"
+  - text: "Hasta la próxima"
+  - text: "Espero verte pronto"
+  - text: "Despedida y buena suerte"
+  - text: "Fue un placer ayudarte"
+  - text: "Vuelve pronto"
+  - text: "Adiós, que tengas un buen día"
+  - text: "Cuídate, hasta luego"
+  - text: "Espero que vuelvas pronto"
+  - text: "Hasta luego, que estés bien"
+  - text: "Fue un placer, adiós"
+  - text: "Nos vemos, cuídate"
+  - text: "Gracias por usar nuestro servicio"
+  - text: "Espero haberte ayudado, adiós"
+  - text: "Nos vemos en otra ocasión"
+  - text: "Adiós, que tengas un buen día"
+  - text: "Cuídate mucho, hasta la próxima"
+  - text: "Gracias por visitarnos, vuelve pronto"
+
+  utter_cambio_contraseña:
+  - text: "⏯ Mira el video de *Reestablecer tu contraseña de usuario de dominio* para una explicación detallada:\n
+  https://www.youtube.com/watch?v=5rNoUmOJzR0"
+
+  utter_cambio_contraseña_2:
+  - text: "Ademas de ello, te enviare una guía detallada que puedes seguir para cambiar tu contraseña:||https://cdn.www.gob.pe/uploads/document/file/5638777/4993885-manual-disenado-restablecer-contrasena.pdf?v=1706626291"
+
+  utter_configurar_outlook:
+  - text: "⏯ Mira el video de *Configuración de correo Outlook EsSalud* para una explicación detallada:\n
+  https://www.youtube.com/watch?v=DBp9tXxbrVc&ab_channel=GCTIC"
+
+  utter_configurar_outlook_2:
+  - text: "Ademas de ello, te enviare una guía detallada que puedes seguir para configurar tu correo OUTLOOK en la computadora:||https://cdn.www.gob.pe/uploads/document/file/5638811/4993885-manual-disenado-configuracion-correo.pdf?v=1706626291"
+
+  utter_solicitar_firma_digital:
+  - text: "⏯ Mira el video del *Proceso de instalación* para una explicación detallada:\n
+  https://www.youtube.com/watch?v=24RdGJ1nOLY"
+
+  utter_solicitar_firma_digital_2:
+  - text: "Ademas de ello, te enviare una guía detallada que puedes seguir para que instales el *CERTIFICADO DIGITAL*:||https://www.essalud.gob.pe/doc-gob/Guia_solicitar_y_instalar_Certificado_Digital.pdf"
+
+  utter_solicitar_firma_digital_3:
+  - text: "El *primer paso* seria llenar este formulario:||https://www.essalud.gob.pe/doc-gob/Formato_Carga_Masiva_Reniec-m3.xls"
+
+  utter_solicitar_firma_digital_4:
+  - text: "Se indica que el responsable o coordinador del área envía el formato con la información completa a través del correo certificado.digital@essalud.gob.pe, con copia a mesadeayuda@essalud.gob.pe, para el trámite correspondiente."
+
+  utter_problemas_PC_y_acceso_internet:
+
+  - text: " Corrobora si no tienes acceso a internet mediante los siguientes pasos: ||1. Verifica que tu cable de internet este bien conectado a tu computador luego:||
+  2. Ingresa al navegador de tu preferencia (Chrome, Edge, Mozilla, etc.) y verifica si abre alguna página web.||3. Si aparece este mensaje, es porque:||https://i.blogs.es/f08d94/google-chrome-juego-dinosaurio-offline-no-internet/1024_2000.png||*Sigue sin tener internet*" 
+  
+  utter_olvide_mi_contraseña:
+  - text: "Si al intentar ingresar a su equipo le sale el siguiente mensaje:||*“La contraseña no es correcta. Inténtalo de nuevo”.*||*1.* Debes esperar de 3 a 5 minutos e ingresa nuevamente. Verifica que el teclado numérico esté activo y digita correctamente la clave.||*2.* Si el problema persiste, se debe generar una atención por MESA DE AYUDA." 
+
+  utter_proceso_migracion_gob_pe:
+
+  - text: "Te puedo brindar las siguientes opciones:\n➣ Iniciar con el proceso migratorio\n➣ Guia de tramite y servicio\n➣ Ejemplos de estructura\n➣ Guias de lenguaje ciudadano." 
+  
+  utter_contacto_migrar:
+  - text: "Para iniciar este proceso la gerencia a la que perteneces debe designar a un responsable para las coordinaciones correspondientes.||La persona responsable debe comunicarse con el Lic. Frank Ortiz Jara al correo sgsagobpe@essalud.gob.pe o llamar al celular 96 0532016 para programar una reunión y realizar el análisis de la información a ser migrada."
+  
+  utter_Guia_tramite:
+  - text: "En este documento podrás identificar la información de acuerdo al tipo de guía (trámite, servicio o informativa). Además, podrás encontrar un enlace sobre contenidos migrados de otras instituciones.||https://cdn.www.gob.pe/uploads/document/file/5781049/5134359-identificar-tipo-servicio-tramite-info-2024.pdf?v=1706650479"
+  
+  utter_Guia_lenguaje_ciudadano:
+
+  - text: "Es importante que tengas en cuenta las siguientes guías que te ayudarán a adaptar tu información a un “lenguaje ciudadano”; es decir, un estilo de escritura que todos puedan entender fácilmente.||
+*🅐 Guía sobre lenguaje ciudadano*  - https://guias.servicios.gob.pe/paginas-institucionales/lenguaje-simple/index\n
+*🅑 Uso lingüístico* - https://guias.servicios.gob.pe/paginas-institucionales/lenguaje-simple/uso-linguistico\n
+*🅒 Jergas y tecnicismos* - https://guias.servicios.gob.pe/paginas-institucionales/lenguaje-simple/jergas\n
+*🅓 Lineamientos generales* - https://guias.servicios.gob.pe/paginas-institucionales/lenguaje-simple/lineamientos\n
+*🅔 Recomendaciones*  - https://guias.servicios.gob.pe/paginas-institucionales/lenguaje-simple/recomendaciones"
+
+
+  utter_descargar_formatos_mesa_ayuda:
+  - text: "Escoge el *formato* que necesitas para enviarlo a Mesa de ayuda:||
+➣ Solicitud de acceso a los Servicios Informáticos (dominio y correo).\n
+➣ Solicitud de Acceso a Internet.\n
+➣ Solicitud de VPN.\n
+➣ Devolución de Bienes Tecnológicos (Entrega de cargo).\n
+➣ Solicitud PIDE (Plataforma Nacional de Interoperabilidad).\n
+➣ Solicitud de Certificado Digital.\n
+➣ Solicitud de Bienes Tecnológicos." 
+
+
+
+  utter_solicitud_acceso_a_los_servicios_informaticos:
+  - text: 'Claro, aqui tienes el formato de Solicitud de acceso a los Servicios Informáticos (dominio y correo)||https://cdn.www.gob.pe/uploads/document/file/5769119/5125218-formato-de-solicitud-de-accesos-a-los-servicios-informaticos-2024.xlsx?v=1706306592||Envía este formato correctamente llenado y firmado a *mesadepartes@essalud.gob.pe*'
+
+  utter_solicitud_acceso_a_internet:
+  - text: 'Claro, aqui tienes el formato de Acceso a Internet.||https://cdn.www.gob.pe/uploads/document/file/5769123/5125218-formato_3_acceso_internet-1.xlsx?v=1706306593||Envía este formato correctamente llenado y firmado a *mesadepartes@essalud.gob.pe*'
+
+  utter_solicitud_formato_vpn:
+  - text: 'Claro, aqui tienes el formato VPN.||https://cdn.www.gob.pe/uploads/document/file/5769120/5125218-formato-de-solictud-para-creacion-cuentas-vpn.xlsx?v=1706306593||Envía este formato correctamente llenado y firmado a *mesadepartes@essalud.gob.pe*'
+
+  utter_solicitud_formato_devolucion_bienes_tecnologicos:
+  - text: 'Claro, aqui tienes el formato de Devolución de Bienes Tecnológicos (entrega de cargo)||https://cdn.www.gob.pe/uploads/document/file/5769122/5125218-formato_1_bienes_tecnologicos-1.xlsx?v=1706306593||Envía este formato correctamente llenado y firmado a *mesadepartes@essalud.gob.pe*'
+ 
+  utter_solicitud_PIDE:
+  - text: 'Claro, aqui tienes el formato PIDE (Plataforma Nacional de Interoperabilidad)||https://cdn.www.gob.pe/uploads/document/file/5769124/5125218-formato-de-solicitud-de-acceso-pide.xlsx?v=1706306594||Envía este formato correctamente llenado y firmado a *mesadepartes@essalud.gob.pe*'
+ 
+  utter_solicitud_formato_de_certificado_digital:
+  - text: 'Claro, aqui tienes el formato de Solicitud de Certificado Digital.||https://cdn.www.gob.pe/uploads/document/file/5769117/5125218-formato-carga-masiva-reniec.xlsx?v=1706306592||El responsable o coordinador del área* envía el formato con la información completa a través del correo *certificado.digital@essalud.gob.pe* con copia a *mesadepartes@essalud.gob.pe*'
+  
+  utter_solicitud_formato__bienes_tecnologicos:
+  - text: 'Claro, aqui tienes el formato de Solicitud de Bienes Tecnológicos.||https://cdn.www.gob.pe/uploads/document/file/5769125/5125218-formatos-devolucion-de-bienes-tecnologicos.docx?v=1706306594||Envía este formato correctamente llenado y firmado a *mesadepartes@essalud.gob.pe*'
+  
+  utter_solicitar_instalacion_programa:
+  - text: "Para brindar soporte en la INSTALACIÓN, requerimos que se indique qué software requiere instalar y/o configurar.||Envía la solicitud al correo *mesadeayuda@essalud.gob.pe* con el asunto “Instalación de programa / realizar configuración”.||Puedes ver la lista de softwares institucionales en el siguiente enlace desde tu computador institucional\n
+  http://intranet.essalud/portal/modules/mydownloads/"
+
+  utter_Ejemplos_de_estructura:
+  - text: "Estos documentos muestran ejemplos de la estructura de contenido enviados por otras dependencias:||https://cdn.www.gob.pe/uploads/document/file/5781050/5134359-ejemplo-01-seguro-seguro-regular-4-1.docx?v=1706649754||https://cdn.www.gob.pe/uploads/document/file/5781051/5134359-ejemplo-02-pagina-gmc-22-nov-2023-1-1.docx?v=1706649755"
+
+
+  utter_informacion_sgd:
+  - text: "Información SGD - Sistema de Gestión Documentaria:||
+➣ ¿*Qué es* el SGD y que *roles* contempla?\n
+➣ ¿Cómo *accedo* al SGD?\n
+➣ ¿Cómo hago el cambio de mi *contraseña*?\n
+➣ ¿Cómo sé *qué rol tengo* dentro del SGD?\n
+➣ ¿Qué es una *Hoja de Trámite*?\n
+➣ ¿Cómo sé que ha llegado un *documento para atender* en mi bandeja?\n
+➣ Únete al grupo “WhatsApp SGD - Atención de *consultas y dudas*\n
+➣ *Videos e instructivos* del SGD\n
+➣ ¿Presentas *dificultades* con el SGD?\n
+➣ Otras consultas"
+
+
+
+  utter_informacion_sgd_1:
+  - text: "Es un *Sistema de Gestión Documental* que nos permite realizar el *seguimiento de los documentos* que ingresan a la institución o que son generados al interior de las diversas dependencias, de acuerdo a los procedimientos existentes en cada una de ellas.||Los roles que contempla el SGD son los siguientes:\n
+⓵ 👨🏻‍💼 Rol Director: asumido por el/la responsable del área. \n
+⓶ 👩🏻‍🏫 Rol Secretaria: asumido por el/la persona que realiza apoyo administrativo al responsable del área.\n
+⓷ 👩🏻‍💻 Rol Trabajador: asumido por todos los demás integrantes del área que responden documentos como profesionales."
+
+  utter_informacion_sgd_2:
+  - text: "✅ Ingresa a Google Chrome y copia el siguiente *ENLACE*:||essaludvirtual.essalud.gob.pe||✅ En *usuario* coloca tu correo institucional.||✅ Digita tu DNI en *contraseña*."
+
+  utter_informacion_sgd_3:
+  - text: "✅ Ingresa al SGD.||✅ Haz click en *¿Olvidaste tu contraseña?*||✅ En “usuario” coloca tu correo institucional.||✅ Ingresa tu DNI y correo institucional.📬 Se enviará un enlace a tu correo para realizar el cambio. Ingresa tu nueva contraseña, repite tu nueva contraseña y haz clic en “Guardar”.
+||También te puede servir esté manual||https://cdn.www.gob.pe/uploads/document/file/5704054/4993885-cambiar-contrasena-sgd.pdf?v=1707254387"
+
+  utter_informacion_sgd_4:
+  - text: "Estos son los accesos correspondientes a cada rol:\n
+⓵ 👨🏻‍💼 Si cuentas con acceso al módulo *“GESTIÓN INTERNA”* y a *CONFIRMAR Y/O FIRMAR DOCUMENTOS*, tienes *ROL DIRECTOR*.\n
+⓶👩🏻‍🏫 Si cuentas con acceso al módulo *“GESTIÓN INTERNA”*, tienes *ROL SECRETARIA*.\n
+⓷👩🏻‍💻 Si tienes acceso al módulo *“TRABAJADOR”*, tienes *ROL TRABAJADOR*.||
+🚨 NOTA: Los roles dentro del SGD van de acuerdo a las funciones que el usuario ocupa en su día a día.||
+🔄 Si necesita cambiar de ROL, realiza los siguientes pasos:*||
+1.	Llena este formato.||https://cdn.www.gob.pe/uploads/document/file/5734417/4993885-formato-1-nuevos-usuarios_sgd.xlsx?v=1706131176||
+2.	Envíalo tu solicitud  al siguiente correo:||
+administra.sgd@essalud.gob.pe"
+
+  utter_informacion_sgd_5:
+  - text: "Es el número que identifica un expediente. Una hoja de trámite contiene diversos tipos de documentos y archivos adjuntos (anexos).||
+La hoja de trámite tiene la forma: (Ejemplo: 00000123-2024)||🚨 NOTA: Los roles dentro del SGD van de acuerdo a las funciones que el usuario ocupa en su día a día."
+
+  utter_informacion_sgd_6:
+  - text: "✅ Inicia sesión en el *SGD*.||✅ Te diriges a la pestaña *GESTIÓN INTERNA* (para los roles de secretaria y director) o a la pestaña *TRABAJADOR* (para el caso del rol trabajador).||✅ Click en módulo *BANDEJA DE ENTRADA*.||En la *BANDEJA DE ENTRADA* podrás visualizar todas las hojas de trámite que ingresan al área o son delegadas al trabajador. "
+
+  utter_informacion_sgd_7:
+  - text: "Ingresa a este enlace para unirte al grupo de WhatsApp de SGD – Atención||https://chat.whatsapp.com/IleURnwKaC2Bc8crI0Zrvr"
+    
+  utter_informacion_sgd_8:
+  - text: "Indique cualquiera de las siguientes alternativas:||
+➣ VIDEO y manual para *Rol de Director*\n
+➣ VIDEO y manual para *Rol de Secretaria*\n
+➣ VIDEO y manual para *Rol de Trabajador*\n
+➣ instructivo - Caso práctico del uso del SGD (Ejemplo)\n"
+
+  utter_informacion_sgd_8_1:
+  - text: "⏯ VIDEO para *Rol de Director*||https://youtu.be/TQViZtle5Eg||Instructivo para el *ROL DE SECRETARIA Y DIRECTOR*. ⬇||https://cdn.www.gob.pe/uploads/document/file/5744193/4993885-manual-modulo-gestion-interna_1-1-0.pdf?v=1706196418"
+
+
+  utter_informacion_sgd_8_2:
+  - text: "⏯ VIDEO para *Rol de Secretaria*||https://youtu.be/PHFf98RGJMs||Instructivo para el *ROL DE SECRETARIA Y DIRECTOR*. ⬇||https://cdn.www.gob.pe/uploads/document/file/5744193/4993885-manual-modulo-gestion-interna_1-1-0.pdf?v=1706196418"
+
+
+  utter_informacion_sgd_8_3:
+  - text: "⏯ VIDEO para *Rol de Trabajador*||https://youtu.be/VdZ5O2KLNbU||Instructivo para el *ROL DE TRABAJADOR* ⬇||https://cdn.www.gob.pe/uploads/document/file/5744194/4993885-manual-modulo-trabajador_1-1-0.pdf?v=1706196419"
+
+
+  utter_informacion_sgd_8_4:
+  - text: "Caso práctico del uso del SGD (Ejemplo) ⬇||https://cdn.www.gob.pe/uploads/document/file/5744192/4993885-instructivo-de-caso-practico-sistema-de-gestion-documental-sgd.pdf?v=1706196418"
+
+
+
+  utter_informacion_sgd_9:
+  - text: " *🔄 Si necesita cambiar de ROL, realiza los siguientes pasos:*||
+1.	Llena este formato.||https://cdn.www.gob.pe/uploads/document/file/5734417/4993885-formato-1-nuevos-usuarios_sgd.xlsx?v=1706131176||
+2.	Envíalo tu solicitud al siguiente correo: administra.sgd@essalud.gob.pe||
+También, puedes trasladar tu consulta en el grupo de WhatsApp dando clic en el enlace:||https://chat.whatsapp.com/IleURnwKaC2Bc8crI0Zrvr||
+Si presentas inconvenientes con tu *firma digital*"
+
+  utter_informacion_sgd_10:
+  - text: "Estos son MicroVideos que le van a ayudar en su consulta ⏯||
+➣ ¿Cómo envío un documento desde el perfil trabajador?\n
+➣ ¿Cómo digitalizo un documento en físico que cuenta con NIT?\n
+➣ ¿Cómo enviar un documento adjunto sobre un documento ya enviado?\n
+➣ ¿Cómo finalizar un documento?\n
+➣ ¿Cómo poner una firma o visto a un documento adjunto?\n
+➣ ¿Cómo reviso los documentos emitidos?\n
+➣ ¿Cómo se confirma las acciones de DELEGAR y DERIVAR realizadas por un Director?\n
+➣ ¿Qué es una multibandeja?\n"
+
+  utter_informacion_sgd_10_1:
+  - text: "⏯ Video - Envío un documento desde el perfil trabajador||
+https://www.youtube.com/watch?v=1uyKoPl9AoE&ab_channel=GCTIC"
+
+  utter_informacion_sgd_10_2:
+  - text: "⏯ Video - Digitalizo un documento en físico que cuenta con NIT||
+https://www.youtube.com/watch?v=CCereBZvtbY&ab_channel=GCTIC"
+
+  utter_informacion_sgd_10_3:
+  - text: "⏯ Video - Enviar un documento adjunto sobre un documento ya enviado||
+https://www.youtube.com/watch?v=ttTyGHAqKes&ab_channel=GCTIC"
+
+  utter_informacion_sgd_10_4:
+  - text: "⏯ Video - Finalizar un documento||
+https://www.youtube.com/watch?v=Jc1qD7fACAI&ab_channel=GCTIC"
+
+  utter_informacion_sgd_10_5:
+  - text: "⏯ Video - Poner una firma o visto a un documento adjunto||
+https://www.youtube.com/watch?v=0_magOQkGzI&ab_channel=GCTIC"
+
+  utter_informacion_sgd_10_6:
+  - text: "⏯ Video - Reviso los documentos emitidos||
+https://www.youtube.com/watch?v=gHBXoHSez_E&ab_channel=GCTIC"
+
+  utter_informacion_sgd_10_7:
+  - text: "⏯ Video - Confirmar las acciones de DELEGAR y DERIVAR realizadas por un Director||
+https://www.youtube.com/watch?v=tOhb49IW6Xo&ab_channel=GCTIC"
+
+  utter_informacion_sgd_10_8:
+  - text: "⏯ Video - Multibandeja||
+https://www.youtube.com/watch?v=vekeyRYt7O4&ab_channel=GCTIC"
+
+  utter_derivacion:
+  - text: "Si tu problema aún persiste, ¿te gustaría iniciar una solicitud en nuestro sistema de mesa de ayuda?"
+  - text: "¿Quisieras proceder con una solicitud en nuestra mesa de ayuda si el problema no ha sido resuelto?"
+  - text: "En caso de que tu problema no haya sido solucionado, ¿te gustaría generar una solicitud en nuestra mesa de ayuda?"
+  - text: "¿Te interesaría crear una solicitud en nuestra mesa de ayuda si tu problema no se ha solucionado?"
+  - text: "Si aún tienes problemas, ¿te gustaría abrir una solicitud en nuestra mesa de ayuda?"
+  - text: "¿Quieres generar una solicitud en nuestra mesa de ayuda si tu problema no ha sido resuelto?"
+  - text: "En caso de que tu problema persista, ¿te gustaría presentar una solicitud en nuestra mesa de ayuda?"
+  - text: "¿Te gustaría presentar una solicitud en nuestra mesa de ayuda si tu problema sigue sin resolverse?"
+  - text: "¿Quieres proceder con una solicitud en nuestra mesa de ayuda si tu problema no ha sido atendido?"
+  - text: "¿Te gustaría iniciar una solicitud en nuestra mesa de ayuda si el problema no ha sido solucionado?"
+
+
+
+
+
+
+  utter_solicitud_atencion_general:
+  - text: "opc10Flow"
+
+  utter_soyunbot:
+  - text: "*Soy Emilia, el Chatbot de EsSalud.*"
+  - text: "*Soy Emilia, el Chatbot de EsSalud.*"
+  - text: "*Soy Emilia, tu asistente virtual de EsSalud.*"
+  - text: "*Soy Emilia, aquí para ayudarte con EsSalud.*"
+  - text: "*Soy Emilia, el Chatbot de EsSalud.*"
+  - text: "*Soy Emilia, el Chatbot de EsSalud.*"
+  - text: "*Soy Emilia, tu guía de EsSalud.*"
+  - text: "*Soy Emilia, el Chatbot de EsSalud.*"
+  - text: "*Soy Emilia, el asistente virtual de EsSalud.*"
+  - text: "*Soy Emilia, aquí para responder tus preguntas sobre EsSalud.*"
+  - text: "*Soy Emilia, el Chatbot de EsSalud.*"
+  - text: "*Soy Emilia, lista para asistirte en lo que necesites.*"
+  - text: "*Soy Emilia, el Chatbot de EsSalud, a tu servicio.*"
+  - text: "*Soy Emilia, el Chatbot de EsSalud.*"
+  - text: "*Soy Emilia, el Chatbot de EsSalud, aquí para ayudarte.*"
+  - text: "*Soy Emilia, tu asistente de EsSalud.*"
+  - text: "*Soy Emilia, el Chatbot de EsSalud.*"
+  - text: "*Soy Emilia, el Chatbot de EsSalud.*"
+
+session_config:
+  session_expiration_time: 5
+  carry_over_slots_to_new_session: true
